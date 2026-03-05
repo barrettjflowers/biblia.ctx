@@ -1,40 +1,149 @@
-# Biblia.ctx
+# Canonical Data Format
+Conventions for canonical records used by biblia.ctx
 
-# sv
-
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+## Type Definition
+```ts
+export type Cononical = {
+  id: string // db key
+  title: string // userspace friendly name
+  description: string // userspace description
+  date_start?: string // birth or start date
+  date_end?: string // death or end date
+  date?: string // single or circa neutral date
+  tags?: string[] // search keys
+}
 ```
 
-## Developing
+---
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+# Field Specifications
 
-```bash
-npm run dev
+## `id`
+Unique database identifier.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+- lowercase only
+- no spaces
+
+Example
+```json
+"id": "abel"
+"id": "moses"
+"id": "noahs-flood"
 ```
 
-## Building
+---
 
-To create a production version of your app:
+## `title`
+Human readable name shown to users.
 
-```bash
-npm run build
+Example
+```json
+"title": "Abel"
+"title": "Moses"
+"title": "Noah's Flood"
 ```
 
-You can preview the production build with `npm run preview`.
+---
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## `description`
+A **1–2 sentence summary** describing the subject.
+
+- Should describe **well-known information**
+- Avoid speculation
+- Keep concise
+
+Example
+```json
+"description": "Abel was the second son of Adam and Eve and is known for offering a sacrifice that pleased God. He was later killed by his brother Cain."
+```
+
+---
+
+## `date_start`
+Start date of a person, event, or artifact.
+
+- birth dates
+- beginning of events, or artifacts
+
+Format
+```
+YYYYbce
+```
+
+Example
+```json
+"date_start": "1597bce"
+```
+
+---
+
+## `date_end`
+End date of a person, event, or artifact.
+
+- death dates
+- event completion
+
+Format
+```
+YYYYbce
+```
+
+Example
+```json
+"date_end": "1474bce"
+```
+
+---
+
+## `date`
+Used when **only one date is known**.
+
+Exact date
+```
+YYYYbce
+```
+
+Example
+```json
+"date": "4000bce"
+```
+
+Circa date
+```
+c.YYYYbce
+```
+
+Example
+```json
+"date": "c.4000bce"
+```
+
+Use `date` instead of `date_start` / `date_end` when only a single date is available.
+
+---
+
+## `tags`
+Search keywords used for filtering.
+
+- one word per tag
+- lowercase
+- split multi-word concepts into multiple tags
+
+```json
+"tags": ["person", "genesis", "sacrifice"]
+```
+
+---
+
+# Example Record
+```ts
+{
+  id: "abel",
+  title: "Abel",
+  description: "Abel was the second son of Adam and Eve and is known for offering a sacrifice that pleased God. He was later killed by his brother Cain.",
+  date_start: "",
+  date_end: "",
+  date: "c.4000bce",
+  tags: ["person", "genesis", "sacrifice"]
+}
+```
