@@ -1,5 +1,7 @@
-import { writable, derived } from 'svelte/store';
+import { writable, derived, get } from 'svelte/store';
 import { insight } from '../lib/archive/dict_example';
+import { settings } from './settings';
+import { parseYear, isWithinRange } from './dateUtils';
 
 export const query = writable('');
 
@@ -42,16 +44,33 @@ export const results = derived(query, ($query) => {
 	if (!$query.trim()) {
 		return [];
 	}
-	return insight
+
+	const yearsContext = get(settings).yearsContext;
+
+	const scored = insight
 		.map((item) => ({
 			item,
 			score: Math.min(
 				fuzzyScore(item.title, $query),
 				fuzzyScore(item.description, $query),
-				fuzzyScore(item.tags.join(' '), $query)
+				item.tags ? fuzzyScore(item.tags.join(' '), $query) : Infinity
 			)
 		}))
 		.filter((r) => r.score <= Math.max(2, $query.length / 3))
-		.sort((a, b) => a.score - b.score)
+		.sort((a, b) => a.score - b.score);
+
+	if (scored.length === 0) {
+		return [];
+	}
+
+	const topResult = scored[0];
+	const referenceYear = parseYear(topResult.item.date);
+
+	if (referenceYear === null) {
+		return [topResult.item];
+	}
+
+	return scored
+		.filter((r) => isWithinRange(parseYear(r.item.date), referenceYear, yearsContext))
 		.map((r) => r.item);
 });
