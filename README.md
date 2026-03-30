@@ -7,9 +7,7 @@ export type Cononical = {
   id: string // db key
   title: string // userspace friendly name
   description: string // userspace description
-  date_start?: string // birth or start date
-  date_end?: string // death or end date
-  date?: string // single or circa neutral date
+  date?: string // date of event
   tags?: string[] // search keys
 }
 ```
@@ -59,44 +57,7 @@ Example
 
 ---
 
-## `date_start`
-Start date of a person, event, or artifact.
-
-- birth dates
-- beginning of events, or artifacts
-
-Format
-```
-YYYYbce
-```
-
-Example
-```json
-"date_start": "1597bce"
-```
-
----
-
-## `date_end`
-End date of a person, event, or artifact.
-
-- death dates
-- event completion
-
-Format
-```
-YYYYbce
-```
-
-Example
-```json
-"date_end": "1474bce"
-```
-
----
-
 ## `date`
-Used when **only one date is known**.
 
 Exact date
 ```
@@ -118,7 +79,20 @@ Example
 "date": "c.4000bce"
 ```
 
-Use `date` instead of `date_start` / `date_end` when only a single date is available.
+Range of dates
+```
+YYYYbce-YYYYbce
+```
+
+Example
+```json
+"date": "4000bce-3000bce"
+```
+
+Ranges can also be circa
+```
+c.YYYYbce-c.YYYYbce
+```
 
 ---
 
@@ -141,9 +115,7 @@ Search keywords used for filtering.
   id: "abel",
   title: "Abel",
   description: "Abel was the second son of Adam and Eve and is known for offering a sacrifice that pleased God. He was later killed by his brother Cain.",
-  date_start: "",
-  date_end: "",
-  date: "c.4000bce",
+  date: "c.4000bce-c.3900bce",
   tags: ["person", "genesis", "sacrifice"]
 }
 ```

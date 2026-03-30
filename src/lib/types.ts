@@ -5,6 +5,7 @@ export type Cononical = {
   description: string //userspace description
   date_start?: string //birth or start date
   date_end?: string //death or end date
+  source?: string //source
   date?: string //circa neutral date
   tags?: string[] //search keys
 }

@@ -4,16 +4,14 @@ export const insight: Cononical[] = [
     id: 'aaron',
     title: 'Aaron',
     description: 'Great-grandson of Levi. Appointed spokesman for the Israelites in behalf of Moses.',
-	date_start:
-    date_end:
-    date: '1597-1474 bce',
+    date: '1597-1474bce',
 	tags: ['egypt', 'exodus', 'moses']
 },
 {
     id: 'abel',
     title: 'Abel',
     description: 'Second son of Adam; younger brother of Cain.',
-    date: 'c. 4000-3896 bce',
+    date: 'c.4000-3896bce',
     tags: ['genesis', 'adam', 'cain']
 },
 {

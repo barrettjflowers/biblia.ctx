@@ -31,8 +31,8 @@ declare module '$env/static/private' {
 	export const NODE: string;
 	export const INIT_CWD: string;
 	export const NVM_CD_FLAGS: string;
-	export const TERM: string;
 	export const SHELL: string;
+	export const TERM: string;
 	export const CLICOLOR: string;
 	export const HOMEBREW_REPOSITORY: string;
 	export const TMPDIR: string;
@@ -56,6 +56,7 @@ declare module '$env/static/private' {
 	export const npm_package_json: string;
 	export const npm_config_engine_strict: string;
 	export const _: string;
+	export const LaunchInstanceID: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_init_module: string;
 	export const __CFBundleIdentifier: string;
@@ -82,14 +83,15 @@ declare module '$env/static/private' {
 	export const FZF_DEFAULT_COMMAND: string;
 	export const NVM_BIN: string;
 	export const npm_config_user_agent: string;
-	export const KITTY_WINDOW_ID: string;
 	export const KITTY_INSTALLATION_DIR: string;
+	export const KITTY_WINDOW_ID: string;
 	export const INFOPATH: string;
 	export const HOMEBREW_CELLAR: string;
+	export const SECURITYSESSIONID: string;
 	export const npm_node_execpath: string;
 	export const npm_config_prefix: string;
-	export const COLORTERM: string;
 	export const KITTY_PUBLIC_KEY: string;
+	export const COLORTERM: string;
 	export const NODE_ENV: string;
 }
 
@@ -125,8 +127,8 @@ declare module '$env/dynamic/private' {
 		NODE: string;
 		INIT_CWD: string;
 		NVM_CD_FLAGS: string;
-		TERM: string;
 		SHELL: string;
+		TERM: string;
 		CLICOLOR: string;
 		HOMEBREW_REPOSITORY: string;
 		TMPDIR: string;
@@ -150,6 +152,7 @@ declare module '$env/dynamic/private' {
 		npm_package_json: string;
 		npm_config_engine_strict: string;
 		_: string;
+		LaunchInstanceID: string;
 		npm_config_userconfig: string;
 		npm_config_init_module: string;
 		__CFBundleIdentifier: string;
@@ -176,14 +179,15 @@ declare module '$env/dynamic/private' {
 		FZF_DEFAULT_COMMAND: string;
 		NVM_BIN: string;
 		npm_config_user_agent: string;
-		KITTY_WINDOW_ID: string;
 		KITTY_INSTALLATION_DIR: string;
+		KITTY_WINDOW_ID: string;
 		INFOPATH: string;
 		HOMEBREW_CELLAR: string;
+		SECURITYSESSIONID: string;
 		npm_node_execpath: string;
 		npm_config_prefix: string;
-		COLORTERM: string;
 		KITTY_PUBLIC_KEY: string;
+		COLORTERM: string;
 		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
