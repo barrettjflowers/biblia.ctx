@@ -1,106 +1,606 @@
 import type { Cononical } from '../types';
 
 export const insights: Cononical[] = [
-	{ id: 'aaron', title: 'Aaron', description: '' },
-	{ id: 'abel', title: 'Abel', description: '' },
-	{ id: 'abihu', title: 'Abihu', description: '' },
-	{ id: 'abishag', title: 'Abishag', description: '' },
-	{ id: 'abraham', title: 'Abraham', description: '' },
-	{ id: 'absalom', title: 'Absalom', description: '' },
-	{ id: 'abusive-speech', title: 'Abusive Speech', description: '' },
-	{ id: 'abyss', title: 'Abyss', description: '' },
-	{ id: 'accident', title: 'Accident', description: '' },
-	{ id: 'accusation', title: 'Accusation', description: '' },
-	{ id: 'acts-of-apostles', title: 'Acts of Apostles', description: '' },
-	{ id: 'adam', title: 'Adam', description: '' },
-	{ id: 'administration', title: 'Administration', description: '' },
-	{ id: 'adonijah', title: 'Adonijah', description: '' },
-	{ id: 'adoption', title: 'Adoption', description: '' },
-	{ id: 'adornment', title: 'Adornment', description: '' },
-	{ id: 'adultery', title: 'Adultery', description: '' },
-	{ id: 'affection', title: 'Affection', description: '' },
-	{ id: 'agabus', title: 'Agabus', description: '' },
-	{ id: 'age', title: 'Age', description: '' },
-	{ id: 'agriculture', title: 'Agriculture', description: '' },
-	{ id: 'ahab', title: 'Ahab', description: '' },
-	{ id: 'ahaz', title: 'Ahaz', description: '' },
-	{ id: 'alcoholic-beverages', title: 'Alcoholic Beverages', description: '' },
-	{ id: 'alexander-the-great', title: 'Alexander the Great', description: '' },
-	{ id: 'alien-resident', title: 'Alien Resident', description: '' },
-	{ id: 'altar', title: 'Altar', description: '' },
-	{ id: 'ambassador', title: 'Ambassador', description: '' },
-	{ id: 'ammonites', title: 'Ammonites', description: '' },
-	{ id: 'amos', title: 'Amos', description: '' },
-	{ id: 'amusements', title: 'Amusements', description: '' },
-	{ id: 'ancient-of-days', title: 'Ancient of Days', description: '' },
-	{ id: 'angel', title: 'Angel', description: '' },
-	{ id: 'anger', title: 'Anger', description: '' },
-	{ id: 'animals', title: 'Animals', description: '' },
-	{ id: 'anointed-anointing', title: 'Anointed, Anointing', description: '' },
-	{ id: 'anointed-christians', title: 'Anointed Christians', description: '' },
-	{ id: 'antichrist', title: 'Antichrist', description: '' },
-	{ id: 'antonia-tower-of', title: 'Antonia, Tower of', description: '' },
-	{ id: 'anxiety', title: 'Anxiety', description: '' },
-	{ id: 'apocrypha', title: 'Apocrypha', description: '' },
-	{ id: 'apostasy', title: 'Apostasy', description: '' },
-	{ id: 'apostle', title: 'Apostle', description: '' },
-	{ id: 'appointment', title: 'Appointment', description: '' },
-	{ id: 'approach-to-god', title: 'Approach to God', description: '' },
-	{ id: 'arabah', title: 'Arabah', description: '' },
-	{ id: 'arabia', title: 'Arabia', description: '' },
-	{ id: 'aram', title: 'Aram', description: '' },
-	{ id: 'aramaic', title: 'Aramaic', description: '' },
-	{ id: 'archaeology', title: 'Archaeology', description: '' },
-	{ id: 'archangel', title: 'Archangel', description: '' },
-	{ id: 'architecture', title: 'Architecture', description: '' },
-	{ id: 'areopagus', title: 'Areopagus', description: '' },
-	{ id: 'ark-of-the-covenant', title: 'Ark of the Covenant', description: '' },
-	{ id: 'armageddon', title: 'Armageddon', description: '' },
-	{ id: 'arms-armor', title: 'Arms, Armor', description: '' },
-	{ id: 'army', title: 'Army', description: '' },
-	{ id: 'artemis', title: 'Artemis', description: '' },
-	{ id: 'ashtoreth', title: 'Ashtoreth', description: '' },
-	{ id: 'assembly', title: 'Assembly', description: '' },
-	{ id: 'association', title: 'Association', description: '' },
-	{ id: 'assyria', title: 'Assyria', description: '' },
-	{ id: 'astrologers', title: 'Astrologers', description: '' },
-	{ id: 'athaliah', title: 'Athaliah', description: '' },
-	{ id: 'athens', title: 'Athens', description: '' },
-	{ id: 'atonement', title: 'Atonement', description: '' },
-	{ id: 'atonement-day', title: 'Atonement Day', description: '' },
-	{ id: 'attitudes-and-gestures', title: 'Attitudes and Gestures', description: '' },
-	{ id: 'baal', title: 'Baal', description: '' },
-	{ id: 'babel', title: 'Babel', description: '' },
-	{ id: 'babylon', title: 'Babylon', description: '' },
-	{ id: 'babylon-the-great', title: 'Babylon the Great', description: '' },
-	{ id: 'bag', title: 'Bag', description: '' },
-	{ id: 'bake-baker', title: 'Bake, Baker', description: '' },
-	{ id: 'balaam', title: 'Balaam', description: '' },
-	{ id: 'baptism', title: 'Baptism', description: '' },
-	{ id: 'barak', title: 'Barak', description: '' },
-	{ id: 'bashan', title: 'Bashan', description: '' },
-	{ id: 'beasts-symbolic', title: 'Beasts, Symbolic', description: '' },
-	{ id: 'beating', title: 'Beating', description: '' },
-	{ id: 'bee', title: 'Bee', description: '' },
-	{ id: 'belshazzar', title: 'Belshazzar', description: '' },
-	{ id: 'benjamin', title: 'Benjamin', description: '' },
-	{ id: 'bestiality', title: 'Bestiality', description: '' },
-	{ id: 'bethlehem', title: 'Bethlehem', description: '' },
-	{ id: 'beth-shean', title: 'Beth-shean', description: '' },
-	{ id: 'bible', title: 'Bible', description: '' },
-	{ id: 'bible-authenticity', title: 'Bible Authenticity', description: '' },
-	{ id: 'bible-translations', title: 'Bible Translations', description: '' },
-	{ id: 'birds', title: 'Birds', description: '' },
-	{ id: 'birth', title: 'Birth', description: '' },
-	{ id: 'birthright', title: 'Birthright', description: '' },
-	{ id: 'blamelessness', title: 'Blamelessness', description: '' },
-	{ id: 'blessing', title: 'Blessing', description: '' },
-	{ id: 'blood', title: 'Blood', description: '' },
-	{ id: 'boasting', title: 'Boasting', description: '' },
-	{ id: 'body', title: 'Body', description: '' },
-	{ id: 'bond', title: 'Bond', description: '' },
-	{ id: 'bones', title: 'Bones', description: '' },
-	{ id: 'book', title: 'Book', description: '' },
+	{
+		id: 'aaron',
+		title: 'Aaron',
+		description:
+			'The first high priest of Israel, brother of Moses and Miriam, who served as spokesperson for Moses before Pharaoh and participated in the golden calf incident at Sinai.'
+	},
+	{
+		id: 'abel',
+		title: 'Abel',
+		description:
+			'The second son of Adam and Eve, a shepherd who offered an acceptable sacrifice to God but was murdered by his brother Cain out of jealousy.'
+	},
+	{
+		id: 'abihu',
+		title: 'Abihu',
+		description:
+			'The second son of Aaron the high priest who, along with his brother Nadab, offered unauthorized fire before the Lord and was consumed by fire from heaven.'
+	},
+	{
+		id: 'abishag',
+		title: 'Abishag',
+		description:
+			"A young Shunammite woman who served King David in his old age; her marriage to Adonijah after David's death became a political issue."
+	},
+	{
+		id: 'abraham',
+		title: 'Abraham',
+		description:
+			"The patriarch of the Hebrew people, originally named Abram, who left Ur at God's call and became the father of Isaac through Sarah, with his descendants promised to become a great nation."
+	},
+	{
+		id: 'absalom',
+		title: 'Absalom',
+		description:
+			'The third son of King David who rebelled against his father, seized the throne, and was killed in battle while fleeing, having died with his long hair caught in a tree.'
+	},
+	{
+		id: 'abusive-speech',
+		title: 'Abusive Speech',
+		description:
+			'Speech that dishonors God and harms others, including cursing, slander, and malicious words, which the Bible condemns as incompatible with righteousness.'
+	},
+	{
+		id: 'abyss',
+		title: 'Abyss',
+		description:
+			"The deep, boundless pit or bottomless abyss, often associated with the realm of demonic activity and the chaotic waters before creation, also called the 'deep'."
+	},
+	{
+		id: 'accident',
+		title: 'Accident',
+		description:
+			'An unforeseen event that occurs without apparent cause; the Bible acknowledges that even unintentional deaths require accountability, as seen in cities of refuge.'
+	},
+	{
+		id: 'accusation',
+		title: 'Accusation',
+		description:
+			'A formal charge against someone, as in the Christian congregation where accusations must be substantiated by two or three witnesses before disciplinary action.'
+	},
+	{
+		id: 'acts-of-apostles',
+		title: 'Acts of Apostles',
+		description:
+			"The fifth book of the New Testament, written by Luke, documenting the early church's spread from Jerusalem to Rome, the work of the apostles, and the founding of Christian congregations."
+	},
+	{
+		id: 'adam',
+		title: 'Adam',
+		description:
+			'The first human being, created by God in His image, placed in the Garden of Eden, given dominion over creation, and whose disobedience brought sin and death to humanity.'
+	},
+	{
+		id: 'administration',
+		title: 'Administration',
+		description:
+			'The orderly arrangement of matters in the congregation and in civic affairs, requiring qualified men to handle responsibilities with wisdom and fidelity.'
+	},
+	{
+		id: 'adonijah',
+		title: 'Adonijah',
+		description:
+			"The fourth son of King David who attempted to claim the throne after David's decline, was pardoned by Solomon but later executed for plotting against the king."
+	},
+	{
+		id: 'adoption',
+		title: 'Adoption',
+		description:
+			'The legal transfer of a person into a new family relationship; in the Bible, it describes both literal adoption and the spiritual relationship believers have with God as His sons.'
+	},
+	{
+		id: 'adornment',
+		title: 'Adornment',
+		description:
+			'The use of jewelry, cosmetics, and fine clothing to enhance appearance; the Bible emphasizes inner beauty and modesty over elaborate outward display.'
+	},
+	{
+		id: 'adultery',
+		title: 'Adultery',
+		description:
+			'Sexual relations between a married person and someone other than their spouse, condemned as a serious sin that breaks the marriage covenant with God.'
+	},
+	{
+		id: 'affection',
+		title: 'Affection',
+		description:
+			'Deep emotional attachment and love, including family love, romantic love, and brotherly affection, which the Bible encourages to be expressed with tenderness and self-sacrifice.'
+	},
+	{
+		id: 'agabus',
+		title: 'Agabus',
+		description:
+			"A Christian prophet in the early church who predicted a famine during Claudius's reign and later bound Paul with his own belt to symbolize his fate in Jerusalem."
+	},
+	{
+		id: 'age',
+		title: 'Age',
+		description:
+			'The measure of time from birth; the Bible records lifespans ranging from brief to exceptional, with theocratic significance attached to certain age milestones.'
+	},
+	{
+		id: 'agriculture',
+		title: 'Agriculture',
+		description:
+			'Farming and tending the land, the primary occupation in biblical times, including crop cultivation, animal husbandry, and the use of plows, terraces, and irrigation.'
+	},
+	{
+		id: 'ahab',
+		title: 'Ahab',
+		description:
+			'The seventh king of Israel (c. 940–910 BCE), notorious for his wickedness, idolatry, marriage to Jezebel, and conflict with the prophet Elijah.'
+	},
+	{
+		id: 'ahaz',
+		title: 'Ahaz',
+		description:
+			'The twelfth king of Judah (c. 746–732 BCE), who practiced idolatry, sacrificed his own son, and became a vassal to Assyria rather than trust in God.'
+	},
+	{
+		id: 'alcoholic-beverages',
+		title: 'Alcoholic Beverages',
+		description:
+			'Intoxicating drinks including wine and beer, which the Bible warns against overusing, requiring moderation and abstinence from drunkenness while prohibiting intoxication in worship.'
+	},
+	{
+		id: 'alexander-the-great',
+		title: 'Alexander the Great',
+		description:
+			'Macedonian king (356–323 BCE) who conquered the Persian Empire, spreading Greek culture throughout the Near East and creating the Hellenistic era.'
+	},
+	{
+		id: 'alien-resident',
+		title: 'Alien Resident',
+		description:
+			"A foreigner living in Israel with temporary status, required to obey God's laws and treated with justice but not entitled to land inheritance."
+	},
+	{
+		id: 'altar',
+		title: 'Altar',
+		description:
+			"A raised platform for offering sacrifices to God, central to worship from Abel's offering through the temple system, where blood sacrifices atoned for sin."
+	},
+	{
+		id: 'ambassador',
+		title: 'Ambassador',
+		description:
+			'A representative sent to negotiate on behalf of a ruler, sometimes used figuratively for Christians as representatives of Christ and ambassadors for reconciliation.'
+	},
+	{
+		id: 'ammonites',
+		title: 'Ammonites',
+		description:
+			"A pagan nation descended from Lot, occupying territory east of Jordan, often hostile to Israel, with Molech worship and involved in battles against Judah's kings."
+	},
+	{
+		id: 'amos',
+		title: 'Amos',
+		description:
+			"A shepherd from Tekoa who prophesied in Israel around 800 BCE, delivering messages of judgment against the nation's social injustice and empty formalism."
+	},
+	{
+		id: 'amusements',
+		title: 'Amusements',
+		description:
+			'Activities providing pleasure and recreation; the Bible distinguishes between innocent enjoyment and amusements that become idols or lead to ungodliness.'
+	},
+	{
+		id: 'ancient-of-days',
+		title: 'Ancient of Days',
+		description:
+			"A title for God used in Daniel's prophecy, depicting an aged, wise figure on a throne who delegates authority and renders divine judgment."
+	},
+	{
+		id: 'angel',
+		title: 'Angel',
+		description:
+			'Spiritual beings created by God who serve as His messengers, worship Him, protect believers, and execute His will in the physical world.'
+	},
+	{
+		id: 'anger',
+		title: 'Anger',
+		description:
+			'Strong displeasure that can be righteous when directed at sin and injustice, but becomes sinful when it seethes, nurses grudges, or leads to unrighteous actions.'
+	},
+	{
+		id: 'animals',
+		title: 'Animals',
+		description:
+			'Living creatures created before humans, given dominion to humans, used for sacrifice, food, labor, and companionship, with both practical and symbolic significance.'
+	},
+	{
+		id: 'anointed-anointing',
+		title: 'Anointed, Anointing',
+		description:
+			'The ceremony of applying oil to signify being set apart for sacred service, applied to priests, kings, and occasionally prophets as a symbol of divine appointment.'
+	},
+	{
+		id: 'anointed-christians',
+		title: 'Anointed Christians',
+		description:
+			"Those who have received God's holy spirit, called 'anointed' as members of the 'little flock' who will rule with Christ in heaven as joint heirs."
+	},
+	{
+		id: 'antichrist',
+		title: 'Antichrist',
+		description:
+			"An opponent or pseudo-Christ who denies the Father and the Son, representing apostate forces in the last days; the term appears only in John's epistles."
+	},
+	{
+		id: 'antonia-tower-of',
+		title: 'Antonia, Tower of',
+		description:
+			'A fortress in Jerusalem adjoining the temple area, built by the Maccabees and later used by Roman soldiers as a barracks and platform for executions.'
+	},
+	{
+		id: 'anxiety',
+		title: 'Anxiety',
+		description:
+			'Distressing worry about the future; the Bible commands against anxious thinking, encouraging trust in God and prayer instead of spiraling worry.'
+	},
+	{
+		id: 'apocrypha',
+		title: 'Apocrypha',
+		description:
+			'Greek writings from the intertestamental period not included in the Hebrew canon, including Judith, Tobit, Maccabees, and Wisdom literature, some used by early Christians.'
+	},
+	{
+		id: 'apostasy',
+		title: 'Apostasy',
+		description:
+			'The abandonment of true worship, either by individuals turning from righteousness or by entire congregations falling into error and false doctrine.'
+	},
+	{
+		id: 'apostle',
+		title: 'Apostle',
+		description:
+			'A specially chosen messenger, first the Twelve chosen by Jesus, then others including Paul, tasked with bearing witness and establishing congregations.'
+	},
+	{
+		id: 'appointment',
+		title: 'Appointment',
+		description:
+			'The designation of individuals to specific roles in congregation service; appointments are made according to ability and spiritual qualifications.'
+	},
+	{
+		id: 'approach-to-god',
+		title: 'Approach to God',
+		description:
+			'The means by which humans can come before God in worship, through prayer, sacrifice, and the mediation of Christ as High Priest.'
+	},
+	{
+		id: 'arabah',
+		title: 'Arabah',
+		description:
+			'The desert region south of the Dead Sea, a desolate wilderness traversed by travelers between Judah and the Gulf of Aqaba.'
+	},
+	{
+		id: 'arabia',
+		title: 'Arabia',
+		description:
+			"The Arabian Peninsula, home to Ishmael's descendants, including the Nabateans and other peoples, traversed by Abraham's family and mentioned in Paul's travels."
+	},
+	{
+		id: 'aram',
+		title: 'Aram',
+		description:
+			"The region of Syria and upper Mesopotamia, home to the Aramaean people, whose kings fought against Israel and who influenced Israel's language and culture."
+	},
+	{
+		id: 'aramaic',
+		title: 'Aramaic',
+		description:
+			"The Aramaic language, related to Hebrew, spoken in Mesopotamia and Syria, used in certain portions of Daniel and Ezra and in Jesus' time."
+	},
+	{
+		id: 'archaeology',
+		title: 'Archaeology',
+		description:
+			'The scientific study of ancient ruins and artifacts that corroborate biblical accounts, confirming historical details of places, persons, and events.'
+	},
+	{
+		id: 'archangel',
+		title: 'Archangel',
+		description:
+			'A chief angel; Michael is the only archangel named in Scripture, who leads heavenly forces against demonic powers and protects Israel.'
+	},
+	{
+		id: 'architecture',
+		title: 'Architecture',
+		description:
+			"The art of designing and constructing buildings, from Solomon's temple to homes, demonstrating advanced techniques in foundations, stonework, and decorative elements."
+	},
+	{
+		id: 'areopagus',
+		title: 'Areopagus',
+		description:
+			"The hill of Mars in Athens, the ancient council that met to hear Paul's defense of Christianity, marking the first recorded Christian address in Europe."
+	},
+	{
+		id: 'ark-of-the-covenant',
+		title: 'Ark of the Covenant',
+		description:
+			"The sacred chest containing the Ten Commandments, Aaron's rod, and manna, overlaid with gold, topped by the mercy seat, and housed in the Most Holy."
+	},
+	{
+		id: 'armageddon',
+		title: 'Armageddon',
+		description:
+			'The final battle at the end of the age, when divine powers destroy warmongers and establish righteous rule on earth, as prophesied in Revelation.'
+	},
+	{
+		id: 'arms-armor',
+		title: 'Arms, Armor',
+		description:
+			'Weapons and protective equipment used in warfare, from swords and spears to shields and armor, with figurative use for spiritual warfare against wicked forces.'
+	},
+	{
+		id: 'army',
+		title: 'Army',
+		description:
+			"Organized military forces of nations, from Israel's tribal militia to the professional armies of Assyria and Rome, with various ranks and divisions."
+	},
+	{
+		id: 'artemis',
+		title: 'Artemis',
+		description:
+			'The Greek goddess of the hunt and fertility, called Diana by the Romans, worshipped especially at Ephesus where her temple was one of the Seven Wonders.'
+	},
+	{
+		id: 'ashtoreth',
+		title: 'Ashtoreth',
+		description:
+			"The Canaanite goddess of fertility and war, plural 'Ashtaroth,' worshipped by Solomon and associated with the heavenly bodies as a fertility deity."
+	},
+	{
+		id: 'assembly',
+		title: 'Assembly',
+		description:
+			"A gathering of people for worship, fellowship, or decision-making, from Israel's national assembly to the Christian congregation meetings."
+	},
+	{
+		id: 'association',
+		title: 'Association',
+		description:
+			'Grouping or fellowship with others; in Scripture, both the association of the wicked (to be avoided) and Christian fellowship (to be pursued).'
+	},
+	{
+		id: 'assyria',
+		title: 'Assyria',
+		description:
+			'The powerful empire centered on the Tigris River, which conquered Israel in 740 BCE, exiled the ten tribes, and threatened Judah until its fall in 607 BCE.'
+	},
+	{
+		id: 'astrologers',
+		title: 'Astrologers',
+		description:
+			'Those who study the stars to predict events, including the Magi who visited Jesus, whose craft is condemned as false and incompatible with true worship.'
+	},
+	{
+		id: 'athaliah',
+		title: 'Athaliah',
+		description:
+			'The daughter of Ahab and Jezebel who became queen of Judah by killing her grandchildren, ruling for six years before being overthrown by Jehu.'
+	},
+	{
+		id: 'athens',
+		title: 'Athens',
+		description:
+			'The capital of Greece, famous for philosophy, art, and learning, where Paul debated with Epicurean and Stoic philosophers and founded a congregation.'
+	},
+	{
+		id: 'atonement',
+		title: 'Atonement',
+		description:
+			'The reconciliation between God and humans through the sacrifice of Christ, whose perfect offering satisfied divine justice and provided redemption from sin.'
+	},
+	{
+		id: 'atonement-day',
+		title: 'Atonement Day',
+		description:
+			"The annual day of fasting in Israel when the high priest entered the Most Holy to make atonement for the nation's sins, pointing to Christ's greater sacrifice."
+	},
+	{
+		id: 'attitudes-and-gestures',
+		title: 'Attitudes and Gestures',
+		description:
+			'Physical expressions that convey inward feelings, including kneeling, bowing, raising hands, clapping, and various customs that carry cultural and spiritual meaning.'
+	},
+	{
+		id: 'baal',
+		title: 'Baal',
+		description:
+			'The primary Canaanite fertility god, worshipped in various forms, whose prophets contested with Elijah on Mount Carmel and who was tolerated by many Israelites.'
+	},
+	{
+		id: 'babel',
+		title: 'Babel',
+		description:
+			'The tower built in Shinar whose construction God frustrated by confusing languages, creating the nations and halting human pride; site identified with Babylon.'
+	},
+	{
+		id: 'babylon',
+		title: 'Babylon',
+		description:
+			'The great city on the Euphrates, capital of the Chaldean empire that conquered Judah, destroyed the temple, and exiled the Jews for 70 years.'
+	},
+	{
+		id: 'babylon-the-great',
+		title: 'Babylon the Great',
+		description:
+			'The world empire of false religion, symbolized as a Harlot sitting on a scarlet beast, to be destroyed in divine judgment as the source of worldly corruption.'
+	},
+	{
+		id: 'bag',
+		title: 'Bag',
+		description:
+			'A container for carrying items, from money bags for travelers to storage bags for grain, with figurative use for spiritual provision and sustenance.'
+	},
+	{
+		id: 'bake-baker',
+		title: 'Bake, Baker',
+		description:
+			"The occupation of preparing bread, essential for daily life; Israel's dietary laws included specific requirements about bread and baking processes."
+	},
+	{
+		id: 'balaam',
+		title: 'Balaam',
+		description:
+			'A non-Israelite prophet hired by Balak to curse Israel who, prevented by God, instead pronounced blessings, whose donkey spoke to him.'
+	},
+	{
+		id: 'baptism',
+		title: 'Baptism',
+		description:
+			"Immersion in water symbolizing death to one's old life and resurrection to new life in Christ, required for Christians as an outward testimony of inward faith."
+	},
+	{
+		id: 'barak',
+		title: 'Barak',
+		description:
+			"An Israeli military leader who, at Deborah's direction, led Israel against the Canaanite general Sisera, fulfilling the prophetic song of triumph."
+	},
+	{
+		id: 'bashan',
+		title: 'Bashan',
+		description:
+			'The fertile region east of the Jordan, known for its oak forests and strong cattle, taken by the Reubenites, Gadites, and half Manasseh.'
+	},
+	{
+		id: 'beasts-symbolic',
+		title: 'Beasts, Symbolic',
+		description:
+			"Animals used in prophecy to represent nations and political powers, from the four beasts in Daniel to the wild beasts in Revelation's symbolic drama."
+	},
+	{
+		id: 'beating',
+		title: 'Beating',
+		description:
+			'The act of striking with a rod or whip, permitted as parental and judicial punishment but prohibited as excessive or unjust physical abuse.'
+	},
+	{
+		id: 'bee',
+		title: 'Bee',
+		description:
+			'The honey-producing insect, inhabiting hives in hollow trees and rocks, whose honey was valued as food and symbolically represented sweetness and industry.'
+	},
+	{
+		id: 'belshazzar',
+		title: 'Belshazzar',
+		description:
+			'The last king of Babylon, son of Nebuchadnezzar, who saw the writing on the wall during a feast and was slain that night when Darius took the city.'
+	},
+	{
+		id: 'benjamin',
+		title: 'Benjamin',
+		description:
+			"The twelfth son of Jacob and youngest son of Rachel, whose tribe produced Israel's first king (Saul) and was allocated territory near Jerusalem."
+	},
+	{
+		id: 'bestiality',
+		title: 'Bestiality',
+		description:
+			'Sexual relations between humans and animals, condemned in the Mosaic Law as a capital offense that defiles both the person and the land.'
+	},
+	{
+		id: 'bethlehem',
+		title: 'Bethlehem',
+		description:
+			"The small town in Judah, David's birthplace and the prophesied location of the Messiah's birth, where Jesus was born in a stable."
+	},
+	{
+		id: 'beth-shean',
+		title: 'Beth-shean',
+		description:
+			"The city in the Jordan Valley where Saul's body was hung after battle, later a significant city in Roman times with a temple to Zeus."
+	},
+	{
+		id: 'bible',
+		title: 'Bible',
+		description:
+			'The collection of sacred writings, originally in Hebrew and Greek, consisting of 66 books recognized as Scripture, the Word of God to humanity.'
+	},
+	{
+		id: 'bible-authenticity',
+		title: 'Bible Authenticity',
+		description:
+			"The verification of the Bible as God's Word, supported by historical accuracy, internal consistency, manuscript evidence, and prophetic fulfillment."
+	},
+	{
+		id: 'bible-translations',
+		title: 'Bible Translations',
+		description:
+			'The rendering of Scripture from original languages into other languages, from early translations like the Septuagint to modern versions preserving the message.'
+	},
+	{
+		id: 'birds',
+		title: 'Birds',
+		description:
+			'Flying creatures created on the fifth day, used for food, sacrifice, and symbolism, including doves, eagles, sparrows, and ravens with various meanings.'
+	},
+	{
+		id: 'birth',
+		title: 'Birth',
+		description:
+			'The beginning of human life, considered in Scripture as planned by God, with children viewed as blessings and heritage from the Lord.'
+	},
+	{
+		id: 'birthright',
+		title: 'Birthright',
+		description:
+			"The privileges of the firstborn, including double inheritance and leadership, which Esau sold to Jacob and which ultimately passed to Joseph's sons."
+	},
+	{
+		id: 'blamelessness',
+		title: 'Blamelessness',
+		description:
+			'A state of being without serious blemish or fault, expected of leaders in the congregation and of individuals walking in integrity before God.'
+	},
+	{
+		id: 'blessing',
+		title: 'Blessing',
+		description:
+			'Favorable wishes and divine favor bestowed by God, pronounced over people and things, ranging from simple greetings to profound prayers of endowment.'
+	},
+	{
+		id: 'blood',
+		title: 'Blood',
+		description:
+			'The red fluid in living creatures, representing life itself, whose shedding in sacrifice atoned for sin and whose transfusion in Christ provides redemption.'
+	},
+	{
+		id: 'boasting',
+		title: 'Boasting',
+		description:
+			"Excessive pride in one's achievements, condemned when it draws glory to self rather than God; contrasted with proper confidence in divine provisions."
+	},
+	{
+		id: 'body',
+		title: 'Body',
+		description:
+			"The physical form of humans and animals, used symbolically for the congregation as Christ's body and for the temple of God's spirit in believers."
+	},
+	{
+		id: 'bond',
+		title: 'Bond',
+		description:
+			"A legal obligation or covenant, as in the Mosaic Law's regulations about slavery and debt, with spiritual application to the bond of commitment to God."
+	},
+	{
+		id: 'bones',
+		title: 'Bones',
+		description:
+			"The skeletal structure of the body, representing the core of being; Joseph's bones were carried from Egypt, and Ezekiel's vision depicted the valley of dry bones."
+	},
+	{
+		id: 'book',
+		title: 'Book',
+		description:
+			'A written document, from individual letters to Scripture itself, with specific reference to records of names, genealogical accounts, and the saved book of life.'
+	},
 	{ id: 'bosom-position', title: 'Bosom Position', description: '' },
 	{ id: 'bread', title: 'Bread', description: '' },
 	{ id: 'breast-bosom', title: 'Breast, Bosom', description: '' },
