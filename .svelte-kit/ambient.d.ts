@@ -27,12 +27,11 @@
  */
 declare module '$env/static/private' {
 	export const NVM_INC: string;
-	export const MANPATH: string;
 	export const NODE: string;
 	export const INIT_CWD: string;
 	export const NVM_CD_FLAGS: string;
-	export const SHELL: string;
 	export const TERM: string;
+	export const SHELL: string;
 	export const CLICOLOR: string;
 	export const HOMEBREW_REPOSITORY: string;
 	export const TMPDIR: string;
@@ -123,12 +122,11 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		NVM_INC: string;
-		MANPATH: string;
 		NODE: string;
 		INIT_CWD: string;
 		NVM_CD_FLAGS: string;
-		SHELL: string;
 		TERM: string;
+		SHELL: string;
 		CLICOLOR: string;
 		HOMEBREW_REPOSITORY: string;
 		TMPDIR: string;

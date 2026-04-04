@@ -1,5 +1,5 @@
 import { writable, derived, get } from 'svelte/store';
-import { insight } from '../lib/archive/dict_example';
+import { insight } from '../lib/dataset/example';
 import { settings } from './settings';
 import { parseYear, isWithinRange } from './dateUtils';
 
