@@ -82,8 +82,8 @@ declare module '$env/static/private' {
 	export const FZF_DEFAULT_COMMAND: string;
 	export const NVM_BIN: string;
 	export const npm_config_user_agent: string;
-	export const KITTY_INSTALLATION_DIR: string;
 	export const KITTY_WINDOW_ID: string;
+	export const KITTY_INSTALLATION_DIR: string;
 	export const INFOPATH: string;
 	export const HOMEBREW_CELLAR: string;
 	export const SECURITYSESSIONID: string;
@@ -177,8 +177,8 @@ declare module '$env/dynamic/private' {
 		FZF_DEFAULT_COMMAND: string;
 		NVM_BIN: string;
 		npm_config_user_agent: string;
-		KITTY_INSTALLATION_DIR: string;
 		KITTY_WINDOW_ID: string;
+		KITTY_INSTALLATION_DIR: string;
 		INFOPATH: string;
 		HOMEBREW_CELLAR: string;
 		SECURITYSESSIONID: string;
