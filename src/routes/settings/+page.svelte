@@ -1,11 +1,19 @@
 <script lang="ts">
 	import '../../app.css';
 	import { settings } from '$lib/settings';
+	import { insights } from '$lib/dataset/insight';
+	import { insight as examples } from '$lib/dataset/example';
 
 	let yearsContext = $settings.yearsContext;
+	let dataset = $settings.dataset;
+
+	const datasetOptions = [
+		{ value: 'insight', label: `Insight Book (${insights.length} entries)` },
+		{ value: 'example', label: `Examples (${examples.length} entries)` }
+	];
 
 	function saveSettings() {
-		settings.set({ yearsContext });
+		settings.set({ yearsContext, dataset });
 	}
 </script>
 
@@ -24,19 +32,20 @@
 <main>
 	<div class="settings">
 		<div>
-			<select name="search-type" id="search-type">
-				<option value="insight">Insight Book</option>
-				<option value="apocryphal">Apocryphal</option>
-				<select> </select></select
-			>
+		Dataset:
+			<select name="search-type" id="search-type" bind:value={dataset}>
+				{#each datasetOptions as option}
+					<option value={option.value}>{option.label}</option>
+				{/each}
+			</select>
 		</div>
 		<div>
-			<button>Import Dataset: (Json) </button>
+			<button>Import Dataset</button>
 		</div>
 		<div>
 			<select name="view-type" id="view-type">
-				<option value="graph"> Graph </option>
 				<option value="list"> List </option>
+				<option value="graph"> Graph </option>
 			</select>
 		</div>
 		<div>

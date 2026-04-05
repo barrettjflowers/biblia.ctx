@@ -1,5 +1,6 @@
 import { writable, derived, get } from 'svelte/store';
-import { insight } from '../lib/dataset/example';
+import { insights } from '../lib/dataset/insight';
+import { insight as examples } from '../lib/dataset/example';
 import { settings } from './settings';
 import { parseYear, isWithinRange } from './dateUtils';
 
@@ -40,14 +41,15 @@ function fuzzyScore(text: string, q: string) {
 	return levenshtein(text, q);
 }
 
-export const results = derived(query, ($query) => {
+export const results = derived([query, settings], ([$query, $settings]) => {
 	if (!$query.trim()) {
 		return [];
 	}
 
-	const yearsContext = get(settings).yearsContext;
+	const { yearsContext, dataset } = $settings;
+	const data = dataset === 'example' ? examples : insights;
 
-	const scored = insight
+	const scored = data
 		.map((item) => ({
 			item,
 			score: Math.min(
