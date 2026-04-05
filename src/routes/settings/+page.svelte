@@ -26,13 +26,20 @@
 	<hr
 		style="margin-top: 0rem; margin-bottom: 1rem; border: none; border-top: 1px solid var(--text-color);"
 	/>
-	<p style="margin: 0.03rem 0; text-align: center;">Configure search engine behavior.</p>
+	<p style="margin: 0.03rem 0;padding-bottom: 1rem; text-align: center;">Configure search engine behavior.</p>
+	<a href="/" class="settings-btn" aria-label="Open settings">
+		<button class="btn" aria-label="Open settings">
+		<svg width="25" height="25" viewBox="0 0 24 18" fill="black">
+  <path d="M12 3l9 7.5v9a1.5 1.5 0 0 1-1.5 1.5H15a1 1 0 0 1-1-1v-5h-4v5a1 1 0 0 1-1 1H4.5A1.5 1.5 0 0 1 3 19.5v-9L12 3z"/>
+</svg>
+		</button>
+	</a>
 </div>
 
 <main>
 	<div class="settings">
 		<div>
-		Dataset:
+			Dataset:
 			<select name="search-type" id="search-type" bind:value={dataset}>
 				{#each datasetOptions as option}
 					<option value={option.value}>{option.label}</option>
