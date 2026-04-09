@@ -6,11 +6,13 @@ const SETTINGS_KEY = 'biblia-settings';
 export interface Settings {
 	yearsContext: number;
 	dataset: 'insight' | 'example';
+	viewType: 'list' | 'ortholinear';
 }
 
 const defaultSettings: Settings = {
 	yearsContext: 50,
-	dataset: 'insight'
+	dataset: 'insight',
+	viewType: 'list'
 };
 
 function loadSettings(): Settings {

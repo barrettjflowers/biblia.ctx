@@ -1,6 +1,8 @@
 <script lang="ts">
 	import '../app.css';
 	import { query, results } from '../lib/fuzzy';
+	import { settings } from '../lib/settings';
+	import OrthoLinearGraph from '../lib/components/OrthoLinearGraph.svelte';
 </script>
 
 <div class="header">
@@ -29,7 +31,7 @@
 		style="margin-top: 0rem; margin-bottom: 1rem; border: none; border-top: 1px solid var(--text-color);"
 	/>
 	<p style="padding-bottom: 1rem; text-align: center;">Quick anthropological context.</p>
-	<a href="/settings" class="settings-btn" aria-label="Open settings"> 
+	<a href="/settings" class="settings-btn" aria-label="Open settings">
 		<button class="btn" aria-label="Open settings">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -60,14 +62,18 @@
 	</div>
 
 	{#if $results.length}
-		<ul>
-			{#each $results as item}
-				<li>
-					<strong>{item.title}</strong><br />
-					<small>{item.description}</small>
-				</li>
-			{/each}
-		</ul>
+		{#if $settings.viewType === 'ortholinear'}
+			<OrthoLinearGraph results={$results} />
+		{:else}
+			<ul>
+				{#each $results as item}
+					<li>
+						<strong>{item.title}</strong><br />
+						<small>{item.description}</small>
+					</li>
+				{/each}
+			</ul>
+		{/if}
 	{:else}
 		<p>No results</p>
 	{/if}
