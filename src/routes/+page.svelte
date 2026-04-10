@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import { query, results } from '../lib/fuzzy';
+	import { query, results, targetResult } from '../lib/fuzzy';
 	import { settings } from '../lib/settings';
 	import OrthoLinearGraph from '../lib/components/OrthoLinearGraph.svelte';
 </script>
@@ -63,7 +63,7 @@
 
 	{#if $results.length}
 		{#if $settings.viewType === 'ortholinear'}
-			<OrthoLinearGraph results={$results} />
+			<OrthoLinearGraph results={$results} target={$targetResult} />
 		{:else}
 			<ul>
 				{#each $results as item}

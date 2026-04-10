@@ -3,18 +3,23 @@
 	import { parseYear } from '$lib/dateUtils';
 
 	export let results: Cononical[] = [];
+	export let target: Cononical | null = null;
+
+	$: targetYear = target ? parseYear(target.date) : null;
 
 	interface DatedItem {
 		item: Cononical;
 		year: number;
 		index: number;
+		gap: number;
 	}
 
 	$: datedItems = results
 		.map((item, index) => ({
 			item,
 			year: parseYear(item.date) ?? NaN,
-			index
+			index,
+			gap: targetYear !== null ? (parseYear(item.date) ?? NaN) - targetYear : 0
 		}))
 		.filter((d): d is DatedItem => !isNaN(d.year))
 		.sort((a, b) => a.year - b.year);
@@ -24,7 +29,8 @@
 	$: yearRange = maxYear - minYear || 1;
 
 	function getPosition(year: number): number {
-		return ((year - minYear) / yearRange) * 100;
+		const padding = 10;
+		return padding + ((year - minYear) / yearRange) * (100 - padding * 2);
 	}
 
 	function formatYear(year: number): string {
@@ -37,19 +43,27 @@
 	function getSide(index: number): 'top' | 'bottom' {
 		return index % 2 === 0 ? 'top' : 'bottom';
 	}
+
+	function isTarget(item: Cononical): boolean {
+		return target !== null && item.id === target.id;
+	}
 </script>
 
 {#if datedItems.length > 0}
 	<div class="graph-container">
 		<div class="timeline">
-			{#each datedItems as { item, year, index }}
+			{#each datedItems as { item, year, index, gap }}
 				{@const side = getSide(index)}
-				<div class="node {side}" style="left: {getPosition(year)}%;">
+				{@const isTargetNode = isTarget(item)}
+				<div class="node {side}" class:target={isTargetNode} style="left: {getPosition(year)}%;">
+					<div class="connector"></div>
 					<div class="node-content">
 						<strong>{item.title}</strong>
 						<small>{item.description}</small>
+						{#if gap !== 0}
+							<small class="gap">{gap > 0 ? '+' : ''}{gap}yr</small>
+						{/if}
 					</div>
-					<div class="node-marker">*</div>
 					<div class="node-year">{formatYear(year)}</div>
 				</div>
 			{/each}
@@ -62,14 +76,14 @@
 
 <style>
 	.graph-container {
-		padding: 2rem 1rem;
+		padding: 2rem 3rem;
 		overflow-x: auto;
 	}
 
 	.timeline {
 		position: relative;
 		height: 280px;
-		min-width: 100%;
+		min-width: calc(100% - 4rem);
 		margin-top: 3rem;
 	}
 
@@ -101,20 +115,40 @@
 		margin-top: 10px;
 	}
 
-	.node-marker {
-		font-size: 1.5rem;
-		font-weight: bold;
-		line-height: 1;
+	.node.target {
+		border: 2px solid var(--text-color);
+		padding: 0.5rem;
+		background: var(--bg-color);
 	}
 
-	.node.top .node-marker {
+	.connector {
+		width: 2px;
+		height: 20px;
+		background: var(--text-color);
+	}
+
+	.node.top .connector {
+		order: 2;
+	}
+
+	.node.top .node-year {
 		order: 3;
-		margin-top: 0.5rem;
 	}
 
-	.node.bottom .node-marker {
+	.node.top .node-content {
 		order: 1;
-		margin-bottom: 0.5rem;
+	}
+
+	.node.bottom .connector {
+		order: 2;
+	}
+
+	.node.bottom .node-year {
+		order: 1;
+	}
+
+	.node.bottom .node-content {
+		order: 3;
 	}
 
 	.node-content {
@@ -147,18 +181,19 @@
 		text-overflow: ellipsis;
 	}
 
+	.node-content small.gap {
+		color: #8b4513;
+		font-weight: bold;
+		display: block;
+		margin-top: 0.25rem;
+	}
+
+	.node.target .node-content small.gap {
+		display: none;
+	}
+
 	.node-year {
 		font-size: 0.75rem;
 		font-family: menlo, monospace;
-	}
-
-	.node.top .node-year {
-		order: 2;
-		margin-top: 0.25rem;
-	}
-
-	.node.bottom .node-year {
-		order: 3;
-		margin-top: 0.25rem;
 	}
 </style>

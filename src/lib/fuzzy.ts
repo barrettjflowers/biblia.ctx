@@ -1,10 +1,12 @@
 import { writable, derived, get } from 'svelte/store';
+import type { Cononical } from './types';
 import { insights } from '../lib/dataset/insight';
 import { insight as examples } from '../lib/dataset/example';
 import { settings } from './settings';
 import { parseYear, isWithinRange } from './dateUtils';
 
 export const query = writable('');
+export const targetResult = writable<Cononical | null>(null);
 
 function normalize(str: string) {
 	return str.toLowerCase().trim();
@@ -49,30 +51,36 @@ export const results = derived([query, settings], ([$query, $settings]) => {
 	const { yearsContext, dataset } = $settings;
 	const data = dataset === 'example' ? examples : insights;
 
-	const scored = data
-		.map((item) => ({
-			item,
-			score: Math.min(
-				fuzzyScore(item.title, $query),
-				fuzzyScore(item.description, $query),
-				item.tags ? fuzzyScore(item.tags.join(' '), $query) : Infinity
-			)
-		}))
-		.filter((r) => r.score <= Math.max(2, $query.length / 3))
-		.sort((a, b) => a.score - b.score);
+	const scored = data.map((item) => ({
+		item,
+		score: Math.min(
+			fuzzyScore(item.title, $query),
+			fuzzyScore(item.description, $query),
+			item.tags ? fuzzyScore(item.tags.join(' '), $query) : Infinity
+		)
+	}));
 
-	if (scored.length === 0) {
+	const topResult = scored.reduce(
+		(best, curr) => (curr.score < best.score ? curr : best),
+		scored[0]
+	);
+
+	if (!topResult || topResult.score > Math.max(2, $query.length / 3)) {
+		targetResult.set(null);
 		return [];
 	}
 
-	const topResult = scored[0];
+	targetResult.set(topResult.item);
 	const referenceYear = parseYear(topResult.item.date);
 
 	if (referenceYear === null) {
-		return [topResult.item];
+		targetResult.set(null);
+		return [];
 	}
 
-	return scored
+	const filteredByDate = scored
 		.filter((r) => isWithinRange(parseYear(r.item.date), referenceYear, yearsContext))
-		.map((r) => r.item);
+		.sort((a, b) => a.score - b.score);
+
+	return filteredByDate.map((r) => r.item);
 });
