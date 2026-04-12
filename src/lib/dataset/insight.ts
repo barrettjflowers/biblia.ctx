@@ -1269,5 +1269,16 @@ export const insights: Cononical[] = [
 	{ id: 'zebedee', title: 'Zebedee', description: '' },
 	{ id: 'zerubbabel', title: 'Zerubbabel', description: '' },
 	{ id: 'zerubbabels-temple', title: "Zerubbabel's Temple", description: '' },
-	{ id: 'zion', title: 'Zion', description: '' }
+	{ id: 'zion', title: 'Zion', description: '' },
+	{ id: 'trampling-of-jerusalem',
+	 	title: 'Trampling of Jerusalem',
+	 	description: 'Theocratic rule was interrupted from the time earthly Jerusalem was conquered — ending Zedekiah\'s reign — until Jesus Christ began ruling as King of the greater, heavenly Jerusalem.',
+	 	source: [
+			'https://www.jw.org/finder?wtlocale=E&docid=1101999025&srctype=wol&srcid=share&par=35-37',
+			'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Appointed-Times-of-the-Nations/#p8-p9'
+			],
+	 	scripture: 'Luke 21:24',
+	 	date: '607bce-1914ce',
+	 	tags: ['jerusalem', 'prophecy', 'jesus', 'gentile']
+	}
 ];
