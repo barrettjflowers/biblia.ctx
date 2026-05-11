@@ -996,6 +996,14 @@ export const insights: Cononical[] = [
 	{ id: 'new-jerusalem', title: 'New Jerusalem', description: '' },
 	{ id: 'nile', title: 'Nile', description: '' },
 	{ id: 'nineveh', title: 'Nineveh', description: '' },
+	{
+		id: 'nineveh-conquered',
+		title: 'Nineveh conquered by Chaldeans and Medes',
+		description: 'Nineveh was conquered by the Chaldeans and Medes during the reign of Judean king Josiah.',
+		source: 'https://www.jw.org/finder?wtlocale=E&docid=1200001790&srctype=wol&srcid=share&par=7',
+		date: '632bce',
+		tags: ['nineveh', 'chaldeans', 'babylonians', 'media', 'medes', 'conquer']
+	},
 	{ id: 'noah', title: 'Noah', description: '' },
 	{ id: 'oath', title: 'Oath', description: '' },
 	{ id: 'obedience', title: 'Obedience', description: '' },
