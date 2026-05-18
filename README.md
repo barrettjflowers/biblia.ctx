@@ -1,3 +1,7 @@
+# biblia.ctx
+<img width="1280" height="630" alt="biblia" src="https://github.com/user-attachments/assets/6eecf5ce-ec75-4a53-9700-e32e528e5974" />
+
+
 # Canonical Data Format
 
 Conventions for canonical records used by biblia.ctx
