@@ -26,6 +26,15 @@ function deferred() {
   });
   return { promise, resolve, reject };
 }
+function fallback(value, fallback2, lazy = false) {
+  return value === void 0 ? lazy ? (
+    /** @type {() => V} */
+    fallback2()
+  ) : (
+    /** @type {V} */
+    fallback2
+  ) : value;
+}
 function equals(value) {
   return value === this.v;
 }
@@ -1856,17 +1865,18 @@ export {
   noop as _,
   HYDRATION_END as a,
   escape_html as a0,
-  STALE_REACTION as a1,
-  set_ssr_context as a2,
-  ssr_context as a3,
-  push as a4,
-  pop as a5,
-  subscribe_to_store as a6,
-  ELEMENT_PRESERVE_ATTRIBUTE_CASE as a7,
-  ELEMENT_IS_INPUT as a8,
-  ELEMENT_IS_NAMESPACED as a9,
-  safe_not_equal as aa,
-  run_all as ab,
+  fallback as a1,
+  STALE_REACTION as a2,
+  set_ssr_context as a3,
+  ssr_context as a4,
+  push as a5,
+  pop as a6,
+  subscribe_to_store as a7,
+  ELEMENT_PRESERVE_ATTRIBUTE_CASE as a8,
+  ELEMENT_IS_INPUT as a9,
+  ELEMENT_IS_NAMESPACED as aa,
+  safe_not_equal as ab,
+  run_all as ac,
   HYDRATION_START as b,
   HYDRATION_START_ELSE as c,
   get as d,

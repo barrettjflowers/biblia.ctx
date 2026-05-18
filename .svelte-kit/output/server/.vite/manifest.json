@@ -51,9 +51,9 @@
       "_environment.js"
     ]
   },
-  "_settings.B7h3XQWr.css": {
-    "file": "_app/immutable/assets/settings.B7h3XQWr.css",
-    "src": "_settings.B7h3XQWr.css"
+  "_settings.B6a_Yb0j.css": {
+    "file": "_app/immutable/assets/settings.B6a_Yb0j.css",
+    "src": "_settings.B6a_Yb0j.css"
   },
   "_settings.js": {
     "file": "chunks/settings.js",
@@ -62,7 +62,7 @@
       "_index.js"
     ],
     "css": [
-      "_app/immutable/assets/settings.B7h3XQWr.css"
+      "_app/immutable/assets/settings.B6a_Yb0j.css"
     ]
   },
   "_shared.js": {
@@ -130,6 +130,9 @@
       "_settings.js",
       "_index.js",
       "_context.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.B1p_rG4Z.css"
     ]
   },
   "src/routes/settings/+page.svelte": {
@@ -139,7 +142,11 @@
     "isEntry": true,
     "imports": [
       "_index2.js",
-      "_settings.js"
+      "_settings.js",
+      "_context.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.C7eiF-ae.css"
     ]
   }
 }

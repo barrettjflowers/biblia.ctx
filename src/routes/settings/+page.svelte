@@ -7,6 +7,7 @@
 	let yearsContext = $settings.yearsContext;
 	let dataset = $settings.dataset;
 	let viewType = $settings.viewType;
+	let saved = $state(false);
 
 	const datasetOptions = [
 		{ value: 'insight', label: `Insight Book (${insights.length} entries)` },
@@ -15,6 +16,8 @@
 
 	function saveSettings() {
 		settings.set({ yearsContext, dataset, viewType });
+		saved = true;
+		setTimeout(() => saved = false, 2000);
 	}
 </script>
 
@@ -52,9 +55,7 @@
 			</select>
 		</div>
 		<div>
-			<button>Import Dataset</button>
-		</div>
-		<div>
+			<label for="view-type">View Type: </label>
 			<select name="view-type" id="view-type" bind:value={viewType}>
 				<option value="list"> List </option>
 				<option value="ortholinear"> Ortholinear Graph </option>
@@ -63,25 +64,31 @@
 		<div>
 			<label for="years-context">Context Window: </label>
 			<select id="years-context" bind:value={yearsContext}>
-				<option value={10}>10 years</option>
 				<option value={50}>50 years</option>
 				<option value={100}>100 years</option>
 				<option value={200}>200 years</option>
 				<option value={500}>500 years</option>
 				<option value={1000}>1000 years</option>
+				<option value={2000}>2000 years</option>
 			</select>
 		</div>
 
 		<div>
 			<button onclick={saveSettings}> Save </button>
 		</div>
-		<div>
-			<button>Import Config </button>
-		</div>
-		<div>
-			<button>Export Config </button>
-		</div>
+		{#if saved}
+			<p class="saved-msg">Changes Saved</p>
+		{/if}
 	</div>
 </main>
 
 <div class="footer"></div>
+
+<style>
+	.saved-msg {
+		text-align: center;
+		margin-top: 1rem;
+		color: var(--accent-color);
+		font-weight: bold;
+	}
+</style>

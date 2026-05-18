@@ -27,18 +27,20 @@
  */
 declare module '$env/static/private' {
 	export const NVM_INC: string;
+	export const MANPATH: string;
 	export const NODE: string;
 	export const INIT_CWD: string;
 	export const OPENCODE_PID: string;
 	export const NVM_CD_FLAGS: string;
-	export const SHELL: string;
 	export const TERM: string;
+	export const SHELL: string;
 	export const CLICOLOR: string;
-	export const TMPDIR: string;
 	export const HOMEBREW_REPOSITORY: string;
+	export const TMPDIR: string;
 	export const npm_config_global_prefix: string;
-	export const WINDOWID: string;
+	export const FPATH: string;
 	export const NVIM_CONFIG: string;
+	export const WINDOWID: string;
 	export const COLOR: string;
 	export const npm_config_noproxy: string;
 	export const npm_config_local_prefix: string;
@@ -55,7 +57,9 @@ declare module '$env/static/private' {
 	export const PATH: string;
 	export const npm_package_json: string;
 	export const npm_config_engine_strict: string;
+	export const _: string;
 	export const LaunchInstanceID: string;
+	export const OPENCODE_RUN_ID: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_init_module: string;
 	export const __CFBundleIdentifier: string;
@@ -71,6 +75,7 @@ declare module '$env/static/private' {
 	export const npm_config_node_gyp: string;
 	export const npm_package_version: string;
 	export const XPC_SERVICE_NAME: string;
+	export const OPENCODE_PROCESS_ROLE: string;
 	export const SHLVL: string;
 	export const HOME: string;
 	export const TERMINFO: string;
@@ -93,7 +98,6 @@ declare module '$env/static/private' {
 	export const OPENCODE: string;
 	export const COLORTERM: string;
 	export const KITTY_PUBLIC_KEY: string;
-	export const _: string;
 	export const NODE_ENV: string;
 }
 
@@ -125,18 +129,20 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		NVM_INC: string;
+		MANPATH: string;
 		NODE: string;
 		INIT_CWD: string;
 		OPENCODE_PID: string;
 		NVM_CD_FLAGS: string;
-		SHELL: string;
 		TERM: string;
+		SHELL: string;
 		CLICOLOR: string;
-		TMPDIR: string;
 		HOMEBREW_REPOSITORY: string;
+		TMPDIR: string;
 		npm_config_global_prefix: string;
-		WINDOWID: string;
+		FPATH: string;
 		NVIM_CONFIG: string;
+		WINDOWID: string;
 		COLOR: string;
 		npm_config_noproxy: string;
 		npm_config_local_prefix: string;
@@ -153,7 +159,9 @@ declare module '$env/dynamic/private' {
 		PATH: string;
 		npm_package_json: string;
 		npm_config_engine_strict: string;
+		_: string;
 		LaunchInstanceID: string;
+		OPENCODE_RUN_ID: string;
 		npm_config_userconfig: string;
 		npm_config_init_module: string;
 		__CFBundleIdentifier: string;
@@ -169,6 +177,7 @@ declare module '$env/dynamic/private' {
 		npm_config_node_gyp: string;
 		npm_package_version: string;
 		XPC_SERVICE_NAME: string;
+		OPENCODE_PROCESS_ROLE: string;
 		SHLVL: string;
 		HOME: string;
 		TERMINFO: string;
@@ -191,7 +200,6 @@ declare module '$env/dynamic/private' {
 		OPENCODE: string;
 		COLORTERM: string;
 		KITTY_PUBLIC_KEY: string;
-		_: string;
 		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
