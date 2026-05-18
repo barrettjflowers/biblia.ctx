@@ -28,7 +28,7 @@
 		</h1>
 	</span>
 	<hr
-		style="margin-top: 0rem; margin-bottom: 1rem; border: none; border-top: 1px solid var(--text-color);"
+		style="margin-top: 0rem; margin-bottom: 1rem; margin-left: 1rem; margin-right: 1rem; border: none; border-top: 1px solid var(--text-color);"
 	/>
 	<p style="margin: 0.03rem 0;padding-bottom: 1rem; text-align: center;">
 		Configure search engine behavior.

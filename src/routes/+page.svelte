@@ -28,7 +28,7 @@
 		</svg>
 	</span>
 	<hr
-		style="margin-top: 0rem; margin-bottom: 1rem; border: none; border-top: 1px solid var(--text-color);"
+		style="margin-top: 0rem; margin-bottom: 1rem; margin-left: 1rem; margin-right: 1rem; border: none; border-top: 1px solid var(--text-color);"
 	/>
 	<p style="padding-bottom: 1rem; text-align: center;">Quick anthropological context.</p>
 	<a href="/settings" class="settings-btn" aria-label="Open settings">
