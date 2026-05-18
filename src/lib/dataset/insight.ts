@@ -5,20 +5,20 @@ export const insights: Cononical[] = [
 		id: 'aaron',
 		title: 'Aaron',
 		description: 'The first high priest of Israel, brother of Moses and Miriam, who served as spokesperson for Moses before Pharaoh and participated in the golden calf incident at Sinai.',
-		source: '',
+		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Aaron/',
 		href: '',
 		scripture: [],
-		date: '',
+		date: '1597bce',
 		tags: []
 	},
 	{
 		id: 'abel',
 		title: 'Abel',
 		description: 'The second son of Adam and Eve, a shepherd who offered an acceptable sacrifice to God but was murdered by his brother Cain out of jealousy.',
-		source: '',
+		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Abel/',
 		href: '',
 		scripture: [],
-		date: '',
+		date: 'c.4026bce-c.3896bce',
 		tags: []
 	},
 	{
@@ -45,10 +45,10 @@ export const insights: Cononical[] = [
 		id: 'abraham',
 		title: 'Abraham',
 		description: "The patriarch of the Hebrew people, originally named Abram, who left Ur at God's call and became the father of Isaac through Sarah, with his descendants promised to become a great nation.",
-		source: '',
+		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Abraham/',
 		href: '',
 		scripture: [],
-		date: '',
+		date: '2018bce-1843bce',
 		tags: []
 	},
 	{
@@ -115,10 +115,10 @@ export const insights: Cononical[] = [
 		id: 'adam',
 		title: 'Adam',
 		description: 'The first human being, created by God in His image, placed in the Garden of Eden, given dominion over creation, and whose disobedience brought sin and death to humanity.',
-		source: '',
+		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Adam/',
 		href: '',
 		scripture: [],
-		date: '',
+		date: '4026bce',
 		tags: []
 	},
 	{
@@ -1004,7 +1004,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'bosom-position',
 		title: 'Bosom Position',
-		description: '',
+		description: 'A position of close favor and intimacy, often used figuratively to describe being in a place of special privilege near a host at a meal or near God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1014,7 +1014,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'bread',
 		title: 'Bread',
-		description: '',
+		description: 'A staple food made from grain, central to daily life in biblical times, often used symbolically for physical sustenance and figuratively for Jesus as the bread of life.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1024,7 +1024,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'breast-bosom',
 		title: 'Breast, Bosom',
-		description: '',
+		description: 'The chest area of the body, used in Scripture both literally and figuratively to denote nearness, affection, and the place of nourishment and comfort.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1034,7 +1034,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'breastpiece',
 		title: 'Breastpiece',
-		description: '',
+		description: 'A square pouch worn by the high priest of Israel over the chest, containing the Urim and Thummim and bearing twelve precious stones representing the tribes of Israel.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1044,7 +1044,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'builder-building',
 		title: 'Builder, Building',
-		description: '',
+		description: 'Those engaged in constructing homes, walls, and temples in ancient Israel, with the term also used metaphorically for those who build up the congregation spiritually.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1054,7 +1054,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'bull',
 		title: 'Bull',
-		description: '',
+		description: 'A male bovine animal, used extensively in Israelite sacrifices, especially for sin offerings, and also as a symbol of strength and power in prophetic visions.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1064,7 +1064,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'burial-burial-places',
 		title: 'Burial, Burial Places',
-		description: '',
+		description: 'The practice of interring the dead, including tombs, caves, and family burial sites, with significant examples such as the cave of Machpelah purchased by Abraham.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1074,7 +1074,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'caesar',
 		title: 'Caesar',
-		description: '',
+		description: 'The title of Roman emperors, mentioned in the Gospels regarding the payment of taxes and in Acts regarding Paul\'s appeal to Caesar for trial at Rome.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1084,7 +1084,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'caesarea',
 		title: 'Caesarea',
-		description: '',
+		description: 'A major Roman-built port city on the Mediterranean coast of Palestine, named after Caesar Augustus, serving as the seat of Roman government and location of Peter\'s first Gentile convert.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1094,7 +1094,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'cain',
 		title: 'Cain',
-		description: '',
+		description: 'The firstborn son of Adam and Eve, a farmer who murdered his brother Abel out of jealousy because God accepted Abel\'s offering over his own.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1104,7 +1104,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'calendar',
 		title: 'Calendar',
-		description: '',
+		description: 'The system of measuring time used by the Israelites, based on lunar months with intercalation to align with the solar year, governing religious festivals and agricultural seasons.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1114,7 +1114,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'calf-worship',
 		title: 'Calf Worship',
-		description: '',
+		description: 'The idolatrous practice of worshiping a golden calf image, first seen at Mount Sinai while Moses received the Law, later established by Jeroboam at Dan and Bethel.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1124,7 +1124,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'camel',
 		title: 'Camel',
-		description: '',
+		description: 'A large domesticated animal used for transportation and carrying goods across desert regions, frequently mentioned in the patriarchal narratives and as a measure of wealth.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1134,7 +1134,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'cana',
 		title: 'Cana',
-		description: '',
+		description: 'A village in Galilee where Jesus performed his first miracle, turning water into wine at a wedding feast, and later the home of the nobleman whose son Jesus healed.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1144,7 +1144,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'canaanites',
 		title: 'Canaanites',
-		description: '',
+		description: 'The descendants of Canaan who inhabited the Promised Land before Israel\'s conquest, known for their idolatrous practices including child sacrifice, which God condemned and ordered removed.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1154,7 +1154,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'canon',
 		title: 'Canon',
-		description: '',
+		description: 'The collection of books recognized as divinely inspired Scripture, comprising the Hebrew Scriptures and the Christian Greek Scriptures, determined by God\'s spirit through faithful men.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1164,7 +1164,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'capernaum',
 		title: 'Capernaum',
-		description: '',
+		description: 'A city on the northwestern shore of the Sea of Galilee that became the center of Jesus\' Galilean ministry, where he taught in the synagogue and performed many miracles.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1174,7 +1174,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'carmel',
 		title: 'Carmel',
-		description: '',
+		description: 'A prominent mountain ridge in northern Israel overlooking the Mediterranean Sea, famous as the site of Elijah\'s confrontation with the prophets of Baal.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1184,7 +1184,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'census',
 		title: 'Census',
-		description: '',
+		description: 'An official counting of the population for taxation or military purposes, notably the Roman census that brought Joseph and Mary to Bethlehem and the census taken by David.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1194,7 +1194,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'chaldea-chaldean',
 		title: 'Chaldea, Chaldean',
-		description: '',
+		description: 'A region in southern Mesopotamia whose people, the Chaldeans, became the ruling class of the Neo-Babylonian Empire and were known for astrology, wisdom, and conquering Judah.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1204,7 +1204,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'chariot',
 		title: 'Chariot',
-		description: '',
+		description: 'A two-wheeled horse-drawn vehicle used in warfare and processions in ancient times, prominent in Egyptian, Canaanite, and Israelite armies as well as in Elijah\'s fiery ascent.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1214,7 +1214,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'charts',
 		title: 'Charts',
-		description: '',
+		description: 'Genealogical tables and chronological lists used to study biblical history and prophecy, helping to trace lineages and calculate time periods mentioned in Scripture.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1224,7 +1224,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'chemosh',
 		title: 'Chemosh',
-		description: '',
+		description: 'The national god of Moab, an idol worshiped through child sacrifice, which King Solomon later introduced to Israel, provoking God\'s anger.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1234,7 +1234,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'cherethites',
 		title: 'Cherethites',
-		description: '',
+		description: 'A group of foreign mercenaries who served as part of King David\'s personal bodyguard, along with the Pelethites, possibly originating from Crete.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1244,7 +1244,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'child-children',
 		title: 'Child, Children',
-		description: '',
+		description: 'Young offspring, considered in Scripture as a heritage and blessing from God, with parents instructed to raise them in discipline and instruction of the Lord.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1254,7 +1254,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'childbearing',
 		title: 'Childbearing',
-		description: '',
+		description: 'The process of giving birth, which the Bible associates with woman\'s primary role in marriage and with the promise that women would be saved through childbearing by faith.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1264,7 +1264,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'chorazin',
 		title: 'Chorazin',
-		description: '',
+		description: 'A city in Galilee near Capernaum that Jesus condemned for its unbelief despite witnessing his powerful works, along with Bethsaida and Capernaum.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1274,7 +1274,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'christ',
 		title: 'Christ',
-		description: '',
+		description: 'The Greek title meaning Anointed One, equivalent to the Hebrew Messiah, applied to Jesus as God\'s appointed King and Deliverer foretold in prophecy.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1284,7 +1284,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'christian',
 		title: 'Christian',
-		description: '',
+		description: 'A name meaning follower of Christ, first applied to disciples in Antioch, describing those who believe in Jesus, follow his teachings, and are led by God\'s holy spirit.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1294,7 +1294,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'christian-congregation',
 		title: 'Christian Congregation',
-		description: '',
+		description: 'The collective body of anointed believers united under Christ as Head, established at Pentecost and entrusted with the commission to preach the good news worldwide.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1304,7 +1304,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'christian-greek-scriptures',
 		title: 'Christian Greek Scriptures',
-		description: '',
+		description: 'The 27 books of the Christian canon, including the Gospels, Acts, Epistles, and Revelation, written in Greek and accepted as inspired Scripture.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1314,7 +1314,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'chronology',
 		title: 'Chronology',
-		description: '',
+		description: 'The science of measuring time and determining dates of past events, important for understanding biblical history and the timing of prophetic periods.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1324,7 +1324,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'circumcision',
 		title: 'Circumcision',
-		description: '',
+		description: 'The surgical removal of the male foreskin, given by God to Abraham as a sign of the covenant, later required by the Mosaic Law and debated in the early Christian congregation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1334,7 +1334,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'citizen-citizenship',
 		title: 'Citizen, Citizenship',
-		description: '',
+		description: 'Legal membership in a nation or city, granting rights and protections, with Roman citizenship being a valuable status that Paul used to his advantage.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1344,7 +1344,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'city',
 		title: 'City',
-		description: '',
+		description: 'A permanent settlement larger than a village, often walled for protection, serving as centers of government, commerce, and worship throughout biblical history.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1354,7 +1354,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'clay',
 		title: 'Clay',
-		description: '',
+		description: 'A fine-grained earth material used for making pottery, bricks, and seals, frequently used figuratively in Scripture to represent humanity\'s fragility before the Creator.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1364,7 +1364,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'clean-cleanness',
 		title: 'Clean, Cleanness',
-		description: '',
+		description: 'The state of being free from physical or ceremonial impurity, with the Mosaic Law specifying detailed regulations for purification and the New Testament emphasizing spiritual cleanness.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1374,7 +1374,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'cloth',
 		title: 'Cloth',
-		description: '',
+		description: 'Woven fabric made from wool, linen, or other materials, used for clothing, tents, and various household items, with linen being the fabric of priestly garments.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1384,7 +1384,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'clothing',
 		title: 'Clothing',
-		description: '',
+		description: 'Garments worn for covering and adornment, ranging from simple loincloths to fine robes, with the Bible using clothing figuratively for righteousness and salvation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1394,7 +1394,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'cloud',
 		title: 'Cloud',
-		description: '',
+		description: 'A visible mass of water vapor, used in Scripture to represent God\'s presence, as in the pillar of cloud that guided Israel, and in prophecy regarding Christ\'s return.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1404,7 +1404,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'cobra',
 		title: 'Cobra',
-		description: '',
+		description: 'A venomous snake found in Africa and Asia, mentioned in the Bible as a dangerous creature, used figuratively for the wicked who strike unexpectedly.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1414,7 +1414,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'colors',
 		title: 'Colors',
-		description: '',
+		description: 'Hues and shades described in Scripture, including white, red, blue, purple, and scarlet, each often carrying symbolic meaning in the tabernacle and priestly garments.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1424,7 +1424,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'communication',
 		title: 'Communication',
-		description: '',
+		description: 'The exchange of information between individuals, including speech, writing, and gestures, with the Bible emphasizing truthful, edifying, and appropriate communication.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1434,7 +1434,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'compensation',
 		title: 'Compensation',
-		description: '',
+		description: 'Payment or reward for services rendered or loss suffered, including wages, restitution, and damages as regulated by the Mosaic Law.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1444,7 +1444,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'complaining',
 		title: 'Complaining',
-		description: '',
+		description: 'The expression of discontent or dissatisfaction, which the Bible strongly condemns as demonstrating lack of faith and gratitude toward God, as seen in Israel\'s wilderness journey.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1454,7 +1454,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'congregation',
 		title: 'Congregation',
-		description: '',
+		description: 'An assembly of people gathered for worship, referring specifically to the nation of Israel and later to the Christian body of believers organized for worship and service.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1464,7 +1464,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'conscience',
 		title: 'Conscience',
-		description: '',
+		description: 'An internal sense of right and wrong that bears witness to moral choices, which the Bible says can be trained, defiled, or seared and should be kept clean before God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1474,7 +1474,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'contention',
 		title: 'Contention',
-		description: '',
+		description: 'Strife, argument, or heated disagreement, which Scripture warns against as divisive and contrary to the spirit of unity, peace, and love among believers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1484,7 +1484,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'contribution',
 		title: 'Contribution',
-		description: '',
+		description: 'A gift or offering given for religious purposes, including voluntary offerings for the tabernacle and temple and regular giving for the support of Christian ministry.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1494,7 +1494,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'convention',
 		title: 'Convention',
-		description: '',
+		description: 'Large gatherings of God\'s people for worship, instruction, and fellowship, as seen in the annual festivals of Israel and modern assemblies of Jehovah\'s Witnesses.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1504,7 +1504,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'conversion',
 		title: 'Conversion',
-		description: '',
+		description: 'A fundamental change of heart and mind resulting in turning from sin to God, involving repentance, faith in Christ, and dedication to a new course of life.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1514,7 +1514,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'cooking-cooking-utensils',
 		title: 'Cooking, Cooking Utensils',
-		description: '',
+		description: 'The preparation of food by boiling, roasting, or baking, using various pots, pans, and vessels, which in the tabernacle context had regulations for cleanliness.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1524,7 +1524,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'copyist',
 		title: 'Copyist',
-		description: '',
+		description: 'A scribe who manually copied Scripture and other documents, responsible for preserving the accuracy of the Bible text through meticulous copying methods.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1534,7 +1534,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'corinth',
 		title: 'Corinth',
-		description: '',
+		description: 'A major Greek city on the isthmus connecting the Peloponnese to mainland Greece, known for its wealth and immorality, where Paul founded a prominent Christian congregation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1544,7 +1544,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'cornelius',
 		title: 'Cornelius',
-		description: '',
+		description: 'A Roman centurion stationed in Caesarea, described as devout and God-fearing, who became the first recorded Gentile convert after Peter received a vision from God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1554,7 +1554,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'correction',
 		title: 'Correction',
-		description: '',
+		description: 'The act of setting right what is wrong, including reproof, discipline, and training in righteousness, which the Bible presents as an expression of love and fatherly care.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1564,7 +1564,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'corruption',
 		title: 'Corruption',
-		description: '',
+		description: 'The state of moral decay and perversion, used in Scripture to describe humanity\'s fallen condition and the process of physical decay and death.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1574,7 +1574,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'counsel-counselor',
 		title: 'Counsel, Counselor',
-		description: '',
+		description: 'Advice or guidance given by wise or experienced individuals, with Jesus called Wonderful Counselor and older men in the congregation serving as counselors.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1584,7 +1584,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'courage',
 		title: 'Courage',
-		description: '',
+		description: 'Mental and moral strength to face danger, opposition, or difficulty without fear, commanded repeatedly by God to Joshua, the judges, and believers facing persecution.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1594,7 +1594,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'court-judicial',
 		title: 'Court, Judicial',
-		description: '',
+		description: 'A place where legal cases were heard and judged, from local gates where elders sat to the Sanhedrin in Jerusalem and the tribunals of Roman governors.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1604,7 +1604,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'covenant',
 		title: 'Covenant',
-		description: '',
+		description: 'A binding agreement between two parties, especially between God and His people, with major biblical covenants including those with Abraham, at Sinai, and the new covenant.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1614,7 +1614,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'covetousness',
 		title: 'Covetousness',
-		description: '',
+		description: 'An inordinate desire for what belongs to others, condemned in the Ten Commandments and identified as a form of idolatry that leads to many other sins.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1624,7 +1624,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'creation',
 		title: 'Creation',
-		description: '',
+		description: 'God\'s act of bringing the universe, earth, and all living things into existence, described in Genesis as a series of creative periods ending with the creation of humans.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1634,7 +1634,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'crime-and-punishment',
 		title: 'Crime and Punishment',
-		description: '',
+		description: 'Violations of law and the penalties imposed, with the Mosaic Law prescribing specific punishments including restitution, corporal punishment, and capital offenses.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1644,7 +1644,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'curse',
 		title: 'Curse',
-		description: '',
+		description: 'A pronouncement of harm or judgment, either from God as punishment for disobedience or from humans invoking evil, with the Law distinguishing between warranted and unwarranted curses.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1654,7 +1654,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'cush',
 		title: 'Cush',
-		description: '',
+		description: 'The son of Ham and grandson of Noah, from whom the Cushite peoples of Africa, particularly Ethiopia, descended according to the table of nations.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1664,7 +1664,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'custody',
 		title: 'Custody',
-		description: '',
+		description: 'The care and keeping of persons or property, including the imprisonment of accused individuals pending trial and the responsibility of guardians over orphans and widows.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1674,7 +1674,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'cutting-off',
 		title: 'Cutting Off',
-		description: '',
+		description: 'The execution of the death penalty or the act of excommunication, used in the Mosaic Law for serious sins and in the Christian congregation for unrepentant wrongdoers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1684,7 +1684,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'cyrus',
 		title: 'Cyrus',
-		description: '',
+		description: 'The Persian king who conquered Babylon in 539 BCE and issued the decree allowing the Jews to return to Jerusalem and rebuild the temple, fulfilling Isaiah\'s prophecy.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1694,7 +1694,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'damascus',
 		title: 'Damascus',
-		description: '',
+		description: 'An ancient city of Syria, one of the oldest continuously inhabited cities, where Saul of Tarsus was converted on the road and where he later preached in the synagogues.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1704,7 +1704,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'daniel-book-of',
 		title: 'Daniel, Book of',
-		description: '',
+		description: 'A prophetic book of the Hebrew Scriptures written by Daniel, containing accounts of his life in Babylon and visions of world empires, including the prophecy of seventy weeks.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1714,7 +1714,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'darius-the-mede',
 		title: 'Darius the Mede',
-		description: '',
+		description: 'A Mede who received the kingdom of Babylon after its fall, identified by some historians as the governor appointed by Cyrus, under whom Daniel served.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1724,7 +1724,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'david',
 		title: 'David',
-		description: '',
+		description: 'The second king of Israel, a man after God\'s own heart, who defeated Goliath, united the nation, conquered Jerusalem, and received the covenant for an everlasting kingdom.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1734,7 +1734,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'david-city-of',
 		title: 'David, City of',
-		description: '',
+		description: 'Another name for Jerusalem, specifically the original Jebusite stronghold captured by David, which became the capital of the united kingdom and the site of the temple.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1744,7 +1744,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'day',
 		title: 'Day',
-		description: '',
+		description: 'A unit of time defined as the period of light between morning and evening, used in creation account and prophecy, with the term also used figuratively for a period of judgment.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1754,7 +1754,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'day-of-jehovah',
 		title: 'Day of Jehovah',
-		description: '',
+		description: 'A biblical term for a time of divine judgment and deliverance, when God intervenes to execute judgment on the wicked and bring salvation to His people.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1764,7 +1764,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'death',
 		title: 'Death',
-		description: '',
+		description: 'The cessation of life, which the Bible describes as a condition of unconsciousness in the grave, introduced by Adam\'s sin, with the hope of resurrection through Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1774,7 +1774,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'debt-debtor',
 		title: 'Debt, Debtor',
-		description: '',
+		description: 'An obligation to pay money or render service, with the Mosaic Law regulating lending, interest, and the release of debts in the sabbath year and Jubilee.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1784,7 +1784,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'declare-righteous',
 		title: 'Declare Righteous',
-		description: '',
+		description: 'A legal term meaning to pronounce righteous or acquit, used in the Bible for God\'s act of forgiving sins and crediting righteousness through faith in Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1794,7 +1794,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'dedication',
 		title: 'Dedication',
-		description: '',
+		description: 'The act of setting apart persons or things for sacred use, including the dedication of the tabernacle, temple, and firstborn children to God\'s service.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1804,7 +1804,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'deluge',
 		title: 'Deluge',
-		description: '',
+		description: 'The global Flood in Noah\'s day, sent by God to destroy all flesh because of human wickedness, from which only eight souls in the ark survived.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1814,7 +1814,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'demon',
 		title: 'Demon',
-		description: '',
+		description: 'An evil spirit, formerly angels who rebelled with Satan, that can possess humans and oppose God\'s purposes, but are subject to Christ\'s authority and will be destroyed.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1824,7 +1824,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'denarius',
 		title: 'Denarius',
-		description: '',
+		description: 'A Roman silver coin that was a day\'s wage for a laborer, used in Jesus\' parables and as the coin shown when he said to render to Caesar what is Caesar\'s.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1834,7 +1834,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'desire',
 		title: 'Desire',
-		description: '',
+		description: 'Strong inclination or longing for something, which can be either good when directed toward God and righteousness or sinful when driven by fleshly appetites.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1844,7 +1844,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'destruction',
 		title: 'Destruction',
-		description: '',
+		description: 'The act of bringing to ruin or complete end, used in Scripture for the annihilation of the wicked at judgment and for the end of the present system of things.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1854,7 +1854,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'devoted-thing',
 		title: 'Devoted Thing',
-		description: '',
+		description: 'An object or person irrevocably given to God, often involving complete destruction as in the case of Jericho, representing something set apart exclusively for God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1864,7 +1864,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'devotion',
 		title: 'Devotion',
-		description: '',
+		description: 'Earnest commitment and loyalty to God, involving heartfelt worship, obedience, and exclusive dedication as expressed in both the Hebrew and Christian Scriptures.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1874,7 +1874,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'dew',
 		title: 'Dew',
-		description: '',
+		description: 'Moisture that condenses on surfaces overnight, vital for crops in Israel\'s dry climate, used figuratively in Scripture for refreshment, blessing, and God\'s favor.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1884,7 +1884,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'disciple',
 		title: 'Disciple',
-		description: '',
+		description: 'A learner or follower of a teacher, especially one of the 12 apostles of Jesus, but more broadly any person who accepts Christ\'s teachings and follows him.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1894,7 +1894,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'discipline',
 		title: 'Discipline',
-		description: '',
+		description: 'Training that corrects, molds, and strengthens character, including parental correction of children and God\'s discipline of believers as evidence of sonship.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1904,7 +1904,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'diseases-and-treatment',
 		title: 'Diseases and Treatment',
-		description: '',
+		description: 'Physical ailments and the methods used to treat them in ancient times, with the Mosaic Law providing sanitary regulations and the Bible commending the efforts of physicians.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1914,7 +1914,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'disfellowshipping',
 		title: 'Disfellowshipping',
-		description: '',
+		description: 'The act of removing an unrepentant wrongdoer from the Christian congregation to protect its spiritual cleanness, based on biblical instructions for maintaining congregation purity.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1924,7 +1924,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'district-of-the-jordan',
 		title: 'District of the Jordan',
-		description: '',
+		description: 'The fertile plain of the Jordan River valley, mentioned as the region Lot chose when parting from Abraham, and the area where Jericho is located.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1934,7 +1934,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'divination',
 		title: 'Divination',
-		description: '',
+		description: 'The practice of seeking knowledge of the future or hidden things through occult means, strictly forbidden in the Mosaic Law as contrary to reliance on God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1944,7 +1944,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'divorce',
 		title: 'Divorce',
-		description: '',
+		description: 'The legal dissolution of a marriage, regulated by the Mosaic Law with a certificate of divorce, but restricted by Jesus to cases of sexual immorality.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1954,7 +1954,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'dragnet',
 		title: 'Dragnet',
-		description: '',
+		description: 'A large fishing net dragged through the water to catch fish, used by Jesus in an illustration of the Kingdom, where good and bad are separated at the conclusion.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1964,7 +1964,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'dragon',
 		title: 'Dragon',
-		description: '',
+		description: 'A mythical monster used in Scripture as a symbol of Satan the Devil, particularly in the book of Revelation where he opposes God and persecutes the woman and her offspring.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1974,7 +1974,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'dress',
 		title: 'Dress',
-		description: '',
+		description: 'The style and manner of clothing, with the Bible instructing modesty and appropriateness while prohibiting cross-dressing and excessive adornment.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1984,7 +1984,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'dyes-dyeing',
 		title: 'Dyes, Dyeing',
-		description: '',
+		description: 'The process of coloring fabrics using natural materials such as plants, shellfish, and minerals, with purple and scarlet being especially valued colors in biblical times.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -1994,7 +1994,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'earth',
 		title: 'Earth',
-		description: '',
+		description: 'The planet on which humans live, created by God and destined to be restored to paradisaic conditions, with the righteous promised to inherit the earth forever.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2004,7 +2004,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ecclesiastes',
 		title: 'Ecclesiastes',
-		description: '',
+		description: 'A book of the Hebrew Scriptures written by Solomon, reflecting on the vanity of human striving apart from God and concluding that fearing God is the whole duty of man.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2014,7 +2014,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'eden',
 		title: 'Eden',
-		description: '',
+		description: 'The garden home of the first human pair, Adam and Eve, planted by God in a location associated with four rivers, where the original perfect conditions existed.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2024,7 +2024,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'education',
 		title: 'Education',
-		description: '',
+		description: 'The process of teaching and learning, which in ancient Israel centered on the home and the Law, with parents responsible for instructing their children in God\'s ways.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2034,7 +2034,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'egypt-egyptian',
 		title: 'Egypt, Egyptian',
-		description: '',
+		description: 'An ancient nation and civilization along the Nile River, where Abraham, Joseph, and Jacob\'s family sojourned, and from which the Israelites were delivered through Moses.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2044,17 +2044,17 @@ export const insights: Cononical[] = [
 	{
 		id: 'elijah',
 		title: 'Elijah',
-		description: '',
-		source: '',
+		description: 'A prophet of the northern kingdom of Israel who confronted King Ahab and Queen Jezebel, defeated the prophets of Baal on Mount Carmel, and was taken to heaven in a whirlwind.',
+		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Elijah/',
 		href: '',
 		scripture: [],
-		date: '',
+		date: 'c.940bce-c.905bce',
 		tags: []
 	},
 	{
 		id: 'elisha',
 		title: 'Elisha',
-		description: '',
+		description: 'A prophet of Israel who succeeded Elijah and performed twice as many miracles, including healing Naaman of leprosy and resurrecting the Shunammite woman\'s son.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2064,7 +2064,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'emotions',
 		title: 'Emotions',
-		description: '',
+		description: 'Strong feelings such as love, joy, fear, anger, and sorrow, which God Himself possesses and which humans are to express in ways consistent with righteousness.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2074,7 +2074,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'employment',
 		title: 'Employment',
-		description: '',
+		description: 'Work performed for wages or livelihood, with the Bible commending honest labor and condemning idleness, while providing principles for fair treatment of workers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2084,7 +2084,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'enclave-cities',
 		title: 'Enclave Cities',
-		description: '',
+		description: 'Cities within a territory that were given to the Levites as their inheritance, distributed among the tribes so that the priestly tribe could dwell throughout the land.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2094,7 +2094,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'endurance',
 		title: 'Endurance',
-		description: '',
+		description: 'The ability to bear up under trials and persevere in faith, which the Bible identifies as a fruit of God\'s spirit and a quality needed to receive God\'s promises.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2104,7 +2104,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'enemy',
 		title: 'Enemy',
-		description: '',
+		description: 'An adversary or opponent, with the Bible teaching to love one\'s enemies and not to rejoice when they stumble, while recognizing that God will ultimately judge His enemies.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2114,7 +2114,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'engagement',
 		title: 'Engagement',
-		description: '',
+		description: 'A formal agreement to marry, which in biblical culture was a binding betrothal that required a divorce to dissolve, as seen in Joseph\'s response to Mary\'s pregnancy.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2124,7 +2124,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'entertainment',
 		title: 'Entertainment',
-		description: '',
+		description: 'Activities that amuse or divert, which the Bible neither condemns outright nor endorses when it involves immorality, foolishness, or takes priority over worship.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2134,7 +2134,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'envy',
 		title: 'Envy',
-		description: '',
+		description: 'A resentful longing for what others have, condemned in Scripture as a work of the flesh that leads to strife and every evil practice.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2144,7 +2144,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ephesus',
 		title: 'Ephesus',
-		description: '',
+		description: 'A major city of the Roman province of Asia, site of the temple of Artemis and a prominent Christian congregation to which Paul wrote a letter and addressed from Miletus.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2154,7 +2154,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ephod',
 		title: 'Ephod',
-		description: '',
+		description: 'A priestly garment worn by the high priest of Israel, made of fine linen and embroidered with gold, blue, purple, and scarlet, and used in seeking God\'s will.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2164,7 +2164,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'esau',
 		title: 'Esau',
-		description: '',
+		description: 'The firstborn son of Isaac and Rebekah, twin brother of Jacob, who sold his birthright for a meal and later lost the patriarchal blessing, becoming the ancestor of the Edomites.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2174,7 +2174,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'esther-book-of',
 		title: 'Esther, Book of',
-		description: '',
+		description: 'A book of the Hebrew Scriptures recounting how Queen Esther risked her life to save the Jews from extermination through Haman\'s plot in Persia.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2184,7 +2184,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ethiopia',
 		title: 'Ethiopia',
-		description: '',
+		description: 'A region in Africa south of Egypt, often associated with the kingdom of Cush, mentioned in connection with the Ethiopian eunuch baptized by Philip.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2194,7 +2194,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'eunuch',
 		title: 'Eunuch',
-		description: '',
+		description: 'A castrated male who served in royal courts, sometimes entrusted with high positions, and who could become a proselyte to Judaism or Christianity.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2204,7 +2204,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'evangelizer',
 		title: 'Evangelizer',
-		description: '',
+		description: 'One who announces good news, especially one who preaches the gospel of the Kingdom, including Philip the evangelizer and all Christians who share in the preaching work.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2214,17 +2214,17 @@ export const insights: Cononical[] = [
 	{
 		id: 'eve',
 		title: 'Eve',
-		description: '',
-		source: '',
+		description: 'The first woman, created by God from Adam\'s rib, who was deceived by the serpent and ate the forbidden fruit, leading to the fall of humanity.',
+		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Eve/',
 		href: '',
 		scripture: [],
-		date: '',
+		date: '4026bce',
 		tags: []
 	},
 	{
 		id: 'exclusive-devotion',
 		title: 'Exclusive Devotion',
-		description: '',
+		description: 'The quality of being completely loyal to God, who requires that His servants worship Him alone and not share their affection with any other gods.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2234,7 +2234,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'execution-executioner',
 		title: 'Execution, Executioner',
-		description: '',
+		description: 'The carrying out of a death sentence, either by stoning, sword, or other means, with the Mosaic Law specifying execution for various capital offenses.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2244,7 +2244,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'exile',
 		title: 'Exile',
-		description: '',
+		description: 'The forced removal of people from their homeland, especially the deportation of the northern kingdom by Assyria and the southern kingdom by Babylon.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2254,7 +2254,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'exodus',
 		title: 'Exodus',
-		description: '',
+		description: 'The departure of the Israelites from Egypt under Moses\' leadership, a foundational event in Israel\'s history marked by the ten plagues, Passover, and the crossing of the Red Sea.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2264,7 +2264,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'expanse',
 		title: 'Expanse',
-		description: '',
+		description: 'The vast space or firmament created by God on the second creative day to separate the waters above from the waters below, called Heaven.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2274,7 +2274,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'expelling',
 		title: 'Expelling',
-		description: '',
+		description: 'The removal of individuals from the congregation for serious sin, also known as disfellowshipping, based on apostolic instructions to maintain purity.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2284,7 +2284,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'eye',
 		title: 'Eye',
-		description: '',
+		description: 'The organ of sight, used literally and figuratively in Scripture, with the eye representing understanding, desire, and the ability to perceive truth.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2294,7 +2294,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ezekiel',
 		title: 'Ezekiel',
-		description: '',
+		description: 'A priest and prophet among the Jewish exiles in Babylon, who received visions of God\'s glory, the valley of dry bones, and a future temple.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2304,7 +2304,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ezekiel-book-of',
 		title: 'Ezekiel, Book of',
-		description: '',
+		description: 'A prophetic book of the Hebrew Scriptures written by Ezekiel, containing messages of judgment on Jerusalem and surrounding nations, and visions of restoration and a future temple.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2314,7 +2314,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ezekiels-temple',
 		title: "Ezekiel's Temple",
-		description: '',
+		description: 'The visionary temple described in chapters 40-48 of Ezekiel, showing a future place of worship with precise measurements and arrangements for God\'s presence.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2324,7 +2324,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ezion-geber',
 		title: 'Ezion-geber',
-		description: '',
+		description: 'A port city at the northern tip of the Gulf of Aqaba, used by Solomon for ships that sailed to Ophir for gold, and associated with Israel\'s wilderness journey.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2334,7 +2334,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ezra',
 		title: 'Ezra',
-		description: '',
+		description: 'A priest and scribe who led a group of exiles from Babylon to Jerusalem, taught the Law to the people, and helped restore proper worship in the post-exilic period.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2344,7 +2344,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'faith',
 		title: 'Faith',
-		description: '',
+		description: 'Trust and confidence in God and His promises, including belief in Christ for salvation, which the Bible says is the assured expectation of things hoped for.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2354,7 +2354,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'family',
 		title: 'Family',
-		description: '',
+		description: 'A social unit consisting of parents and children, established by God as the basic building block of society, with the Bible providing instructions for family relationships.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2364,7 +2364,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'famine',
 		title: 'Famine',
-		description: '',
+		description: 'A severe shortage of food, often used by God in biblical times as a judgment or test of faith, as seen in the famines during Abraham, Joseph, and Elijah\'s days.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2374,7 +2374,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'father',
 		title: 'Father',
-		description: '',
+		description: 'A male parent, with God portrayed as the ultimate Father, and the role of human fathers including providing, protecting, and spiritually training their children.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2384,7 +2384,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'fault-faultfinding',
 		title: 'Fault, Faultfinding',
-		description: '',
+		description: 'The act of pointing out flaws or shortcomings, which the Bible warns against when done in a critical, judgmental spirit rather than in love.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2394,7 +2394,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'fear',
 		title: 'Fear',
-		description: '',
+		description: 'An emotional response to danger or threat, with the Bible distinguishing between wholesome fear of God that leads to wisdom and sinful fear that shows lack of faith.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2404,7 +2404,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'festivals',
 		title: 'Festivals',
-		description: '',
+		description: 'Annual religious celebrations appointed by God for Israel, including Passover, Pentecost, and the Festival of Booths, each commemorating aspects of God\'s dealings with His people.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2414,7 +2414,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'festus',
 		title: 'Festus',
-		description: '',
+		description: 'Porcius Festus, the Roman governor of Judea who succeeded Felix and heard Paul\'s defense, deciding to send Paul to Caesar at his appeal.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2424,7 +2424,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'field',
 		title: 'Field',
-		description: '',
+		description: 'An area of open land used for cultivation or grazing, with biblical laws regulating gleaning, sabbath rest, and the redemption of sold fields.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2434,7 +2434,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'fig',
 		title: 'Fig',
-		description: '',
+		description: 'A fruit tree common in Palestine, whose fruit was a staple food, used by Jesus in parables and to illustrate the nation of Israel\'s fruitfulness or lack thereof.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2444,7 +2444,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'fire',
 		title: 'Fire',
-		description: '',
+		description: 'A source of heat and light, used in worship for sacrifices, in judgment as in Sodom\'s destruction, and figuratively for God\'s purifying presence and the testing of works.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2454,7 +2454,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'firstborn-firstling',
 		title: 'Firstborn, Firstling',
-		description: '',
+		description: 'The first offspring of humans or animals, with the firstborn son receiving special privileges and the firstborn of animals being offered to God under the Law.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2464,7 +2464,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'firstfruits',
 		title: 'Firstfruits',
-		description: '',
+		description: 'The first portion of the harvest offered to God, symbolizing dedication of the whole, and used in the New Testament for Christ\'s resurrection and the early believers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2474,7 +2474,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'fish',
 		title: 'Fish',
-		description: '',
+		description: 'Aquatic creatures that were a major food source in biblical times, associated with several of Jesus\' miracles and with the calling of fishermen as apostles.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2484,7 +2484,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'flesh',
 		title: 'Flesh',
-		description: '',
+		description: 'The soft tissue of the body, used in Scripture to refer to physical humanity, all living creatures, and the fallen human nature inclined toward sin.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2494,7 +2494,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'flood',
 		title: 'Flood',
-		description: '',
+		description: 'A catastrophic deluge, especially the global Flood of Noah\'s day that destroyed all life outside the ark, sent by God as judgment on human wickedness.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2504,7 +2504,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'food',
 		title: 'Food',
-		description: '',
+		description: 'Substances consumed for nourishment, with biblical laws distinguishing clean and unclean foods, and the New Testament teaching that all foods are acceptable with thanksgiving.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2514,7 +2514,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'foot',
 		title: 'Foot',
-		description: '',
+		description: 'The lower extremity of the leg, used literally for walking and standing, and figuratively for possession, dominance, and the idea of walking in God\'s ways.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2524,7 +2524,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'forehead',
 		title: 'Forehead',
-		description: '',
+		description: 'The part of the face above the eyes, used figuratively in Scripture for boldness, determination, and the marking of God\'s servants in prophetic visions.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2534,7 +2534,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'foreigner',
 		title: 'Foreigner',
-		description: '',
+		description: 'A person from another country living in Israel, who was to be treated with fairness and kindness, with certain laws applying equally to native-born and foreigner.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2544,7 +2544,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'foreknowledge-foreordination',
 		title: 'Foreknowledge, Foreordination',
-		description: '',
+		description: 'God\'s advance knowledge of future events and His predetermination of certain purposes, which does not negate human free will but ensures the fulfillment of His plan.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2554,7 +2554,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'forgiveness',
 		title: 'Forgiveness',
-		description: '',
+		description: 'The act of pardoning an offender, which God grants based on Christ\'s sacrifice and which believers are required to extend to others as Christ forgave them.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2564,7 +2564,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'fornication',
 		title: 'Fornication',
-		description: '',
+		description: 'Sexual intercourse between unmarried persons, condemned in both the Hebrew and Christian Scriptures as a serious sin against God and one\'s own body.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2574,7 +2574,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'foundation',
 		title: 'Foundation',
-		description: '',
+		description: 'The base on which a building is constructed, used figuratively for the foundation of the earth, the apostles and prophets as the foundation of the congregation, and Christ as the foundation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2584,7 +2584,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'fountain-spring',
 		title: 'Fountain, Spring',
-		description: '',
+		description: 'A natural source of water, vital in the dry climate of Palestine, used figuratively for wisdom, life, and blessing flowing from God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2594,7 +2594,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'freedom',
 		title: 'Freedom',
-		description: '',
+		description: 'Liberty from bondage or oppression, with the Bible speaking of freedom from sin and death through Christ, and the responsible use of Christian freedom.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2604,7 +2604,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'friend',
 		title: 'Friend',
-		description: '',
+		description: 'A person with whom one has a close bond of mutual affection, with Abraham called God\'s friend and the Bible emphasizing loyalty and helpfulness among friends.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2614,7 +2614,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'furnace',
 		title: 'Furnace',
-		description: '',
+		description: 'An enclosed structure for heating materials to high temperatures, used for smelting metals, baking pottery, and as a figure of intense suffering or testing.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2624,7 +2624,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'galatia',
 		title: 'Galatia',
-		description: '',
+		description: 'A region in central Asia Minor where Paul established Christian congregations, to whom he addressed his letter emphasizing justification by faith rather than Law observance.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2634,7 +2634,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'galilee',
 		title: 'Galilee',
-		description: '',
+		description: 'The northern region of Palestine, the main area of Jesus\' ministry, where he called his disciples, performed many miracles, and appeared after his resurrection.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2644,7 +2644,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gate-gateway',
 		title: 'Gate, Gateway',
-		description: '',
+		description: 'The entrance to a city, often a fortified structure where legal matters were conducted, elders sat, and commercial transactions took place.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2654,7 +2654,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gatherings',
 		title: 'Gatherings',
-		description: '',
+		description: 'Assemblies of people for worship, instruction, or social purposes, with the Bible commanding regular meetings of believers and prohibiting forsaking the assembling together.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2664,7 +2664,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'genealogy',
 		title: 'Genealogy',
-		description: '',
+		description: 'A record of family descent, important in the Bible for establishing tribal inheritance, priestly lineage, and the messianic line from David.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2674,7 +2674,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'generation',
 		title: 'Generation',
-		description: '',
+		description: 'A group of people living at the same time, also used for a period of about 40 years, and for a class or type of people with shared characteristics.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2684,7 +2684,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'generosity',
 		title: 'Generosity',
-		description: '',
+		description: 'The quality of being generous and giving freely, which the Bible commends and encourages, especially in supporting the poor and the work of the ministry.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2694,7 +2694,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'genesis-book-of',
 		title: 'Genesis, Book of',
-		description: '',
+		description: 'The first book of the Bible, written by Moses, covering creation, the fall of man, the Flood, and the patriarchal history of Abraham, Isaac, Jacob, and Joseph.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2704,7 +2704,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gennesaret',
 		title: 'Gennesaret',
-		description: '',
+		description: 'A fertile plain on the western shore of the Sea of Galilee, also called the Lake of Gennesaret, where Jesus taught and the area associated with his ministry.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2714,7 +2714,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gentiles',
 		title: 'Gentiles',
-		description: '',
+		description: 'Non-Israelite peoples, often referred to as nations, who were originally excluded from the covenant but later became fellow heirs of the promise through Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2724,7 +2724,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gethsemane',
 		title: 'Gethsemane',
-		description: '',
+		description: 'A garden at the foot of the Mount of Olives where Jesus prayed in agony the night before his crucifixion and where he was betrayed by Judas and arrested.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2734,7 +2734,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gibeon-gibeonites',
 		title: 'Gibeon, Gibeonites',
-		description: '',
+		description: 'A Hivite city that deceived Joshua into making a peace treaty, later assigned to the tribe of Benjamin, where the tabernacle stood and Solomon offered sacrifices.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2744,7 +2744,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gideon',
 		title: 'Gideon',
-		description: '',
+		description: 'A judge of Israel who delivered the nation from Midianite oppression with only 300 men, demonstrating that salvation comes from God, not human might.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2754,7 +2754,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gifts-presents',
 		title: 'Gifts, Presents',
-		description: '',
+		description: 'Items given freely to express favor, honor, or affection, with the Bible noting both proper gifts as expressions of love and improper gifts used as bribes.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2764,7 +2764,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gifts-from-god',
 		title: 'Gifts From God',
-		description: '',
+		description: 'Endowments and abilities granted by God, including spiritual gifts in the early congregation such as prophecy, healing, and tongues, as well as the gift of holy spirit.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2774,7 +2774,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gifts-of-mercy',
 		title: 'Gifts of Mercy',
-		description: '',
+		description: 'Acts of kindness and charitable giving to those in need, which the Bible commands to be done generously and without reluctance or compulsion.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2784,7 +2784,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gilead',
 		title: 'Gilead',
-		description: '',
+		description: 'A region east of the Jordan River, known for its balm and fertile pastures, allotted to the tribes of Reuben, Gad, and half of Manasseh.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2794,7 +2794,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'glory',
 		title: 'Glory',
-		description: '',
+		description: 'Honor, renown, and splendor, especially of God, whose glory fills the earth and is manifested in creation, His dealings with Israel, and in the person of Jesus Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2804,7 +2804,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'goat',
 		title: 'Goat',
-		description: '',
+		description: 'A domesticated animal used for milk, meat, and especially for sin offerings under the Law, and used in Jesus\' parable of separating sheep from goats at judgment.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2814,7 +2814,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'god',
 		title: 'God',
-		description: '',
+		description: 'The Supreme Being, the Creator of all things, who is eternal, all-powerful, all-knowing, and all-wise, whose personal name is Jehovah and who alone is worthy of worship.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2824,7 +2824,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'godly-devotion',
 		title: 'Godly Devotion',
-		description: '',
+		description: 'Reverent devotion to God that produces faithful service, moral purity, and a life dedicated to pleasing Him, described as beneficial for all things.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2834,7 +2834,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gods-and-goddesses',
 		title: 'Gods and Goddesses',
-		description: '',
+		description: 'Deities worshiped by the nations surrounding Israel, including Baal, Ashtoreth, Dagon, Molech, and others, whose worship God strictly forbade.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2844,7 +2844,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gog',
 		title: 'Gog',
-		description: '',
+		description: 'A figure in Ezekiel\'s prophecy representing a coalition of nations that attack God\'s people in the last days and are destroyed by divine intervention.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2854,7 +2854,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gold',
 		title: 'Gold',
-		description: '',
+		description: 'A precious yellow metal highly valued in ancient times, used extensively in the tabernacle and temple furnishings, and as a symbol of purity and value.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2864,7 +2864,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'goliath',
 		title: 'Goliath',
-		description: '',
+		description: 'A Philistine giant of Gath, over nine feet tall, who challenged the armies of Israel and was killed with a sling and stone by the young shepherd David.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2874,7 +2874,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'goodness',
 		title: 'Goodness',
-		description: '',
+		description: 'The quality of being morally good and virtuous, an attribute of God that He requires in His servants, and a fruit of the spirit.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2884,7 +2884,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'good-news',
 		title: 'Good News',
-		description: '',
+		description: 'The message of salvation through Jesus Christ, the Kingdom of God, and the hope of everlasting life, which Christians are commissioned to preach worldwide.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2894,7 +2894,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'gossip-slander',
 		title: 'Gossip, Slander',
-		description: '',
+		description: 'Rumors and malicious talk about others, which the Bible condemns as divisive and destructive, warning against tale-bearing and false accusations.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2904,7 +2904,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'government',
 		title: 'Government',
-		description: '',
+		description: 'Authority structures established for ruling and administering society, with the Bible teaching that existing authorities are permitted by God and Christians should be subject to them.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2914,7 +2914,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'grafting',
 		title: 'Grafting',
-		description: '',
+		description: 'The horticultural technique of joining a shoot from one plant to another, used by Paul as an illustration of how Gentiles were grafted into the spiritual olive tree.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2924,7 +2924,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'grave',
 		title: 'Grave',
-		description: '',
+		description: 'The place of burial or the state of the dead, often associated with the Hebrew Sheol and Greek Hades, representing the common resting place of mankind.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2934,7 +2934,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'great-crowd',
 		title: 'Great Crowd',
-		description: '',
+		description: 'A multitude described in Revelation who come out of the great tribulation, standing before God\'s throne, serving Him, and belonging to no particular nation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2944,7 +2944,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'greece-greeks',
 		title: 'Greece, Greeks',
-		description: '',
+		description: 'The nation and people of Greece, whose empire succeeded Persia in biblical prophecy, whose language became the medium of the Christian Greek Scriptures, and whose culture influenced the Mediterranean world.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2954,7 +2954,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hades',
 		title: 'Hades',
-		description: '',
+		description: 'The Greek word for the grave or the place of the dead, corresponding to the Hebrew Sheol, where the dead are conscious of nothing and await resurrection.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2964,7 +2964,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hagar',
 		title: 'Hagar',
-		description: '',
+		description: 'Sarah\'s Egyptian maidservant who became Abraham\'s secondary wife and bore Ishmael, later sent away with her son at Sarah\'s demand.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2974,7 +2974,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hair',
 		title: 'Hair',
-		description: '',
+		description: 'Threadlike strands growing from the skin, with Nazirites forbidden to cut their hair, and the Bible emphasizing inner beauty over elaborate hairstyles.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2984,7 +2984,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hallelujah',
 		title: 'Hallelujah',
-		description: '',
+		description: 'A Hebrew expression meaning Praise Jah, used in the Psalms and in Revelation as a joyful exclamation of praise to God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -2994,7 +2994,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'haman',
 		title: 'Haman',
-		description: '',
+		description: 'An Agagite official in the Persian court under Ahasuerus, who plotted to destroy all Jews in the empire but was hanged on the gallows he built for Mordecai.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3004,7 +3004,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hand',
 		title: 'Hand',
-		description: '',
+		description: 'The end of the arm used for grasping and working, used figuratively in Scripture for power, authority, and the actions of God and humans.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3014,7 +3014,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'happiness',
 		title: 'Happiness',
-		description: '',
+		description: 'A state of well-being and contentment, which the Bible says comes from knowing God, obeying His laws, and trusting in Him, not from material possessions.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3024,7 +3024,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hare',
 		title: 'Hare',
-		description: '',
+		description: 'A small mammal considered unclean under the Mosaic Law because it chews the cud but does not have a split hoof, forbidden as food.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3034,7 +3034,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'harlot',
 		title: 'Harlot',
-		description: '',
+		description: 'A prostitute, often used literally for women engaged in sexual immorality and figuratively for unfaithful Israel or Babylon the Great.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3044,7 +3044,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'har-magedon',
 		title: 'Har-Magedon',
-		description: '',
+		description: 'The Hebrew name meaning Mount of Megiddo, used in Revelation for the place where the kings of the earth gather for the final battle against God\'s people.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3054,7 +3054,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'harvest',
 		title: 'Harvest',
-		description: '',
+		description: 'The season of gathering crops, used extensively in Scripture as a metaphor for the end of the age when God gathers the righteous and judges the wicked.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3064,7 +3064,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hate',
 		title: 'Hate',
-		description: '',
+		description: 'Intense dislike or hostility, which the Bible distinguishes between righteous hatred of evil and sinful hatred of others, commanding love even for enemies.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3074,7 +3074,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hazael',
 		title: 'Hazael',
-		description: '',
+		description: 'A Syrian king whom Elijah anointed as Hazael, who later became king of Damascus and oppressed Israel during Elisha\'s time.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3084,7 +3084,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'head',
 		title: 'Head',
-		description: '',
+		description: 'The upper part of the human body, used figuratively for leadership, authority, and the source, with Christ as head of the congregation and man as head of woman.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3094,7 +3094,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'headdress',
 		title: 'Headdress',
-		description: '',
+		description: 'A covering for the head, ranging from the high priest\'s turban to common headcloths, worn for protection, adornment, and as part of official or ceremonial dress.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3104,7 +3104,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'headship',
 		title: 'Headship',
-		description: '',
+		description: 'The position of authority and leadership, established by God with Christ as head of the man, man as head of woman, and God as head of Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3114,7 +3114,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'healing',
 		title: 'Healing',
-		description: '',
+		description: 'The restoration of health, performed by Jesus and the apostles as signs of divine power, and promised as a future blessing in the new world.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3124,7 +3124,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'heart',
 		title: 'Heart',
-		description: '',
+		description: 'The physical organ, but more often used figuratively for the seat of emotions, intellect, will, and moral character, representing the inner person before God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3134,7 +3134,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'heaven',
 		title: 'Heaven',
-		description: '',
+		description: 'The sky above the earth, the dwelling place of God and the angels, and the realm where Christ rules at God\'s right hand until all enemies are subdued.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3144,7 +3144,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hebrews-letter-to-the',
 		title: 'Hebrews, Letter to the',
-		description: '',
+		description: 'A letter of the Christian Greek Scriptures, likely written by Paul, demonstrating the superiority of Christ and the new covenant over the Mosaic Law.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3154,7 +3154,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hebrew-scriptures',
 		title: 'Hebrew Scriptures',
-		description: '',
+		description: 'The 39 books of the Bible written in Hebrew and Aramaic, forming the Old Testament canon, recording God\'s dealings with Israel and containing messianic prophecies.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3164,7 +3164,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hell',
 		title: 'Hell',
-		description: '',
+		description: 'An English translation of the Hebrew Sheol and Greek Hades and Gehenna, representing the grave or place of the dead rather than a place of eternal torment.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3174,7 +3174,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hermon',
 		title: 'Hermon',
-		description: '',
+		description: 'A mountain at the northern border of Israel, the highest peak in the region, associated with the transfiguration and as a source of the Jordan River.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3184,7 +3184,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'herod-party-followers-of',
 		title: 'Herod, Party Followers of',
-		description: '',
+		description: 'A political faction among the Jews during Jesus\' time who supported the Herodian dynasty and collaborated with the Romans, often opposing Jesus.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3194,7 +3194,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'herodias',
 		title: 'Herodias',
-		description: '',
+		description: 'The granddaughter of Herod the Great who married her uncle Herod Philip and later her other uncle Herod Antipas, leading to John the Baptist\'s condemnation and execution.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3204,7 +3204,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'herodotus',
 		title: 'Herodotus',
-		description: '',
+		description: 'A Greek historian of the 5th century BCE, called the father of history, whose writings provide valuable background for understanding the Persian period of biblical history.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3214,7 +3214,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'herods-temple',
 		title: "Herod's Temple",
-		description: '',
+		description: 'The magnificent temple in Jerusalem rebuilt and expanded by Herod the Great, where Jesus taught and which was destroyed by the Romans in 70 CE.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3224,7 +3224,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'herod-the-great',
 		title: 'Herod the Great',
-		description: '',
+		description: 'The Roman-appointed king of Judea who rebuilt the temple, ordered the slaughter of infants at Bethlehem, and ruled at the time of Jesus\' birth.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3234,7 +3234,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hezekiah',
 		title: 'Hezekiah',
-		description: '',
+		description: 'A righteous king of Judah who instituted religious reforms, trusted in God against the Assyrian invasion, and was granted an extension of 15 years of life.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3244,7 +3244,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'high-places',
 		title: 'High Places',
-		description: '',
+		description: 'Elevated sites used for worship, often associated with pagan cults and idolatry, which the Law prohibited but which continued to be used by the Israelites.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3254,7 +3254,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'high-priest',
 		title: 'High Priest',
-		description: '',
+		description: 'The chief religious leader of Israel, a descendant of Aaron, who alone entered the Most Holy on the Day of Atonement and prefigured Jesus Christ as the great High Priest.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3264,7 +3264,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'highway-road',
 		title: 'Highway, Road',
-		description: '',
+		description: 'Routes of travel connecting cities and regions, used literally for ancient thoroughfares and figuratively for the way of holiness and the path of righteousness.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3274,7 +3274,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hinnom-valley-of',
 		title: 'Hinnom, Valley of',
-		description: '',
+		description: 'A valley southwest of Jerusalem used for child sacrifice to Molech and later as a refuse dump where fires burned continually, giving rise to the term Gehenna.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3284,7 +3284,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hire-wages',
 		title: 'Hire, Wages',
-		description: '',
+		description: 'Payment for labor or services, with the Mosaic Law requiring prompt payment and condemning the withholding of wages from hired workers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3294,7 +3294,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hittites',
 		title: 'Hittites',
-		description: '',
+		description: 'An ancient people of Anatolia who established a powerful empire, appearing in the Bible as inhabitants of Canaan and as one of the nations Israel was to dispossess.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3304,7 +3304,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hobab',
 		title: 'Hobab',
-		description: '',
+		description: 'The son of Moses\' father-in-law Reuel, whom Moses invited to accompany Israel through the wilderness as a guide because of his knowledge of the region.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3314,7 +3314,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'holiness',
 		title: 'Holiness',
-		description: '',
+		description: 'The state of being set apart for God, morally pure and sacred, which is a defining attribute of God and required of His people.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3324,7 +3324,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'holy-spirit',
 		title: 'Holy Spirit',
-		description: '',
+		description: 'God\'s active force, used in creation, to empower individuals for service, to produce the Bible, and to guide and sanctify believers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3334,7 +3334,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'honor',
 		title: 'Honor',
-		description: '',
+		description: 'Respect, esteem, and high regard given to those worthy, including parents, the elderly, governing authorities, and especially God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3344,7 +3344,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hope',
 		title: 'Hope',
-		description: '',
+		description: 'The confident expectation of future good, based on God\'s promises, including the hope of resurrection, everlasting life, and the realization of God\'s Kingdom.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3354,7 +3354,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'horse',
 		title: 'Horse',
-		description: '',
+		description: 'A large domesticated animal used for riding, warfare, and transport, which Israel was cautioned not to multiply as a source of military pride.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3364,7 +3364,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hospitality',
 		title: 'Hospitality',
-		description: '',
+		description: 'The generous and friendly reception of guests and strangers, which the Bible emphasizes as an important Christian virtue and duty.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3374,7 +3374,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hour',
 		title: 'Hour',
-		description: '',
+		description: 'A unit of time equal to 1/24 of a day, used in the Bible both literally and figuratively for appointed times and seasons of divine activity.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3384,7 +3384,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'house',
 		title: 'House',
-		description: '',
+		description: 'A structure for dwelling, used literally and figuratively for a family line, dynasty, or the household of God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3394,7 +3394,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'humility',
 		title: 'Humility',
-		description: '',
+		description: 'The quality of being humble and modest, considering others above oneself, which the Bible exalts as a necessary virtue in the sight of God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3404,7 +3404,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hunting-and-fishing',
 		title: 'Hunting and Fishing',
-		description: '',
+		description: 'The pursuit of wild animals and fish for food or sport, with notable biblical hunters including Nimrod and Esau, and fishing being the occupation of several apostles.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3414,7 +3414,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'husband',
 		title: 'Husband',
-		description: '',
+		description: 'A married man, with the Bible assigning him the role of family head, provider, and loving caretaker of his wife, as Christ loves the congregation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3424,7 +3424,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'hushai',
 		title: 'Hushai',
-		description: '',
+		description: 'A friend of King David who pretended to defect to Absalom during the rebellion and gave counsel that thwarted Ahithophel\'s advice, saving David.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3434,7 +3434,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'idol-idolatry',
 		title: 'Idol, Idolatry',
-		description: '',
+		description: 'An image or object worshiped as a god, which the Bible strictly forbids, condemning idolatry as a violation of the first two commandments and spiritual adultery.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3444,7 +3444,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'illustrations',
 		title: 'Illustrations',
-		description: '',
+		description: 'Stories or comparisons used to teach moral or spiritual lessons, especially Jesus\' parables which used everyday situations to convey kingdom truths.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3454,7 +3454,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'image',
 		title: 'Image',
-		description: '',
+		description: 'A representation or likeness, including physical idols, the image of God in which humans were created, and the image of the beast in Revelation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3464,7 +3464,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'immortality',
 		title: 'Immortality',
-		description: '',
+		description: 'The state of being immune to death, which God alone possesses inherently, but which He grants to Christ and to anointed believers at the resurrection.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3474,7 +3474,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'impalement',
 		title: 'Impalement',
-		description: '',
+		description: 'A method of execution by hanging on a stake or pole, used by Persians and Romans, and the means by which Jesus Christ was put to death.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3484,7 +3484,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'incense',
 		title: 'Incense',
-		description: '',
+		description: 'Aromatic substances burned to produce fragrant smoke, used in tabernacle and temple worship on the golden altar, symbolizing prayers ascending to God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3494,7 +3494,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'industriousness',
 		title: 'Industriousness',
-		description: '',
+		description: 'The quality of being hardworking and diligent, which the Bible commends, contrasting the industrious with the lazy and warning against idleness.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3504,7 +3504,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'inheritance',
 		title: 'Inheritance',
-		description: '',
+		description: 'Property or rights passed from parents to children, including the land inheritance of Israel, and used figuratively for the spiritual inheritance of believers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3514,7 +3514,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'insects',
 		title: 'Insects',
-		description: '',
+		description: 'Small invertebrate creatures, many mentioned in the Bible including locusts, bees, ants, and flies, with some designated as clean and others as unclean for food.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3524,7 +3524,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'inspiration',
 		title: 'Inspiration',
-		description: '',
+		description: 'The divine influence by which the Bible writers were guided by God\'s spirit to write His message, making Scripture inspired of God and beneficial for teaching.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3534,7 +3534,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'installation',
 		title: 'Installation',
-		description: '',
+		description: 'The ceremony of placing someone into an office or position, such as the installation of the high priest or the appointment of elders in the Christian congregation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3544,7 +3544,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'instruction',
 		title: 'Instruction',
-		description: '',
+		description: 'Teaching and training in knowledge and discipline, with the Bible serving as the primary source of instruction from God for righteous living.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3554,7 +3554,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'integrity',
 		title: 'Integrity',
-		description: '',
+		description: 'The quality of being honest and having strong moral principles, exemplified by Job who maintained his integrity despite severe trials.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3564,7 +3564,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'interest',
 		title: 'Interest',
-		description: '',
+		description: 'Money paid for the use of borrowed funds, which the Mosaic Law prohibited charging among fellow Israelites but allowed with foreigners.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3574,7 +3574,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'isaac',
 		title: 'Isaac',
-		description: '',
+		description: 'The son of Abraham and Sarah, born when they were old, the child of promise through whom the covenant line continued, and who was nearly offered as a sacrifice.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3584,7 +3584,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'island-isle',
 		title: 'Island, Isle',
-		description: '',
+		description: 'Land surrounded by water, mentioned in the Bible in connection with various Mediterranean islands such as Cyprus, Crete, and Malta visited by Paul.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3594,7 +3594,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jachin',
 		title: 'Jachin',
-		description: '',
+		description: 'One of the two bronze pillars at the entrance of Solomon\'s temple, meaning He Will Establish, paired with Boaz.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3604,7 +3604,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jacob',
 		title: 'Jacob',
-		description: '',
+		description: 'The son of Isaac and Rebekah, who received the birthright and blessing from his father, fathered the 12 tribes of Israel, and was renamed Israel.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3614,7 +3614,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jailer',
 		title: 'Jailer',
-		description: '',
+		description: 'A keeper of a prison, notably the Philippian jailer who asked Paul and Silas what he must do to be saved and became a believer.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3624,7 +3624,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jealous-jealousy',
 		title: 'Jealous, Jealousy',
-		description: '',
+		description: 'Intense concern for exclusive loyalty, which in God is a righteous attribute, demanding exclusive devotion, but in humans often becomes sinful envy.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3634,7 +3634,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jebus-jebusites',
 		title: 'Jebus, Jebusites',
-		description: '',
+		description: 'The original Canaanite inhabitants of Jerusalem, who held the city until David captured it and made it his capital, after which it was called the City of David.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3644,7 +3644,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jehovah',
 		title: 'Jehovah',
-		description: '',
+		description: 'The personal name of God, meaning He Causes to Become, revealed to Moses at the burning bush and used nearly 7,000 times in the Hebrew Scriptures.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3654,7 +3654,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jephthah',
 		title: 'Jephthah',
-		description: '',
+		description: 'A judge of Israel who delivered the nation from Ammonite oppression and made a vow that resulted in his daughter spending her life in sacred service.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3664,7 +3664,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jericho',
 		title: 'Jericho',
-		description: '',
+		description: 'An ancient city west of the Jordan River, the first city conquered by Israel under Joshua through miraculous collapse of its walls, later rebuilt in disobedience.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3674,7 +3674,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jeroboam',
 		title: 'Jeroboam',
-		description: '',
+		description: 'The first king of the northern ten tribes after the kingdom divided, who established calf worship at Dan and Bethel to prevent his subjects from going to Jerusalem.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3684,7 +3684,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jerusalem',
 		title: 'Jerusalem',
-		description: '',
+		description: 'The capital city of Israel, chosen by God as the place for His name to dwell, site of the temple, and the city where Jesus was crucified and resurrected.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3694,7 +3694,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jesus-christ',
 		title: 'Jesus Christ',
-		description: '',
+		description: 'The Son of God, the promised Messiah, who lived a perfect life, died sacrificially for humanity\'s sins, was resurrected, and now rules as King at God\'s right hand.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3704,7 +3704,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jewels-and-precious-stone',
 		title: 'Jewels and Precious Stone',
-		description: '',
+		description: 'Gems and valuable stones used in adornment, temple decoration, and as symbols of beauty and value, including the 12 stones on the high priest\'s breastpiece.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3714,7 +3714,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'job',
 		title: 'Job',
-		description: '',
+		description: 'A man from Uz who suffered severe trials but maintained his integrity, proving Satan\'s challenge wrong and receiving double blessings from God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3724,7 +3724,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'john-good-news-according-to',
 		title: 'John, Good News According to',
-		description: '',
+		description: 'The fourth Gospel, written by the apostle John, emphasizing Jesus\' divinity and featuring his discourses, signs, and the I AM statements.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3734,7 +3734,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'john-the-baptizer',
 		title: 'John the Baptizer',
-		description: '',
+		description: 'The forerunner of Jesus, who preached repentance and baptized in the Jordan River, prepared the way for the Messiah, and was beheaded by Herod Antipas.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3744,17 +3744,17 @@ export const insights: Cononical[] = [
 	{
 		id: 'jonah',
 		title: 'Jonah',
-		description: '',
-		source: '',
+		description: 'A Hebrew prophet who was swallowed by a great fish after fleeing his commission to Nineveh, later delivering God\'s warning that led to the city\'s repentance.',
+		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Jonah/',
 		href: '',
 		scripture: [],
-		date: '',
+		date: 'c.844bce',
 		tags: []
 	},
 	{
 		id: 'joppa',
 		title: 'Joppa',
-		description: '',
+		description: 'An ancient port city on the Mediterranean coast, from which Jonah sailed when fleeing to Tarshish, and where Peter resurrected Tabitha.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3764,7 +3764,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jordan',
 		title: 'Jordan',
-		description: '',
+		description: 'The major river of Palestine, flowing from the Sea of Galilee to the Dead Sea, crossed by Israel entering the Promised Land and where Jesus was baptized.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3774,7 +3774,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'josephus',
 		title: 'Josephus',
-		description: '',
+		description: 'A first-century Jewish historian whose writings provide valuable historical background for the intertestamental period and the first century, including the Jewish revolt against Rome.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3784,7 +3784,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'joy',
 		title: 'Joy',
-		description: '',
+		description: 'A feeling of great pleasure and happiness, a fruit of God\'s spirit, and a quality that characterizes the Christian life even amid trials.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3794,7 +3794,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'jubilee',
 		title: 'Jubilee',
-		description: '',
+		description: 'The 50th year proclaimed by trumpet throughout Israel, when debts were forgiven, slaves were freed, and ancestral lands were returned to their original owners.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3804,7 +3804,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'judaism',
 		title: 'Judaism',
-		description: '',
+		description: 'The religion of the Jews, based on the Mosaic Law and traditions, which the apostle Paul distinguished from Christianity as a system superseded by faith in Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3814,7 +3814,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'judas-iscariot',
 		title: 'Judas Iscariot',
-		description: '',
+		description: 'The apostle who betrayed Jesus to the religious leaders for 30 pieces of silver, later returned the money and hanged himself in remorse.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3824,7 +3824,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'judea',
 		title: 'Judea',
-		description: '',
+		description: 'The southern region of Palestine, the territory of the tribe of Judah, where Jerusalem was located and which became a Roman province during Jesus\' time.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3834,7 +3834,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'judge',
 		title: 'Judge',
-		description: '',
+		description: 'One who pronounces judgment, including the leaders who governed Israel before the monarchy, and the ultimate Judge who is God, who will judge all mankind.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3844,7 +3844,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'judgment-day',
 		title: 'Judgment Day',
-		description: '',
+		description: 'A future time when God will execute judgment on the world, bringing punishment on the wicked and reward to the righteous through Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3854,7 +3854,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'judgment-seat',
 		title: 'Judgment Seat',
-		description: '',
+		description: 'A raised platform where a judge sat to hear cases and pronounce verdicts, used of both human tribunals and the judgment seat of Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3864,7 +3864,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'justice',
 		title: 'Justice',
-		description: '',
+		description: 'The quality of being fair and righteous, a fundamental attribute of God, who requires justice in human dealings and will bring perfect justice to the earth.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3874,7 +3874,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'justification',
 		title: 'Justification',
-		description: '',
+		description: 'The act of being declared righteous by God on the basis of faith in Christ\'s ransom sacrifice, not by works of the Law.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3884,7 +3884,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'key',
 		title: 'Key',
-		description: '',
+		description: 'An instrument for locking and unlocking doors, used figuratively for authority, power, and access, such as the keys of the kingdom and keys of death.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3894,7 +3894,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'kindness',
 		title: 'Kindness',
-		description: '',
+		description: 'The quality of being friendly, generous, and considerate, a fruit of the spirit and an attribute of God that leads to repentance.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3904,7 +3904,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'king',
 		title: 'King',
-		description: '',
+		description: 'A male ruler of a nation, with Israel\'s kings starting with Saul, and David establishing a dynasty culminating in Jesus Christ as King of kings.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3914,7 +3914,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'kingdom',
 		title: 'Kingdom',
-		description: '',
+		description: 'A realm or government ruled by a king, used especially for God\'s Kingdom, the messianic government that will rule over the earth and bring peace.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3924,7 +3924,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'kingdom-of-god',
 		title: 'Kingdom of God',
-		description: '',
+		description: 'The heavenly government ruled by Jesus Christ that will destroy all human governments and establish everlasting peace and righteousness on earth.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3934,7 +3934,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'knowledge',
 		title: 'Knowledge',
-		description: '',
+		description: 'Familiarity with facts and truth, which the Bible says begins with the fear of God and includes accurate knowledge of God and His purposes.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3944,7 +3944,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'korah',
 		title: 'Korah',
-		description: '',
+		description: 'A Levite who led a rebellion against Moses and Aaron in the wilderness, resulting in the earth swallowing him and his followers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3954,7 +3954,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'lachish',
 		title: 'Lachish',
-		description: '',
+		description: 'A fortified city in Judah, captured by the Assyrians under Sennacherib, whose siege is recorded in both the Bible and Assyrian inscriptions.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3964,7 +3964,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'lake-of-fire',
 		title: 'Lake of Fire',
-		description: '',
+		description: 'A symbol in Revelation representing complete destruction or eternal punishment, into which Satan, the beast, the false prophet, and death itself are cast.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3974,7 +3974,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'lampstand',
 		title: 'Lampstand',
-		description: '',
+		description: 'A stand for holding lamps, including the seven-branched gold lampstand of the tabernacle, used as a symbol for the congregations in Revelation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3984,7 +3984,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'landowner',
 		title: 'Landowner',
-		description: '',
+		description: 'A person who owned land, common in biblical times, often featuring in Jesus\' parables about stewardship, tenants, and the kingdom.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -3994,7 +3994,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'language',
 		title: 'Language',
-		description: '',
+		description: 'A system of communication used by a people or nation, with the Bible describing the original single language of humanity that was confused at Babel.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4004,7 +4004,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'laodicea',
 		title: 'Laodicea',
-		description: '',
+		description: 'A wealthy city in Asia Minor, site of one of the seven congregations in Revelation, criticized for being lukewarm and self-satisfied.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4014,7 +4014,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'last-days',
 		title: 'Last Days',
-		description: '',
+		description: 'The period of time preceding Christ\'s second coming and the end of the present system, characterized by widespread trouble, apostasy, and the preaching of the good news.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4024,7 +4024,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'law',
 		title: 'Law',
-		description: '',
+		description: 'Rules and regulations governing behavior, especially the Mosaic Law given through Moses, which served as a tutor leading to Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4034,7 +4034,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'law-covenant',
 		title: 'Law Covenant',
-		description: '',
+		description: 'The covenant made between God and Israel at Mount Sinai, based on the Ten Commandments and the detailed laws that governed Israel\'s worship and daily life.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4044,7 +4044,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'lawlessness',
 		title: 'Lawlessness',
-		description: '',
+		description: 'Disregard for or violation of law, especially God\'s law, which the Bible identifies as sin and which will characterize the last days.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4054,7 +4054,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'leaven',
 		title: 'Leaven',
-		description: '',
+		description: 'A substance used to ferment dough, used figuratively in Scripture for sin, hypocrisy, and corrupting influence, and in Jesus\' parable to represent the kingdom\'s growth.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4064,7 +4064,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'lebanon',
 		title: 'Lebanon',
-		description: '',
+		description: 'A mountainous region north of Israel, known for its cedar trees used in Solomon\'s temple, and mentioned in prophecy regarding the Messiah.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4074,7 +4074,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'legal-case',
 		title: 'Legal Case',
-		description: '',
+		description: 'A dispute brought before judges for resolution, with the Mosaic Law providing procedures for witnesses, evidence, and appeals to higher courts.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4084,7 +4084,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'letters',
 		title: 'Letters',
-		description: '',
+		description: 'Written messages, including the apostolic letters that form much of the Christian Greek Scriptures, which provided instruction, correction, and encouragement to congregations.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4094,7 +4094,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'levites',
 		title: 'Levites',
-		description: '',
+		description: 'Members of the tribe of Levi selected to serve in the tabernacle and temple, assisting the priests and caring for the sanctuary and its furnishings.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4104,7 +4104,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'life',
 		title: 'Life',
-		description: '',
+		description: 'The condition of being alive, which the Bible presents as a gift from God, with the promise of everlasting life for those who exercise faith in Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4114,7 +4114,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'light',
 		title: 'Light',
-		description: '',
+		description: 'Electromagnetic radiation visible to the eye, used figuratively for truth, righteousness, God\'s presence, and Jesus as the light of the world.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4124,7 +4124,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'linen',
 		title: 'Linen',
-		description: '',
+		description: 'A fine fabric made from flax, used for the priestly garments, the tabernacle curtains, and for wrapping the dead, symbolizing purity and righteousness.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4134,7 +4134,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'lion',
 		title: 'Lion',
-		description: '',
+		description: 'A large predatory cat, used in Scripture as a symbol of strength, courage, and royalty, with Jesus called the Lion of the tribe of Judah.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4144,7 +4144,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'liver',
 		title: 'Liver',
-		description: '',
+		description: 'A large internal organ of the body, mentioned in the Bible in connection with animal sacrifices and in the practice of divination by examining livers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4154,7 +4154,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'loan',
 		title: 'Loan',
-		description: '',
+		description: 'The act of lending money or goods, with the Mosaic Law regulating lending practices, prohibiting interest among Israelites, and requiring the return of pledged items.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4164,7 +4164,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'logos',
 		title: 'Logos',
-		description: '',
+		description: 'A Greek term meaning word or reason, used by John to identify Jesus as the divine Word who was with God in the beginning and became flesh.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4174,7 +4174,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'lord',
 		title: 'Lord',
-		description: '',
+		description: 'A title of authority and respect, applied to God, to human masters and rulers, and especially to Jesus Christ as Lord and Master.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4184,7 +4184,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'lords-evening-meal',
 		title: "Lord's Evening Meal",
-		description: '',
+		description: 'The memorial of Christ\'s death instituted by Jesus on the night of his betrayal, observed with unleavened bread and wine, commemorating his sacrifice.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4194,7 +4194,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'love',
 		title: 'Love',
-		description: '',
+		description: 'Unselfish, loyal concern for the welfare of others, the greatest of God\'s attributes and the primary identifying mark of true Christians.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4204,7 +4204,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'loving-kindness',
 		title: 'Loving-Kindness',
-		description: '',
+		description: 'God\'s loyal love and steadfast mercy toward His people, a key attribute that combines love, faithfulness, and kindness.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4214,7 +4214,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'lowliness-of-mind',
 		title: 'Lowliness of Mind',
-		description: '',
+		description: 'Humility and modesty, considering others as more important than oneself, which the Bible commends as essential for Christian unity.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4224,7 +4224,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'loyalty',
 		title: 'Loyalty',
-		description: '',
+		description: 'Faithful devotion and steadfast allegiance to a person or cause, especially to God and His Kingdom, demonstrated through obedience and steadfastness.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4234,7 +4234,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'luke',
 		title: 'Luke',
-		description: '',
+		description: 'A physician and companion of the apostle Paul, who wrote both the Gospel of Luke and the Acts of the Apostles, providing a detailed account of early Christian history.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4244,7 +4244,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'luke-good-news-according-to',
 		title: 'Luke, Good News According to',
-		description: '',
+		description: 'The third Gospel, written by Luke, emphasizing Jesus\' compassion for the poor and outcasts, and containing many parables and the most complete nativity narrative.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4254,7 +4254,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'luminary',
 		title: 'Luminary',
-		description: '',
+		description: 'A heavenly body such as the sun or moon that gives light, created by God on the fourth creative day to govern day and night.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4264,7 +4264,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'lystra',
 		title: 'Lystra',
-		description: '',
+		description: 'A city in Lycaonia where Paul and Barnabas preached and where Paul was stoned and left for dead, also the home of Timothy.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4274,7 +4274,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'magic-and-sorcery',
 		title: 'Magic and Sorcery',
-		description: '',
+		description: 'The practice of using supernatural powers through occult means, strictly condemned in the Bible as demonic and incompatible with worship of God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4284,7 +4284,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'magog',
 		title: 'Magog',
-		description: '',
+		description: 'A land or people mentioned in Ezekiel\'s prophecy associated with Gog, representing hostile nations that attack God\'s people in the last days.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4294,7 +4294,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'maher-shalal-hash-baz',
 		title: 'Maher-shalal-hash-baz',
-		description: '',
+		description: 'A symbolic name meaning Swift Is the Booty, Fast Is the Plunder, given to Isaiah\'s son as a prophecy of Assyria\'s impending conquest.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4304,7 +4304,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'malcam',
 		title: 'Malcam',
-		description: '',
+		description: 'A pagan deity worshiped by the Ammonites, possibly another name for Molech, associated with child sacrifice and condemned in the Hebrew Scriptures.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4314,7 +4314,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'man',
 		title: 'Man',
-		description: '',
+		description: 'A human being, male or female, created in God\'s image, with man specifically referring to the male of the species and the human race collectively.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4324,7 +4324,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'manetho',
 		title: 'Manetho',
-		description: '',
+		description: 'An Egyptian priest and historian of the 3rd century BCE who compiled a history of Egypt that provides a chronological framework for Egyptian dynasties.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4334,7 +4334,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'mankind',
 		title: 'Mankind',
-		description: '',
+		description: 'The human race collectively, created by God and separated from the animals by having a spiritual nature and being made in God\'s image.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4344,7 +4344,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'man-of-lawlessness',
 		title: 'Man of Lawlessness',
-		description: '',
+		description: 'A figure in Paul\'s prophecy representing a great apostasy within the Christian congregation, opposing God and exalting himself above all.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4354,7 +4354,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'manuscripts',
 		title: 'Manuscripts',
-		description: '',
+		description: 'Handwritten copies of ancient texts, especially biblical manuscripts, which are the basis for determining the original text of Scripture.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4364,7 +4364,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'marketplace',
 		title: 'Marketplace',
-		description: '',
+		description: 'A public area in cities where goods were bought and sold, business transactions occurred, and where people gathered for news and social interaction.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4374,7 +4374,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'marriage',
 		title: 'Marriage',
-		description: '',
+		description: 'A divinely instituted union between a man and a woman, intended for companionship, procreation, and as a symbol of Christ\'s relationship with the congregation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4384,7 +4384,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'matthew-good-news-according-to',
 		title: 'Matthew, Good News According to',
-		description: '',
+		description: 'The first Gospel, written by the tax collector Matthew, emphasizing Jesus as the promised Messiah and fulfillment of Hebrew prophecies.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4394,7 +4394,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'matthias',
 		title: 'Matthias',
-		description: '',
+		description: 'The apostle chosen by lot to replace Judas Iscariot after his betrayal and death, becoming one of the 12 apostles.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4404,7 +4404,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'maturity',
 		title: 'Maturity',
-		description: '',
+		description: 'The state of being fully developed physically and spiritually, with the Bible urging Christians to press on to spiritual maturity.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4414,7 +4414,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'meal',
 		title: 'Meal',
-		description: '',
+		description: 'An occasion of eating, ranging from ordinary daily meals to religious feasts, with the Lord\'s Evening Meal being a special memorial observance.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4424,7 +4424,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'medes-media',
 		title: 'Medes, Media',
-		description: '',
+		description: 'An ancient people from the region of Media in northwestern Iran, who joined the Persians in conquering Babylon and are mentioned in Daniel\'s prophecies.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4434,7 +4434,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'mediator',
 		title: 'Mediator',
-		description: '',
+		description: 'One who intervenes between two parties to reconcile them, with Jesus Christ being the sole mediator between God and mankind.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4444,7 +4444,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'meekness',
 		title: 'Meekness',
-		description: '',
+		description: 'Gentleness and humility, a fruit of the spirit, describing those who are teachable and submissive to God\'s will, not self-assertive.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4454,7 +4454,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'meetings',
 		title: 'Meetings',
-		description: '',
+		description: 'Gatherings of God\'s people for worship, prayer, and instruction, which the Bible commands believers not to forsake.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4464,7 +4464,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'megiddo',
 		title: 'Megiddo',
-		description: '',
+		description: 'An ancient city in northern Israel, strategically located at the pass through the Carmel range, site of several important battles and the source of the name Har-Magedon.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4474,7 +4474,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'melchizedek',
 		title: 'Melchizedek',
-		description: '',
+		description: 'The king of Salem and priest of God Most High who blessed Abraham, a type of Christ who is a priest forever according to the order of Melchizedek.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4484,7 +4484,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'memorial',
 		title: 'Memorial',
-		description: '',
+		description: 'Something established to keep a person or event in remembrance, especially the Lord\'s Evening Meal as a memorial of Christ\'s death.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4494,7 +4494,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'menstruation',
 		title: 'Menstruation',
-		description: '',
+		description: 'The monthly discharge of blood from the uterus, which under the Mosaic Law rendered a woman ceremonially unclean for seven days.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4504,7 +4504,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'mercy',
 		title: 'Mercy',
-		description: '',
+		description: 'Compassion or forgiveness shown to an offender or the suffering, a key attribute of God, who is rich in mercy and requires mercy in His worshipers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4514,7 +4514,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'mesopotamia',
 		title: 'Mesopotamia',
-		description: '',
+		description: 'The region between the Tigris and Euphrates rivers, the cradle of civilization, where Abraham originated and where the Assyrian and Babylonian empires rose.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4524,7 +4524,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'messiah',
 		title: 'Messiah',
-		description: '',
+		description: 'The Hebrew title meaning Anointed One, translated as Christ in Greek, referring to the promised deliverer and king foretold in Hebrew prophecy.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4534,7 +4534,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'metals',
 		title: 'Metals',
-		description: '',
+		description: 'Mineral substances such as gold, silver, copper, iron, tin, and lead, used in ancient times for tools, weapons, coins, and temple furnishings.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4544,7 +4544,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'mezuzah',
 		title: 'Mezuzah',
-		description: '',
+		description: 'A small case containing Scripture passages affixed to the doorpost of Jewish homes, based on the command to write God\'s words on the doorposts.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4554,7 +4554,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'mind',
 		title: 'Mind',
-		description: '',
+		description: 'The faculty of consciousness, thought, and understanding, which the Bible says should be renewed and transformed by God\'s spirit.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4564,7 +4564,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'minister',
 		title: 'Minister',
-		description: '',
+		description: 'A servant who attends to the needs of others, used both for those who serve God in special capacities and for all believers who minister to one another.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4574,7 +4574,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ministry',
 		title: 'Ministry',
-		description: '',
+		description: 'Service rendered to God and others, especially the Christian preaching and teaching work, which all believers are commissioned to perform.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4584,7 +4584,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'miracles',
 		title: 'Miracles',
-		description: '',
+		description: 'Extraordinary events manifesting divine power, performed by Jesus and the apostles as signs of God\'s authority and as proofs of the truth of the gospel.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4594,7 +4594,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'miriam',
 		title: 'Miriam',
-		description: '',
+		description: 'The sister of Moses and Aaron, a prophetess who led the women in song after the Red Sea crossing, but was struck with leprosy for criticizing Moses\' marriage.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4604,7 +4604,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'moab-moabites',
 		title: 'Moab, Moabites',
-		description: '',
+		description: 'A nation descended from Lot through his eldest daughter, occupying territory east of the Dead Sea, often hostile to Israel and led by King Balak against them.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4614,7 +4614,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'molech',
 		title: 'Molech',
-		description: '',
+		description: 'An Ammonite god whose worship involved passing children through fire, strictly forbidden in the Mosaic Law and practiced by Solomon and Ahaz.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4624,7 +4624,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'money',
 		title: 'Money',
-		description: '',
+		description: 'A medium of exchange, including coins of gold, silver, and copper, used in commerce and temple offerings, with the Bible warning against the love of money.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4634,7 +4634,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'morals',
 		title: 'Morals',
-		description: '',
+		description: 'Principles of right and wrong behavior, with the Bible providing a moral code based on God\'s character and commandments.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4644,7 +4644,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'moriah',
 		title: 'Moriah',
-		description: '',
+		description: 'The land where Abraham was commanded to offer Isaac, later identified as the site of Jerusalem where Solomon built the temple.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4654,7 +4654,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'moses',
 		title: 'Moses',
-		description: '',
+		description: 'The great prophet and leader who delivered Israel from Egypt, received the Law at Sinai, led the nation through the wilderness, and wrote the Pentateuch.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4664,7 +4664,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'mother',
 		title: 'Mother',
-		description: '',
+		description: 'A female parent, with the Bible emphasizing the honor due to mothers and the influence they have in shaping their children\'s spiritual development.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4674,7 +4674,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'mount-mountain',
 		title: 'Mount, Mountain',
-		description: '',
+		description: 'Elevated landforms significant in the Bible as places of revelation, worship, and divine encounters, including Sinai, Zion, Carmel, and the Mount of Olives.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4684,7 +4684,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'mourning',
 		title: 'Mourning',
-		description: '',
+		description: 'The expression of grief and sorrow, especially for the dead, which had prescribed customs in Israel including weeping, fasting, and wearing sackcloth.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4694,7 +4694,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'murder',
 		title: 'Murder',
-		description: '',
+		description: 'The unlawful killing of a human being, forbidden in the Ten Commandments, with the Bible distinguishing between premeditated murder and unintentional manslaughter.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4704,7 +4704,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'music',
 		title: 'Music',
-		description: '',
+		description: 'Rhythmic sounds and songs used in worship of God, including instrumental and vocal music, with the Psalms serving as the songbook of ancient Israel.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4714,7 +4714,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'mustard',
 		title: 'Mustard',
-		description: '',
+		description: 'A plant whose tiny seeds grow into a large bush, used by Jesus in a parable about the Kingdom of God growing from small beginnings.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4724,7 +4724,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'naaman',
 		title: 'Naaman',
-		description: '',
+		description: 'A Syrian army commander who was cured of leprosy by washing in the Jordan River at Elisha\'s instruction, afterward acknowledging Jehovah as the true God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4734,7 +4734,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'nabonidus',
 		title: 'Nabonidus',
-		description: '',
+		description: 'The last king of Babylon, father of Belshazzar, who spent much of his reign away from the capital while his son ruled as coregent.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4744,7 +4744,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'naboth',
 		title: 'Naboth',
-		description: '',
+		description: 'An Israelite owner of a vineyard that King Ahab coveted, who was falsely accused and stoned to death by Jezebel\'s scheme, leading to Elijah\'s prophetic denunciation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4754,7 +4754,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'nain',
 		title: 'Nain',
-		description: '',
+		description: 'A village in Galilee where Jesus resurrected the only son of a widow, demonstrating his power over death and compassion for the grieving.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4764,7 +4764,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'name',
 		title: 'Name',
-		description: '',
+		description: 'A word by which a person, place, or thing is known, with great significance attached to names in the Bible, especially the name of God revealed as Jehovah.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4774,7 +4774,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'nations',
 		title: 'Nations',
-		description: '',
+		description: 'Distinct groups of people with common ancestry, language, and territory, with God\'s purpose to bring all nations under His Kingdom rule through Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4784,7 +4784,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'nazareth',
 		title: 'Nazareth',
-		description: '',
+		description: 'A town in Galilee where Jesus grew up and lived before beginning his ministry, often referred to as Jesus of Nazareth.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4794,7 +4794,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'nebo-mount',
 		title: 'Nebo, Mount',
-		description: '',
+		description: 'The mountain in Moab from which Moses viewed the Promised Land before his death, located in the Abarim range east of the Jordan.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4804,7 +4804,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'nebuchadnezzar',
 		title: 'Nebuchadnezzar',
-		description: '',
+		description: 'The king of Babylon who destroyed Jerusalem and the temple, took the Jews into exile, and later acknowledged God\'s sovereignty after being humbled.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4814,7 +4814,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'needles-eye',
 		title: "Needle's Eye",
-		description: '',
+		description: 'The small opening in a needle, used by Jesus in a saying about the difficulty of a rich person entering the Kingdom of God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4824,7 +4824,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'nehemiah',
 		title: 'Nehemiah',
-		description: '',
+		description: 'A Jewish cupbearer to the Persian king Artaxerxes who received permission to rebuild Jerusalem\'s walls and later served as governor of Judah.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4834,7 +4834,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'nehemiah-book-of',
 		title: 'Nehemiah, Book of',
-		description: '',
+		description: 'The biblical book recounting Nehemiah\'s efforts to rebuild Jerusalem\'s walls and restore proper worship among the returned exiles.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4844,7 +4844,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'neighbor',
 		title: 'Neighbor',
-		description: '',
+		description: 'A person living nearby, but in Jesus\' teaching extended to anyone in need whom one can help, with the command to love one\'s neighbor as oneself.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4854,7 +4854,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'nephilim',
 		title: 'Nephilim',
-		description: '',
+		description: 'The offspring of angels who materialized and married human women before the Flood, described as mighty ones, the men of fame.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4864,7 +4864,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'nest',
 		title: 'Nest',
-		description: '',
+		description: 'A structure built by birds for laying eggs and raising young, used figuratively in Scripture for a place of refuge and dwelling.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4874,7 +4874,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'new-covenant',
 		title: 'New Covenant',
-		description: '',
+		description: 'The covenant mediated by Christ that replaced the Mosaic Law Covenant, based on better promises and written on the hearts of believers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4884,7 +4884,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'new-jerusalem',
 		title: 'New Jerusalem',
-		description: '',
+		description: 'The heavenly city described in Revelation, representing the bride of Christ, the faithful anointed ones who will rule with Christ over the earth.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4894,7 +4894,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'nile',
 		title: 'Nile',
-		description: '',
+		description: 'The major river of Egypt, forming the basis of Egyptian agriculture and civilization, associated with the baby Moses being hidden in the bulrushes and the ten plagues.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4904,7 +4904,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'nineveh',
 		title: 'Nineveh',
-		description: '',
+		description: 'The capital of the Assyrian Empire, a great city to which God sent Jonah to call for repentance, which led to the city\'s temporary sparing from destruction.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4914,17 +4914,17 @@ export const insights: Cononical[] = [
 	{
 		id: 'noah',
 		title: 'Noah',
-		description: '',
-		source: '',
+		description: 'A righteous man who found favor with God, built the ark to preserve his family and animal life through the global Flood, and became a prophet and preacher of righteousness.',
+		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Noah/',
 		href: '',
 		scripture: [],
-		date: '',
+		date: '2970bce-2020bce',
 		tags: []
 	},
 	{
 		id: 'oath',
 		title: 'Oath',
-		description: '',
+		description: 'A solemn promise made before God, which the Bible treats as binding, with restrictions on frivolous oaths and the command to keep what one swears.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4934,7 +4934,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'obedience',
 		title: 'Obedience',
-		description: '',
+		description: 'Compliance with commands or instructions, especially obedience to God, which is more important than sacrifice and brings blessings and life.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4944,7 +4944,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'obeisance',
 		title: 'Obeisance',
-		description: '',
+		description: 'A gesture of respect and submission, such as bowing or prostrating oneself, offered to superiors, kings, and in worship to God alone.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4954,7 +4954,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'offerings',
 		title: 'Offerings',
-		description: '',
+		description: 'Gifts presented to God, including animal sacrifices, grain offerings, and drink offerings, which under the Law covered various aspects of worship and atonement.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4964,7 +4964,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'oil',
 		title: 'Oil',
-		description: '',
+		description: 'Olive oil, valued for cooking, lighting lamps, anointing, and medicinal use, with anointing oil symbolizing God\'s spirit and blessing.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4974,7 +4974,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ointment-and-perfumes',
 		title: 'Ointment and Perfumes',
-		description: '',
+		description: 'Fragrant substances used for personal grooming, anointing the sick, and preparing bodies for burial, often made from imported spices.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4984,7 +4984,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'older-man',
 		title: 'Older Man',
-		description: '',
+		description: 'An aged male, used in the congregation for those serving as elders based on spiritual qualifications and maturity.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -4994,7 +4994,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'olive',
 		title: 'Olive',
-		description: '',
+		description: 'A tree and its fruit, a major crop in Israel, producing oil for lamps and anointing, with the olive branch symbolizing peace after the Flood.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5004,7 +5004,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'only-begotten',
 		title: 'Only-Begotten',
-		description: '',
+		description: 'A term used in the Bible to describe Jesus as God\'s unique Son, the one of a kind, who has a special relationship with the Father.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5014,7 +5014,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ornaments',
 		title: 'Ornaments',
-		description: '',
+		description: 'Decorative items worn for personal adornment, including rings, bracelets, earrings, and necklaces, with the Bible cautioning against excessive focus on outward decoration.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5024,7 +5024,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'orphan',
 		title: 'Orphan',
-		description: '',
+		description: 'A child whose parents have died, with the Bible repeatedly commanding care and protection for orphans as an important expression of pure religion.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5034,7 +5034,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'other-sheep',
 		title: 'Other Sheep',
-		description: '',
+		description: 'A term used by Jesus for believers who are not of the little flock but will become part of the united flock under the one Shepherd.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5044,7 +5044,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'overseer',
 		title: 'Overseer',
-		description: '',
+		description: 'A position of oversight in the Christian congregation, also called elder, responsible for shepherding and teaching the flock.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5054,7 +5054,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'palace',
 		title: 'Palace',
-		description: '',
+		description: 'A large, magnificent residence of a king or ruler, including the palaces of David, Solomon, and the Herodian rulers in Jerusalem.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5064,7 +5064,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'palestine',
 		title: 'Palestine',
-		description: '',
+		description: 'The land area between the Mediterranean Sea and the Jordan River, named after the Philistines, the biblical Promised Land of Israel.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5074,7 +5074,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'papyrus',
 		title: 'Papyrus',
-		description: '',
+		description: 'A reed plant used in ancient times to make a writing material, important for the production of biblical manuscripts and scrolls.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5084,7 +5084,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'paradise',
 		title: 'Paradise',
-		description: '',
+		description: 'A beautiful park or garden, originally the Garden of Eden, used in the Bible for the future restored earth under God\'s Kingdom.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5094,7 +5094,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'parchment',
 		title: 'Parchment',
-		description: '',
+		description: 'A writing material made from animal skins, used for important documents including scriptural scrolls and Paul\'s personal copies.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5104,7 +5104,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'passover',
 		title: 'Passover',
-		description: '',
+		description: 'An annual Jewish festival commemorating Israel\'s deliverance from Egypt when the destroying angel passed over homes marked with lamb\'s blood, prefiguring Christ\'s sacrifice.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5114,7 +5114,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'patriarchal-society',
 		title: 'Patriarchal Society',
-		description: '',
+		description: 'The social structure of the early Hebrew period, where the patriarch or family head held authority over his household, including servants and descendants.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5124,7 +5124,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'paul',
 		title: 'Paul',
-		description: '',
+		description: 'Formerly Saul of Tarsus, a persecutor of Christians who converted on the road to Damascus and became the apostle to the Gentiles, writing 14 letters of the Christian Scriptures.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5134,7 +5134,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'peace',
 		title: 'Peace',
-		description: '',
+		description: 'Freedom from disturbance and conflict, including peace with God through Christ and the inner peace that comes from trusting in Him.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5144,7 +5144,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'pearl',
 		title: 'Pearl',
-		description: '',
+		description: 'A precious gem formed inside oysters, highly valued in ancient times, used by Jesus in a parable about the Kingdom as a pearl of great value.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5154,7 +5154,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'pentateuch',
 		title: 'Pentateuch',
-		description: '',
+		description: 'The first five books of the Bible, Genesis through Deuteronomy, written by Moses, containing the Law and the foundational history of Israel.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5164,7 +5164,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'pentecost',
 		title: 'Pentecost',
-		description: '',
+		description: 'A Jewish festival occurring 50 days after Passover, when the holy spirit was poured out on the disciples in Jerusalem, marking the beginning of the Christian congregation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5174,7 +5174,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'perfection',
 		title: 'Perfection',
-		description: '',
+		description: 'The state of being complete and without flaw, which God possesses and which humans are commanded to strive for, ultimately realized through Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5184,7 +5184,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'perfume',
 		title: 'Perfume',
-		description: '',
+		description: 'A fragrant liquid made from aromatic substances, used in ancient times for personal grooming, religious ceremonies, and anointing the dead.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5194,7 +5194,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'pergamum',
 		title: 'Pergamum',
-		description: '',
+		description: 'A city in Asia Minor, site of one of the seven congregations in Revelation, known for its library and as a center of pagan worship.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5204,7 +5204,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'persecution',
 		title: 'Persecution',
-		description: '',
+		description: 'Hostility and ill-treatment directed against believers because of their faith, which Jesus foretold and which the Bible says produces endurance.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5214,7 +5214,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'persia-persians',
 		title: 'Persia, Persians',
-		description: '',
+		description: 'An empire that succeeded Babylon under Cyrus the Great, allowing the Jews to return to their homeland, and later figured in prophecies of Daniel.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5224,17 +5224,17 @@ export const insights: Cononical[] = [
 	{
 		id: 'peter',
 		title: 'Peter',
-		description: '',
-		source: '',
+		description: 'One of the 12 apostles of Jesus, originally named Simon, a fisherman who became a leading figure in the early Christian congregation and wrote two epistles.',
+		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Peter/',
 		href: '',
 		scripture: [],
-		date: '',
+		date: '31ce',
 		tags: []
 	},
 	{
 		id: 'pharaoh',
 		title: 'Pharaoh',
-		description: '',
+		description: 'The title of the kings of ancient Egypt, several of whom interacted with Abraham, Joseph, Moses, and the Israelites during the Exodus.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5244,7 +5244,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'pharisees',
 		title: 'Pharisees',
-		description: '',
+		description: 'A Jewish religious sect known for strict observance of the Law and traditions, often opposing Jesus and criticized for hypocrisy and legalism.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5254,7 +5254,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'philistia-philistines',
 		title: 'Philistia, Philistines',
-		description: '',
+		description: 'A people who inhabited the coastal plain of Canaan, enemies of Israel throughout the period of the judges and the monarchy, known for their champion Goliath.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5264,7 +5264,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'philosophy',
 		title: 'Philosophy',
-		description: '',
+		description: 'The pursuit of wisdom through human reasoning, which the Bible warns against when it conflicts with the wisdom of God and is based on human tradition.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5274,7 +5274,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'phoenicia',
 		title: 'Phoenicia',
-		description: '',
+		description: 'A coastal region north of Israel, known for seafaring trade and the cities of Tyre and Sidon, whose inhabitants were Canaanites.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5284,7 +5284,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'pilate',
 		title: 'Pilate',
-		description: '',
+		description: 'Pontius Pilate, the Roman governor of Judea who presided over Jesus\' trial and authorized his crucifixion, later overthrown by the Romans.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5294,7 +5294,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'pity',
 		title: 'Pity',
-		description: '',
+		description: 'Compassion for the suffering of others, which God shows toward His people and which He expects His servants to demonstrate.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5304,7 +5304,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'plague',
 		title: 'Plague',
-		description: '',
+		description: 'A calamity or affliction, especially the ten plagues on Egypt and the pestilences prophesied as part of the last days.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5314,7 +5314,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'plants',
 		title: 'Plants',
-		description: '',
+		description: 'Living organisms that produce their own food through photosynthesis, including trees, grains, and herbs, many of which are named in the Bible.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5324,7 +5324,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'poor',
 		title: 'Poor',
-		description: '',
+		description: 'Those lacking material resources, who are the object of God\'s special concern and for whom the Bible commands generous provision and justice.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5334,7 +5334,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'power-powerful-works',
 		title: 'Power, Powerful Works',
-		description: '',
+		description: 'The ability to act effectively, with God\'s power being supreme, and the powerful works including miracles performed through Christ and the apostles.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5344,7 +5344,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'praise',
 		title: 'Praise',
-		description: '',
+		description: 'The expression of approval and admiration, especially toward God, offered through song, prayer, and declaration of His wonderful works.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5354,7 +5354,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'prayer',
 		title: 'Prayer',
-		description: '',
+		description: 'Communication with God, an essential aspect of worship, through which believers express adoration, confession, thanksgiving, and supplication.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5364,7 +5364,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'preacher-preaching',
 		title: 'Preacher, Preaching',
-		description: '',
+		description: 'One who publicly proclaims a message, especially the good news of God\'s Kingdom, a commission given to all Christians.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5374,7 +5374,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'predestination',
 		title: 'Predestination',
-		description: '',
+		description: 'The teaching that God has foreordained certain events or persons, which the Bible presents in relation to God\'s purpose rather than individual salvation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5384,7 +5384,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'pregnancy',
 		title: 'Pregnancy',
-		description: '',
+		description: 'The condition of carrying a developing offspring in the womb, which the Bible views as a blessing from God and part of a woman\'s role.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5394,7 +5394,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'preparation',
 		title: 'Preparation',
-		description: '',
+		description: 'The act of making ready, including preparation for worship, for the Sabbath, and spiritually for Christ\'s return.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5404,7 +5404,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'presence',
 		title: 'Presence',
-		description: '',
+		description: 'The state of being present, used especially for Christ\'s presence in connection with his invisible rulership and the sign of the last days.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5414,7 +5414,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'press',
 		title: 'Press',
-		description: '',
+		description: 'A device for extracting liquid from olives or grapes, used in the production of oil and wine, staples of biblical daily life.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5424,7 +5424,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'pride',
 		title: 'Pride',
-		description: '',
+		description: 'An inflated sense of one\'s own importance, which the Bible condemns as a sin that leads to disgrace and precedes a fall.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5434,7 +5434,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'priest',
 		title: 'Priest',
-		description: '',
+		description: 'A minister authorized to perform sacred rites, especially the Levitical priests of Israel who offered sacrifices and later all believers as a royal priesthood.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5444,7 +5444,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'prison',
 		title: 'Prison',
-		description: '',
+		description: 'A place of confinement for criminals or those awaiting trial, where several biblical figures including Joseph, Jeremiah, Peter, and Paul were held.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5454,7 +5454,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'prophecy',
 		title: 'Prophecy',
-		description: '',
+		description: 'A message inspired by God, often foretelling future events, which the Bible presents as the primary means of revealing God\'s purposes.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5464,7 +5464,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'prophet',
 		title: 'Prophet',
-		description: '',
+		description: 'A person inspired by God to deliver His message, including foretelling future events and forthtelling God\'s will, from Moses and Elijah to John the Baptizer.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5474,7 +5474,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'prophetic-patterns',
 		title: 'Prophetic Patterns',
-		description: '',
+		description: 'Types and symbols in Scripture that prefigure future realities, such as the tabernacle prefiguring heavenly things and the priesthood pointing to Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5484,7 +5484,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'proselyte',
 		title: 'Proselyte',
-		description: '',
+		description: 'A convert to Judaism from among the Gentiles who adopted Jewish religious practices, mentioned in the Gospels and Acts.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5494,7 +5494,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'prostitute',
 		title: 'Prostitute',
-		description: '',
+		description: 'A person who engages in sexual acts for payment, with the Bible condemning prostitution but showing mercy to repentant prostitutes.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5504,7 +5504,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'proverbs-book-of',
 		title: 'Proverbs, Book of',
-		description: '',
+		description: 'A book of the Hebrew Scriptures containing wise sayings, largely from Solomon, offering practical guidance for godly living.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5514,7 +5514,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'psalms-book-of',
 		title: 'Psalms, Book of',
-		description: '',
+		description: 'A book of the Hebrew Scriptures containing 150 songs and prayers used in Israelite worship, written primarily by David and other inspired composers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5524,7 +5524,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'purim',
 		title: 'Purim',
-		description: '',
+		description: 'A Jewish festival commemorating the deliverance of the Jews from Haman\'s plot, as recorded in the book of Esther.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5534,7 +5534,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'quail',
 		title: 'Quail',
-		description: '',
+		description: 'A small game bird that God provided as meat for the Israelites in the wilderness, both at Sinai and later during the Exodus.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5544,7 +5544,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'qualities',
 		title: 'Qualities',
-		description: '',
+		description: 'Distinctive attributes or characteristics, especially the fruitage of the spirit and the qualities of God such as love, justice, wisdom, and power.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5554,7 +5554,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'quarrel',
 		title: 'Quarrel',
-		description: '',
+		description: 'An angry dispute or argument, which the Bible warns against, instructing Christians to avoid quarreling and to pursue peace.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5564,7 +5564,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'queen',
 		title: 'Queen',
-		description: '',
+		description: 'The female ruler of a kingdom or the wife of a king, including notable queens such as the Queen of Sheba, Esther, and Candace of Ethiopia.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5574,7 +5574,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'quirinius',
 		title: 'Quirinius',
-		description: '',
+		description: 'Publius Sulpicius Quirinius, the Roman governor of Syria who conducted the census that brought Joseph and Mary to Bethlehem for Jesus\' birth.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5584,7 +5584,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'raamses-rameses',
 		title: 'Raamses, Rameses',
-		description: '',
+		description: 'A city in Egypt built by Hebrew slave labor in the region of Goshen, also called Rameses, associated with the Israelite oppression and Exodus.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5594,7 +5594,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'rachel',
 		title: 'Rachel',
-		description: '',
+		description: 'The beloved wife of Jacob, mother of Joseph and Benjamin, who died giving birth to Benjamin and was buried on the road to Bethlehem.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5604,7 +5604,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'rahab',
 		title: 'Rahab',
-		description: '',
+		description: 'A prostitute of Jericho who hid the Israelite spies and was spared when the city was destroyed, becoming an ancestor of Jesus.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5614,7 +5614,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'rain',
 		title: 'Rain',
-		description: '',
+		description: 'Precipitation essential for agriculture in Israel, sent by God as a blessing for obedience and withheld as a judgment.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5624,7 +5624,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'rainbow',
 		title: 'Rainbow',
-		description: '',
+		description: 'An arc of colors in the sky after rain, given by God as a sign of His covenant with Noah that He would never again destroy all flesh by a flood.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5634,7 +5634,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ransom',
 		title: 'Ransom',
-		description: '',
+		description: 'A price paid to redeem or free someone, especially Christ\'s sacrifice as a ransom to release mankind from sin and death.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5644,7 +5644,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'reading',
 		title: 'Reading',
-		description: '',
+		description: 'The act of interpreting written words, which the Bible encourages as a means of learning God\'s will and being transformed by His Word.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5654,7 +5654,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'rebelliousness',
 		title: 'Rebelliousness',
-		description: '',
+		description: 'Open resistance to authority, especially against God, which the Bible equates with the sin of divination and warns against as leading to destruction.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5664,7 +5664,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'reconciliation',
 		title: 'Reconciliation',
-		description: '',
+		description: 'The restoration of a relationship, especially between God and humanity through Christ\'s sacrifice, removing the enmity caused by sin.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5674,7 +5674,7 @@ export const insights: Cononical[] = [
 	{
 		id: 're-creation',
 		title: 'Re-Creation',
-		description: '',
+		description: 'The future restoration or renewal of all things, including the new heavens and new earth promised by God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5684,7 +5684,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'red-sea',
 		title: 'Red Sea',
-		description: '',
+		description: 'The sea that parted miraculously to allow Israel\'s escape from Egypt, through which the Israelites crossed on dry ground while the Egyptian army drowned.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5694,7 +5694,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'relief',
 		title: 'Relief',
-		description: '',
+		description: 'Assistance or comfort given to those in distress, including material help for the poor and spiritual encouragement for the weary.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5704,7 +5704,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'repentance',
 		title: 'Repentance',
-		description: '',
+		description: 'A change of mind and heart leading to turning away from sin and toward God, necessary for forgiveness and salvation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5714,7 +5714,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'reproof',
 		title: 'Reproof',
-		description: '',
+		description: 'An expression of disapproval or correction, which the Bible values as an act of love that leads to wisdom and life.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5724,7 +5724,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'reptiles',
 		title: 'Reptiles',
-		description: '',
+		description: 'Cold-blooded animals including snakes, lizards, and turtles, with some designated as unclean under the Mosaic Law.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5734,7 +5734,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'repurchase-repurchaser',
 		title: 'Repurchase, Repurchaser',
-		description: '',
+		description: 'The act of buying back or redeeming, as in the redemption of land or persons, with God as the Repurchaser of Israel.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5744,7 +5744,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'respect',
 		title: 'Respect',
-		description: '',
+		description: 'Due regard for the feelings, rights, and dignity of others, which the Bible commands children to show parents and all to show God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5754,7 +5754,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'restoration',
 		title: 'Restoration',
-		description: '',
+		description: 'The act of bringing back to a former state, especially the restoration of Israel from exile and the future restoration of all things through Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5764,7 +5764,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'resurrection',
 		title: 'Resurrection',
-		description: '',
+		description: 'The raising of the dead to life again, a fundamental Christian doctrine based on Christ\'s own resurrection and the promise of future resurrection for all.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5774,7 +5774,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'retribution',
 		title: 'Retribution',
-		description: '',
+		description: 'Punishment inflicted as vengeance for wrongdoing, which the Bible says belongs to God and will be carried out at judgment.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5784,7 +5784,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'revelation',
 		title: 'Revelation',
-		description: '',
+		description: 'The disclosure of divine truth or purpose, especially the book of Revelation which unveils future events and the triumph of God\'s Kingdom.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5794,7 +5794,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'revelation-to-john',
 		title: 'Revelation to John',
-		description: '',
+		description: 'The last book of the Bible, written by the apostle John, revealing future events through symbolic visions, including the end of Satan\'s system and the new creation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5804,7 +5804,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'reviling',
 		title: 'Reviling',
-		description: '',
+		description: 'Abusive and insulting speech directed at others, which the Bible condemns as inconsistent with Christian conduct.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5814,7 +5814,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'riches',
 		title: 'Riches',
-		description: '',
+		description: 'Wealth and material abundance, which the Bible warns against trusting in and encourages using generously for good works.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5824,7 +5824,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'righteousness',
 		title: 'Righteousness',
-		description: '',
+		description: 'The quality of being morally right and just, an attribute of God that He imputes to believers through faith and requires in their conduct.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5834,7 +5834,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'river',
 		title: 'River',
-		description: '',
+		description: 'A natural flowing watercourse, significant in the Bible including the Euphrates, Jordan, and the river of life in Revelation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5844,7 +5844,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'rod-staff',
 		title: 'Rod, Staff',
-		description: '',
+		description: 'A stick used for walking, shepherding, discipline, and as a symbol of authority, including Moses\' rod and Aaron\'s rod that budded.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5854,7 +5854,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'roman-empire',
 		title: 'Roman Empire',
-		description: '',
+		description: 'The world power that ruled the Mediterranean during Jesus\' time and the first centuries of the Christian era, mentioned in prophecy and history.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5864,7 +5864,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'rome',
 		title: 'Rome',
-		description: '',
+		description: 'The capital of the Roman Empire, where Paul was imprisoned and wrote several letters, and the city to which the Christian congregation addressed the book of Romans.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5874,7 +5874,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ruler',
 		title: 'Ruler',
-		description: '',
+		description: 'One who exercises authority over a people or territory, with all rulers ultimately subject to God\'s sovereignty.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5884,7 +5884,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sabbath-day',
 		title: 'Sabbath Day',
-		description: '',
+		description: 'The seventh day of the week, appointed by God as a day of rest under the Mosaic Law, commemorating the completion of creation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5894,7 +5894,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sabbath-year',
 		title: 'Sabbath Year',
-		description: '',
+		description: 'Every seventh year when the land was to lie fallow and debts were to be released, as commanded in the Mosaic Law.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5904,7 +5904,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sacred-secret',
 		title: 'Sacred Secret',
-		description: '',
+		description: 'A divine mystery hidden in past ages but now revealed, especially the purpose of God regarding Christ and the gathering of believers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5914,7 +5914,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sacrifices',
 		title: 'Sacrifices',
-		description: '',
+		description: 'Offerings presented to God, including animal sacrifices under the Law which foreshadowed the perfect sacrifice of Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5924,7 +5924,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'salt',
 		title: 'Salt',
-		description: '',
+		description: 'A mineral used for seasoning and preserving food, required in sacrifices and used figuratively for the disciples\' preserving influence.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5934,7 +5934,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'salt-sea',
 		title: 'Salt Sea',
-		description: '',
+		description: 'The Dead Sea, a body of water at the southern end of the Jordan Valley with extreme salinity, marking the boundary of the Promised Land.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5944,7 +5944,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'samaria',
 		title: 'Samaria',
-		description: '',
+		description: 'The capital of the northern kingdom of Israel, built by Omri, and later a Roman city where Philip preached and Simon the sorcerer practiced.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5954,7 +5954,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'samaritan',
 		title: 'Samaritan',
-		description: '',
+		description: 'An inhabitant of Samaria, regarded by Jews as heretical, but featured in Jesus\' parable of the good Samaritan as an example of neighborly love.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5964,7 +5964,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'samson',
 		title: 'Samson',
-		description: '',
+		description: 'A judge of Israel with supernatural strength from God, who fought the Philistines, was betrayed by Delilah, and destroyed the Philistine temple in his death.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5974,17 +5974,17 @@ export const insights: Cononical[] = [
 	{
 		id: 'samuel',
 		title: 'Samuel',
-		description: '',
-		source: '',
+		description: 'A prophet and the last judge of Israel who anointed the nation\'s first two kings, Saul and David, and served as a faithful intermediary between God and His people.',
+		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Samuel/',
 		href: '',
 		scripture: [],
-		date: '',
+		date: 'c.1200bce',
 		tags: []
 	},
 	{
 		id: 'sanctification',
 		title: 'Sanctification',
-		description: '',
+		description: 'The process of being made holy, set apart for God\'s use, accomplished through Christ and the holy spirit in believers.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -5994,7 +5994,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sanctuary',
 		title: 'Sanctuary',
-		description: '',
+		description: 'A sacred or holy place, especially the tabernacle and temple where God\'s presence dwelt among His people.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6004,7 +6004,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sandal',
 		title: 'Sandal',
-		description: '',
+		description: 'A type of footwear consisting of a sole strapped to the foot, the common footwear in biblical times, removed in holy places.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6014,7 +6014,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sanhedrin',
 		title: 'Sanhedrin',
-		description: '',
+		description: 'The supreme Jewish council in Jerusalem, composed of chief priests, elders, and scribes, which ruled on religious and legal matters and tried Jesus.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6024,7 +6024,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sarah',
 		title: 'Sarah',
-		description: '',
+		description: 'The wife of Abraham and mother of Isaac, originally named Sarai, who was blessed by God to bear a child in her old age and is honored as a woman of faith.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6034,7 +6034,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sardis',
 		title: 'Sardis',
-		description: '',
+		description: 'An ancient city in Asia Minor, site of one of the seven congregations in Revelation, criticized for having a reputation of being alive but being dead.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6044,7 +6044,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sargon',
 		title: 'Sargon',
-		description: '',
+		description: 'An Assyrian king who completed the conquest of the northern kingdom of Israel and took the ten tribes into captivity.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6054,7 +6054,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'satan',
 		title: 'Satan',
-		description: '',
+		description: 'The primary adversary of God and humans, originally a perfect angel who rebelled and became the Devil, the tempter, and the ruler of this world.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6064,7 +6064,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'saul',
 		title: 'Saul',
-		description: '',
+		description: 'The first king of Israel, chosen for his height and appearance but rejected due to disobedience, who persecuted David and died in battle against the Philistines.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6074,7 +6074,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'saul-of-tarsus',
 		title: 'Saul of Tarsus',
-		description: '',
+		description: 'The Hebrew name of the apostle Paul before his conversion, a Pharisee who persecuted Christians until encountering Jesus on the road to Damascus.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6084,7 +6084,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'scepter',
 		title: 'Scepter',
-		description: '',
+		description: 'A royal staff or rod symbolizing sovereignty and authority, used in prophecy regarding the everlasting dominion of the Messiah.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6094,7 +6094,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'school',
 		title: 'School',
-		description: '',
+		description: 'A place of instruction and learning, with the Bible referring to schools of the prophets and Paul teaching in the school of Tyrannus.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6104,7 +6104,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'scribe',
 		title: 'Scribe',
-		description: '',
+		description: 'A person skilled in writing, serving as a copyist of Scripture, teacher of the Law, and in the New Testament as an opponent of Jesus.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6114,7 +6114,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'scroll-roll',
 		title: 'Scroll, Roll',
-		description: '',
+		description: 'A roll of papyrus or parchment used for writing, the standard book form in biblical times, with scrolls unrolled horizontally for reading.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6124,7 +6124,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'scythian',
 		title: 'Scythian',
-		description: '',
+		description: 'A barbarian people from the region north of the Black Sea, used by Paul as a term for the most uncivilized peoples, yet all are one in Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6134,7 +6134,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sea',
 		title: 'Sea',
-		description: '',
+		description: 'Large bodies of salt water, including the Mediterranean, Red Sea, and Sea of Galilee, used in prophecy as a symbol of restless humanity.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6144,7 +6144,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sea-of-galilee',
 		title: 'Sea of Galilee',
-		description: '',
+		description: 'A freshwater lake in northern Israel where Jesus walked on water, calmed storms, and called fishermen as disciples, the setting of much of his ministry.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6154,7 +6154,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'secretary',
 		title: 'Secretary',
-		description: '',
+		description: 'A person who wrote down or copied documents, including secretaries who recorded kings\' decrees and letters such as Tertius who wrote Paul\'s letter to the Romans.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6164,7 +6164,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'seed',
 		title: 'Seed',
-		description: '',
+		description: 'The reproductive part of plants, used figuratively for offspring, descendants, and the word of God that produces fruit in receptive hearts.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6174,7 +6174,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'self-control',
 		title: 'Self-Control',
-		description: '',
+		description: 'The ability to restrain one\'s impulses and desires, a fruit of the spirit essential for Christian living and moral purity.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6184,7 +6184,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'selfishness',
 		title: 'Selfishness',
-		description: '',
+		description: 'Excessive concern for one\'s own welfare at the expense of others, which the Bible identifies as a characteristic of the last days and contrary to love.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6194,7 +6194,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sennacherib',
 		title: 'Sennacherib',
-		description: '',
+		description: 'The Assyrian king who invaded Judah during Hezekiah\'s reign and besieged Jerusalem, but withdrew after 185,000 of his soldiers were killed by an angel.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6204,7 +6204,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'senses',
 		title: 'Senses',
-		description: '',
+		description: 'The faculties of perception including sight, hearing, touch, taste, and smell, which the Bible mentions in both literal and figurative contexts.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6214,7 +6214,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'serpent-snake',
 		title: 'Serpent, Snake',
-		description: '',
+		description: 'A legless reptile, used in the Bible as the instrument of Satan in Eden, as a symbol of wisdom and danger, and as a sign of healing in the wilderness.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6224,7 +6224,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'seth',
 		title: 'Seth',
-		description: '',
+		description: 'The third son of Adam and Eve, born after Abel\'s death, through whom the promised line of descendants leading to the Messiah continued.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6234,7 +6234,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'seventy-weeks',
 		title: 'Seventy Weeks',
-		description: '',
+		description: 'A prophetic period in Daniel of 70 weeks of years (490 years), marking the coming of the Messiah and the end of the Jewish system.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6244,7 +6244,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sex',
 		title: 'Sex',
-		description: '',
+		description: 'The physical act of sexual intercourse, designed by God for marriage, with the Bible setting boundaries and condemning sexual immorality.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6254,7 +6254,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'shear-jashub',
 		title: 'Shear-jashub',
-		description: '',
+		description: 'The symbolic name meaning A Remnant Will Return, given to Isaiah\'s son as a sign that a remnant of Israel would survive the Assyrian invasion.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6264,7 +6264,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sheba',
 		title: 'Sheba',
-		description: '',
+		description: 'A region in southern Arabia, known for its wealth and trade, whose queen visited Solomon to test his wisdom.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6274,7 +6274,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sheep',
 		title: 'Sheep',
-		description: '',
+		description: 'A domesticated animal commonly raised in ancient Israel, used extensively in sacrifice and as a symbol of God\'s people under the care of the Shepherd.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6284,17 +6284,17 @@ export const insights: Cononical[] = [
 	{
 		id: 'shem',
 		title: 'Shem',
-		description: '',
-		source: '',
+		description: 'The oldest son of Noah who was blessed along with his brothers after the Flood, and from whom the Semitic peoples, including the Israelites, descended.',
+		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Shem/',
 		href: '',
 		scripture: [],
-		date: '',
+		date: '2468bce-1868bce',
 		tags: []
 	},
 	{
 		id: 'sheol',
 		title: 'Sheol',
-		description: '',
+		description: 'The Hebrew word for the common grave of mankind, where the dead are unconscious, awaiting a resurrection.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6304,7 +6304,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'shepherd',
 		title: 'Shepherd',
-		description: '',
+		description: 'One who tends and cares for sheep, used throughout the Bible as a metaphor for God, Christ, and congregation elders who care for God\'s people.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6314,7 +6314,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'shiloh',
 		title: 'Shiloh',
-		description: '',
+		description: 'A city in Ephraim where the tabernacle was set up after the conquest and remained during the period of the judges, also a prophetic title for the Messiah.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6324,7 +6324,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'shining-one',
 		title: 'Shining One',
-		description: '',
+		description: 'A term used in Isaiah\'s prophecy referring to the king of Babylon, later applied by some to Satan as the one who sought to exalt himself above God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6334,7 +6334,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ship',
 		title: 'Ship',
-		description: '',
+		description: 'A sea vessel used for transportation and trade, important in biblical accounts including Jonah\'s flight and Paul\'s voyages.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6344,7 +6344,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'shishak',
 		title: 'Shishak',
-		description: '',
+		description: 'An Egyptian pharaoh who invaded Judah during Rehoboam\'s reign and plundered the temple and royal treasures.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6354,7 +6354,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'shushan',
 		title: 'Shushan',
-		description: '',
+		description: 'The winter capital of the Persian Empire, also called Susa, where the events of Esther and Nehemiah took place.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6364,7 +6364,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sign',
 		title: 'Sign',
-		description: '',
+		description: 'A visible indication or miracle that confirms a message or reveals God\'s purpose, including signs of the times and signs of Christ\'s presence.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6374,7 +6374,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'siloam',
 		title: 'Siloam',
-		description: '',
+		description: 'A pool in Jerusalem where Jesus sent a blind man to wash and receive sight, fed by the waters of the Gihon spring through Hezekiah\'s tunnel.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6384,7 +6384,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sin',
 		title: 'Sin',
-		description: '',
+		description: 'The transgression of God\'s law, inherited from Adam, which separates humans from God and requires atonement through Christ\'s sacrifice.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6394,7 +6394,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sinai',
 		title: 'Sinai',
-		description: '',
+		description: 'The mountain in the wilderness where God gave the Law to Moses and established the covenant with Israel.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6404,7 +6404,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'singleness',
 		title: 'Singleness',
-		description: '',
+		description: 'The state of being unmarried, which the Bible presents as an honorable condition that allows for undivided service to God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6414,7 +6414,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sisera',
 		title: 'Sisera',
-		description: '',
+		description: 'The commander of the Canaanite army under King Jabin who was defeated by Deborah and Barak and killed by Jael with a tent peg.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6424,7 +6424,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'skin',
 		title: 'Skin',
-		description: '',
+		description: 'The outer covering of the body, used literally in the Bible and figuratively for the condition of one\'s health and appearance.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6434,7 +6434,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sky',
 		title: 'Sky',
-		description: '',
+		description: 'The expanse above the earth where clouds and celestial bodies appear, also called the heavens, declared by David to declare God\'s glory.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6444,7 +6444,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'slave',
 		title: 'Slave',
-		description: '',
+		description: 'A person owned by another, with the Mosaic Law regulating slavery and the New Testament using the term to describe believers as slaves of Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6454,7 +6454,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'smyrna',
 		title: 'Smyrna',
-		description: '',
+		description: 'An ancient city in Asia Minor, site of one of the seven congregations in Revelation, commended for its faithfulness under persecution.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6464,7 +6464,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'social-gatherings',
 		title: 'Social Gatherings',
-		description: '',
+		description: 'Meetings of people for fellowship and enjoyment, which the Bible permits but warns against excesses and immoral behavior.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6474,7 +6474,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sodom',
 		title: 'Sodom',
-		description: '',
+		description: 'A city in the plain of Jordan destroyed by God with fire and brimstone for its extreme wickedness, used as a symbol of divine judgment.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6484,7 +6484,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'solomon',
 		title: 'Solomon',
-		description: '',
+		description: 'The son of David and Bathsheba, king of Israel, renowned for his wisdom, wealth, and building the temple, but later led into idolatry by his foreign wives.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6494,7 +6494,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'solomons-temple',
 		title: "Solomon's Temple",
-		description: '',
+		description: 'The first temple in Jerusalem, built by Solomon on Mount Moriah, a magnificent structure that housed the Ark of the Covenant and served as the center of Israelite worship.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6504,7 +6504,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'song',
 		title: 'Song',
-		description: '',
+		description: 'A musical composition with words, used extensively in biblical worship including the songs of Moses, Deborah, and the Psalms.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6514,7 +6514,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'son-of-man',
 		title: 'Son of Man',
-		description: '',
+		description: 'A title used by Jesus for himself, emphasizing his humanity and his role as the representative human, with messianic connotations from Daniel\'s prophecy.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6524,7 +6524,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'soul',
 		title: 'Soul',
-		description: '',
+		description: 'A living being or person, used in the Bible to refer to the whole person rather than an immortal entity separate from the body.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6534,7 +6534,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sovereignty',
 		title: 'Sovereignty',
-		description: '',
+		description: 'Supreme authority and power to rule, which belongs absolutely to God, who exercises His sovereignty in righteousness and love.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6544,7 +6544,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'sower-sowing',
 		title: 'Sower, Sowing',
-		description: '',
+		description: 'One who scatters seed for planting, used by Jesus in the parable of the sower to illustrate different responses to the word of God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6554,7 +6554,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'speech',
 		title: 'Speech',
-		description: '',
+		description: 'The expression of thoughts through spoken words, with the Bible emphasizing truthful, edifying, and gracious speech that reflects a righteous heart.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6564,7 +6564,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'spice',
 		title: 'Spice',
-		description: '',
+		description: 'Aromatic plant substances used in cooking, anointing oil, incense, and burial preparations, imported from distant lands at great expense.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6574,7 +6574,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'spirit',
 		title: 'Spirit',
-		description: '',
+		description: 'The active force or life principle in living beings, also used for God\'s holy spirit and for mental disposition or attitude.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6584,7 +6584,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'spiritism',
 		title: 'Spiritism',
-		description: '',
+		description: 'The practice of communicating with spirits or demons through mediums and divination, strictly forbidden in the Bible as an abomination.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6594,7 +6594,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'spiritual-temple',
 		title: 'Spiritual Temple',
-		description: '',
+		description: 'A figurative temple made up of anointed believers, built on Christ as the foundation cornerstone, where spiritual sacrifices are offered to God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6604,7 +6604,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'star',
 		title: 'Star',
-		description: '',
+		description: 'A luminous celestial body, created by God, used for signs and seasons, and used figuratively for angels, rulers, and faithful ones.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6614,7 +6614,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'steward',
 		title: 'Steward',
-		description: '',
+		description: 'One entrusted with managing another\'s property or affairs, used figuratively for those entrusted with God\'s mysteries and the congregation\'s resources.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6624,7 +6624,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'stoics',
 		title: 'Stoics',
-		description: '',
+		description: 'Followers of a Greek philosophy that emphasized self-control and virtue, some of whom encountered Paul in Athens and heard him speak on the Areopagus.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6634,7 +6634,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'stone',
 		title: 'Stone',
-		description: '',
+		description: 'A piece of rock, used in construction and as weapons, with Christ as the chief cornerstone and stones representing believers built into a spiritual house.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6644,7 +6644,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'straw',
 		title: 'Straw',
-		description: '',
+		description: 'Stalks of grain after threshing, used as animal bedding and fodder, and mixed with clay for making bricks in ancient Egypt.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6654,7 +6654,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'street',
 		title: 'Street',
-		description: '',
+		description: 'A paved or prepared road within a city, where public life, commerce, and social interaction occurred in biblical towns.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6664,7 +6664,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'strife',
 		title: 'Strife',
-		description: '',
+		description: 'Conflict and disagreement, which the Bible warns against as a work of the flesh that disrupts unity and grieves the spirit.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6674,7 +6674,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'submissiveness',
 		title: 'Submissiveness',
-		description: '',
+		description: 'The quality of yielding to authority, with the Bible teaching submission to God, governing authorities, and proper family relationships.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6684,7 +6684,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'suffering',
 		title: 'Suffering',
-		description: '',
+		description: 'Pain and distress experienced physically or emotionally, which the Bible attributes to sin and Satan\'s world, but uses to develop endurance and faith.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6694,7 +6694,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'superior-authorities',
 		title: 'Superior Authorities',
-		description: '',
+		description: 'Human governing authorities that Christians are commanded to be subject to, recognizing them as permitted by God for maintaining order.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6704,7 +6704,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'synagogue',
 		title: 'Synagogue',
-		description: '',
+		description: 'A Jewish place of worship and instruction where the Scriptures were read and taught, used by Jesus and Paul as venues for teaching.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6714,7 +6714,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'syria',
 		title: 'Syria',
-		description: '',
+		description: 'A region north of Israel, also called Aram, whose capital was Damascus, often in conflict with Israel and mentioned in connection with the conversion of Saul.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6724,7 +6724,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'systems-of-things',
 		title: 'Systems of Things',
-		description: '',
+		description: 'The arrangement or order of society, with the present wicked system contrasted with the new system of righteousness to come under God\'s Kingdom.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6734,7 +6734,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'tabernacle',
 		title: 'Tabernacle',
-		description: '',
+		description: 'The portable tent sanctuary built by Moses in the wilderness, where God\'s presence dwelt among Israel and where sacrifices and worship were conducted.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6744,7 +6744,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'talent',
 		title: 'Talent',
-		description: '',
+		description: 'A unit of weight and a large sum of money in ancient times, used in Jesus\' parable about a man entrusting his property to slaves.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6754,7 +6754,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'taxation',
 		title: 'Taxation',
-		description: '',
+		description: 'The system of collecting money for government support, with the Bible teaching Christians to pay taxes to Caesar while rendering devotion to God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6764,7 +6764,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'tax-collector',
 		title: 'Tax Collector',
-		description: '',
+		description: 'A person employed by the Romans to collect taxes, often despised for extortion and collaboration, yet some became followers of Jesus.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6774,7 +6774,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'teacher-teaching',
 		title: 'Teacher, Teaching',
-		description: '',
+		description: 'One who instructs others, especially in spiritual matters, with Jesus as the Great Teacher and the congregation having teachers as gifts from God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6784,7 +6784,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'temple',
 		title: 'Temple',
-		description: '',
+		description: 'The sacred building in Jerusalem where God\'s presence dwelled, first built by Solomon, rebuilt by Zerubbabel, and expanded by Herod, destroyed in 70 CE.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6794,7 +6794,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ten-plagues',
 		title: 'Ten Plagues',
-		description: '',
+		description: 'The ten calamities God brought upon Egypt through Moses to compel Pharaoh to release Israel: blood, frogs, lice, flies, livestock disease, boils, hail, locusts, darkness, and death of the firstborn.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6804,7 +6804,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ten-words',
 		title: 'Ten Words',
-		description: '',
+		description: 'Another term for the Ten Commandments, the foundational laws given by God to Israel at Mount Sinai, written on two stone tablets.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6814,7 +6814,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'teraphim',
 		title: 'Teraphim',
-		description: '',
+		description: 'Household idols used in ancient times for divination and worship, which Rachel stole from her father Laban and which were condemned by God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6824,7 +6824,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'thessalonica',
 		title: 'Thessalonica',
-		description: '',
+		description: 'A major city in Macedonia where Paul established a congregation, to whom he wrote two letters addressing the Lord\'s return.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6834,7 +6834,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'thigh',
 		title: 'Thigh',
-		description: '',
+		description: 'The upper part of the leg, used in the Bible for the place where swords were carried and where oaths were sworn by placing a hand under the thigh.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6844,7 +6844,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'thinking-ability',
 		title: 'Thinking Ability',
-		description: '',
+		description: 'The capacity to reason and discern, which the Bible encourages developing as a safeguard against foolish and sinful behavior.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6854,7 +6854,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'thomas',
 		title: 'Thomas',
-		description: '',
+		description: 'One of the 12 apostles of Jesus, known as Doubting Thomas because he initially refused to believe in Jesus\' resurrection until he saw the wounds.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6864,7 +6864,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'threshing',
 		title: 'Threshing',
-		description: '',
+		description: 'The process of separating grain from stalks, done with a flail or by having animals trample the grain on a threshing floor.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6874,7 +6874,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'throne',
 		title: 'Throne',
-		description: '',
+		description: 'A ceremonial seat of a monarch or judge, representing authority and rule, with God\'s throne in heaven and the throne of David promised to Christ.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6884,7 +6884,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'thyatira',
 		title: 'Thyatira',
-		description: '',
+		description: 'A city in Asia Minor, site of one of the seven congregations in Revelation, commended for love and faith but warned about tolerating false teaching.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6894,7 +6894,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'time-indefinite',
 		title: 'Time Indefinite',
-		description: '',
+		description: 'A term used in the Bible to denote an indeterminate period of time, sometimes extending into the future without a set end.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6904,7 +6904,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'time-of-the-end',
 		title: 'Time of the End',
-		description: '',
+		description: 'The period immediately preceding the end of the present system of things, marked by global turmoil and the preaching of the Kingdom.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6914,7 +6914,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'time-periods',
 		title: 'Time Periods',
-		description: '',
+		description: 'Divisions of time used in biblical chronology and prophecy, including days, weeks, months, years, and prophetic periods.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6924,7 +6924,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'tithe',
 		title: 'Tithe',
-		description: '',
+		description: 'A tenth of income given for religious purposes, practiced by Abraham and Jacob and required under the Mosaic Law for support of the Levites.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6934,7 +6934,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'titles',
 		title: 'Titles',
-		description: '',
+		description: 'Names or designations indicating rank, office, or relationship, used extensively in the Bible for God, Christ, and various officials.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6944,7 +6944,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'toe',
 		title: 'Toe',
-		description: '',
+		description: 'A digit of the foot, mentioned in the Bible in the context of the statue in Nebuchadnezzar\'s dream, representing the divided condition of the final world power.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6954,7 +6954,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'tongue',
 		title: 'Tongue',
-		description: '',
+		description: 'The muscular organ of speech, used figuratively for language and for the power of speech to bless or curse.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6964,7 +6964,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'tools',
 		title: 'Tools',
-		description: '',
+		description: 'Instruments used for manual work, mentioned in the Bible including plows, axes, hammers, saws, and knives, reflecting ancient crafts and trades.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6974,7 +6974,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'topheth',
 		title: 'Topheth',
-		description: '',
+		description: 'A place in the Valley of Hinnom where child sacrifices were offered to Molech, later used as a refuse dump and associated with judgment.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6984,7 +6984,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'torment',
 		title: 'Torment',
-		description: '',
+		description: 'Severe suffering or anguish, used in the Bible for physical pain and figuratively for the experience of judgment and destruction.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -6994,7 +6994,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'torrent-valley',
 		title: 'Torrent Valley',
-		description: '',
+		description: 'A seasonal stream or wadi that flows only during the rainy season, common in the hill country of Israel and mentioned often in Scripture.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7004,7 +7004,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'torture-stake',
 		title: 'Torture Stake',
-		description: '',
+		description: 'A stake or pole used for execution, on which Jesus was impaled, becoming the means of salvation for all who exercise faith.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7014,7 +7014,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'tower',
 		title: 'Tower',
-		description: '',
+		description: 'A tall structure used for defense, watchtowers in vineyards, and the Tower of Babel, also used figuratively for strong protection.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7024,7 +7024,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'tradition',
 		title: 'Tradition',
-		description: '',
+		description: 'Customs and beliefs passed down through generations, which the Bible distinguishes between beneficial godly traditions and human traditions that nullify God\'s word.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7034,7 +7034,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'training',
 		title: 'Training',
-		description: '',
+		description: 'Instruction and discipline that develops skills and character, especially the training of children and spiritual training for ministry.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7044,7 +7044,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'transfiguration',
 		title: 'Transfiguration',
-		description: '',
+		description: 'The event where Jesus was transformed before Peter, James, and John, appearing in glory with Moses and Elijah, confirming his divine sonship.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7054,7 +7054,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'translations',
 		title: 'Translations',
-		description: '',
+		description: 'Versions of the Bible in languages other than the original Hebrew, Aramaic, and Greek, making Scripture accessible to all peoples.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7064,7 +7064,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'trap',
 		title: 'Trap',
-		description: '',
+		description: 'A device for capturing animals, used figuratively in the Bible for spiritual dangers and snares set by the Devil.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7074,7 +7074,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'trees',
 		title: 'Trees',
-		description: '',
+		description: 'Large woody plants, significant in the Bible including the tree of life, the tree of knowledge, and various trees used as symbols of righteousness.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7084,7 +7084,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'triads',
 		title: 'Triads',
-		description: '',
+		description: 'Groups of three deities worshiped in various ancient religions, such as the Babylonian triad and Egyptian triad, contrasting with biblical monotheism.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7094,7 +7094,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'tribe',
 		title: 'Tribe',
-		description: '',
+		description: 'A social group based on common descent, with Israel divided into 12 tribes descended from Jacob\'s sons, each receiving a territory.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7104,7 +7104,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'tribulation',
 		title: 'Tribulation',
-		description: '',
+		description: 'Great distress or suffering, especially the great tribulation foretold by Jesus as a time of unprecedented trouble preceding the end.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7114,7 +7114,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'trumpet',
 		title: 'Trumpet',
-		description: '',
+		description: 'A wind instrument used for signaling in war, announcing festivals, and in prophecy for warning and the resurrection call.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7124,7 +7124,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'truth',
 		title: 'Truth',
-		description: '',
+		description: 'Conformity to fact and reality, with God described as the God of truth and Jesus as the truth, and the Bible as the word of truth.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7134,7 +7134,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'turtledove',
 		title: 'Turtledove',
-		description: '',
+		description: 'A small bird used in sacrifices under the Mosaic Law, especially for purification and the offerings of the poor.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7144,7 +7144,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'tyre',
 		title: 'Tyre',
-		description: '',
+		description: 'A major Phoenician port city on the Mediterranean coast, known for its maritime trade and the quality of its merchants, with whom Solomon traded.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7154,7 +7154,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'understanding',
 		title: 'Understanding',
-		description: '',
+		description: 'The ability to comprehend and discern meaning, which the Bible presents as a gift from God that comes through wisdom and knowledge.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7164,7 +7164,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'undeserved-kindness',
 		title: 'Undeserved Kindness',
-		description: '',
+		description: 'God\'s unmerited favor and gracious gift of salvation through Christ, the basis of Christian hope and standing before God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7174,7 +7174,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'ur',
 		title: 'Ur',
-		description: '',
+		description: 'An ancient city in Mesopotamia, the original home of Abraham before he left at God\'s command to journey to Canaan.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7184,7 +7184,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'utensils',
 		title: 'Utensils',
-		description: '',
+		description: 'Vessels and implements used in households and the tabernacle, including pots, pans, bowls, and other containers for cooking and serving.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7194,7 +7194,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'uzziah',
 		title: 'Uzziah',
-		description: '',
+		description: 'A king of Judah who reigned for 52 years, known for his military strength and building projects, but struck with leprosy for burning incense in the temple.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7204,7 +7204,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'valley',
 		title: 'Valley',
-		description: '',
+		description: 'A low area between hills or mountains, often fertile and significant in biblical geography including the Valley of Achor, Valley of Elah, and Valley of Jehoshaphat.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7214,7 +7214,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'vellum',
 		title: 'Vellum',
-		description: '',
+		description: 'A fine writing material made from calfskin, used for important manuscripts including early copies of the Bible.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7224,7 +7224,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'vengeance',
 		title: 'Vengeance',
-		description: '',
+		description: 'Punishment inflicted in retribution, which the Bible says belongs to God, but human authorities may carry out as ministers of God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7234,7 +7234,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'venom',
 		title: 'Venom',
-		description: '',
+		description: 'Poison produced by snakes and other animals, used figuratively for destructive speech that harms others.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7244,7 +7244,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'versions',
 		title: 'Versions',
-		description: '',
+		description: 'Different translations or editions of the Bible, including the Septuagint, Vulgate, and various modern versions in many languages.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7254,7 +7254,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'vessels',
 		title: 'Vessels',
-		description: '',
+		description: 'Containers or utensils used for storage, cooking, and worship, used figuratively for people as vessels of mercy or vessels for honorable use.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7264,7 +7264,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'vine',
 		title: 'Vine',
-		description: '',
+		description: 'A climbing plant that produces grapes, cultivated extensively in Israel and used by Jesus as a symbol of himself and his relationship with his disciples.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7274,7 +7274,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'viper',
 		title: 'Viper',
-		description: '',
+		description: 'A venomous snake, mentioned in the Bible including the one that fastened on Paul\'s hand in Malta, and used by Jesus to describe the Pharisees.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7284,7 +7284,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'virgin',
 		title: 'Virgin',
-		description: '',
+		description: 'A person who has not had sexual intercourse, with biblical emphasis on virginity before marriage and the figurative use of virgins in Jesus\' parable.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7294,7 +7294,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'vision',
 		title: 'Vision',
-		description: '',
+		description: 'A supernatural revelation received in a dream or trance, used by God to communicate His will and reveal future events to prophets.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7304,7 +7304,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'vow',
 		title: 'Vow',
-		description: '',
+		description: 'A solemn promise made to God, which the Bible treats as a serious obligation that must be fulfilled, with specific regulations regarding vows in the Law.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7314,7 +7314,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'walking',
 		title: 'Walking',
-		description: '',
+		description: 'The act of moving on foot, used throughout the Bible figuratively for one\'s conduct, manner of life, and relationship with God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7324,7 +7324,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'walls',
 		title: 'Walls',
-		description: '',
+		description: 'Structures built for defense, privacy, and division, notably the walls of Jericho and Jerusalem, used figuratively for protection and salvation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7334,7 +7334,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'war',
 		title: 'War',
-		description: '',
+		description: 'Armed conflict between nations or groups, which the Bible prophesies will cease when God\'s Kingdom brings peace to the earth.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7344,7 +7344,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'washing-of-feet',
 		title: 'Washing of Feet',
-		description: '',
+		description: 'An act of hospitality in biblical culture, performed by Jesus as an example of humility and service to his disciples at the Last Supper.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7354,7 +7354,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'washing-of-hands',
 		title: 'Washing of Hands',
-		description: '',
+		description: 'A ceremonial cleansing practiced in Israelite worship and tradition, used by Pilate to symbolically disclaim responsibility for Jesus\' death.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7364,7 +7364,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'watchman',
 		title: 'Watchman',
-		description: '',
+		description: 'A guard stationed on city walls or towers to warn of approaching danger, used figuratively for prophets who warn God\'s people.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7374,7 +7374,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'water',
 		title: 'Water',
-		description: '',
+		description: 'A vital liquid essential for life, used in the Bible for cleansing, refreshment, and as a symbol of God\'s provision and eternal life.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7384,7 +7384,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'weaving',
 		title: 'Weaving',
-		description: '',
+		description: 'The craft of making fabric by interlacing threads, a common domestic activity in biblical times, with skilled weavers involved in making the tabernacle curtains.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7394,7 +7394,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'week',
 		title: 'Week',
-		description: '',
+		description: 'A period of seven days, established at creation and central to the Sabbath commandment and prophetic periods like Daniel\'s seventy weeks.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7404,7 +7404,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'weights-and-measures',
 		title: 'Weights and Measures',
-		description: '',
+		description: 'Standards for determining quantity and value in commerce, with the Law requiring honest weights and condemning dishonest trade practices.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7414,7 +7414,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'wheat',
 		title: 'Wheat',
-		description: '',
+		description: 'A staple grain crop in Israel, used for bread and in offerings, and used by Jesus in parables about the Kingdom and the separation of wheat from weeds.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7424,7 +7424,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'wickedness',
 		title: 'Wickedness',
-		description: '',
+		description: 'Evil and immoral behavior, which the Bible attributes to the human heart and Satan\'s influence, ultimately to be eradicated by God\'s judgment.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7434,7 +7434,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'widow',
 		title: 'Widow',
-		description: '',
+		description: 'A woman whose husband has died, with the Bible commanding special care and provision for widows as an important expression of pure religion.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7444,7 +7444,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'wife',
 		title: 'Wife',
-		description: '',
+		description: 'A married woman, with the Bible describing the wife\'s role as a helper to her husband and instructing husbands to love and honor their wives.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7454,7 +7454,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'wilderness',
 		title: 'Wilderness',
-		description: '',
+		description: 'A desolate, uninhabited region, significant in the Bible including Israel\'s 40 years of wandering, Jesus\' temptation, and as a place of refuge.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7464,7 +7464,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'wind',
 		title: 'Wind',
-		description: '',
+		description: 'Moving air, used in the Bible as a natural force and figuratively for God\'s spirit, the breath of life, and the transience of human life.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7474,7 +7474,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'wine-and-strong-drink',
 		title: 'Wine and Strong Drink',
-		description: '',
+		description: 'Alcoholic beverages consumed in biblical times, with wine used in celebrations and as a drink offering, but condemned when abused.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7484,7 +7484,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'wineskins',
 		title: 'Wineskins',
-		description: '',
+		description: 'Animal skins used for storing and fermenting wine, used by Jesus in an illustration about not putting new wine into old wineskins.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7494,7 +7494,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'winnowing',
 		title: 'Winnowing',
-		description: '',
+		description: 'The process of separating grain from chaff by throwing it into the wind, used figuratively for judgment and division of the righteous from the wicked.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7504,7 +7504,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'wisdom',
 		title: 'Wisdom',
-		description: '',
+		description: 'The ability to apply knowledge with good judgment, which the Bible presents as beginning with the fear of God and being more valuable than gold.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7514,7 +7514,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'woman',
 		title: 'Woman',
-		description: '',
+		description: 'An adult female, created by God as a complement to man, with the Bible describing both the honored position of women and specific roles in the congregation.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7524,7 +7524,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'wool',
 		title: 'Wool',
-		description: '',
+		description: 'The soft hair of sheep used for making cloth, a common textile in ancient Israel, with the Law forbidding mixing wool and linen in garments.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7534,7 +7534,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'word-the',
 		title: 'Word, The',
-		description: '',
+		description: 'A title for Jesus Christ used by John, identifying him as the divine Word who was with God in the beginning and became flesh.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7544,7 +7544,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'work',
 		title: 'Work',
-		description: '',
+		description: 'Physical or mental effort directed toward a purpose, which the Bible commends as honorable and commands believers to engage in honest labor.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7554,7 +7554,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'world',
 		title: 'World',
-		description: '',
+		description: 'The inhabited earth and its human society, used in the Bible both for the physical world and for the ungodly system of things opposed to God.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7564,7 +7564,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'worship',
 		title: 'Worship',
-		description: '',
+		description: 'Reverent devotion and service rendered to God, which the Bible says must be in spirit and truth, directed exclusively to Jehovah.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7574,7 +7574,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'writing',
 		title: 'Writing',
-		description: '',
+		description: 'The act of recording information in written form, used by God in providing the Scriptures and by biblical figures for recording laws, prophecies, and letters.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7584,7 +7584,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'year',
 		title: 'Year',
-		description: '',
+		description: 'A unit of time based on the earth\'s revolution around the sun, used in biblical chronology and prophecy, including the sabbatical year and the year of Jubilee.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7594,7 +7594,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'yoke',
 		title: 'Yoke',
-		description: '',
+		description: 'A wooden frame joining two animals for plowing, used figuratively for servitude, burden, or submission as in Jesus\' invitation to take his yoke.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7604,7 +7604,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'zeal',
 		title: 'Zeal',
-		description: '',
+		description: 'Intense enthusiasm and devotion, especially in serving God, which the Bible commends when based on accurate knowledge and directed toward righteous purposes.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7614,7 +7614,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'zebedee',
 		title: 'Zebedee',
-		description: '',
+		description: 'A fisherman of Galilee, the husband of Salome and father of the apostles James and John, who were called by Jesus while mending their nets.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7624,7 +7624,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'zerubbabel',
 		title: 'Zerubbabel',
-		description: '',
+		description: 'A descendant of David who led the first group of Jewish exiles back from Babylon and oversaw the rebuilding of the temple in Jerusalem.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7634,7 +7634,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'zerubbabels-temple',
 		title: "Zerubbabel's Temple",
-		description: '',
+		description: 'The second temple built in Jerusalem after the return from Babylonian exile, under the leadership of Zerubbabel and Jeshua the high priest.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7644,7 +7644,7 @@ export const insights: Cononical[] = [
 	{
 		id: 'zion',
 		title: 'Zion',
-		description: '',
+		description: 'Originally a hill in Jerusalem, the site of David\'s city and the temple, used throughout Scripture as a symbol of God\'s dwelling place and His chosen people.',
 		source: '',
 		href: '',
 		scripture: [],
@@ -7652,3 +7652,4 @@ export const insights: Cononical[] = [
 		tags: []
 	},
 ];
+
