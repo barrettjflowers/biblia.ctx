@@ -5,7 +5,7 @@ const SETTINGS_KEY = 'biblia-settings';
 
 export interface Settings {
 	yearsContext: number;
-	dataset: 'insight' | 'example';
+	dataset: 'insight' | 'example' | 'luke';
 	viewType: 'list' | 'ortholinear';
 }
 
