@@ -80,7 +80,7 @@ export const results = derived([query, settings], ([$query, $settings]) => {
 	}
 
 	const filteredByDate = scored
-		.filter((r) => isWithinRange(parseYear(r.item.date), referenceYear, yearsContext))
+		.filter((r) => isWithinRange(r.item.date, referenceYear, yearsContext))
 		.sort((a, b) => a.score - b.score);
 
 	return filteredByDate.map((r) => r.item);

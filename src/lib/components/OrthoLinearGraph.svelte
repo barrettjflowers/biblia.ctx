@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount, onDestroy, tick } from 'svelte';
 	import type { Cononical } from '$lib/types';
-	import { parseYear } from '$lib/dateUtils';
+	import { parseDateRange } from '$lib/dateUtils';
 
 	let { results = [], target = null }: { results: Cononical[]; target: Cononical | null } = $props();
 
@@ -13,19 +13,29 @@
 		year: number;
 		index: number;
 		gap: number;
+		isRange: boolean;
+		startYear: number;
+		endYear?: number;
 	}
 
-	let targetYear = $derived(target ? parseYear(target.date) : null);
+	let targetYear = $derived(target ? parseDateRange(target.date)?.start ?? null : null);
 
 	let datedItems: DatedItem[] = $derived(
 		results
-			.map((item, index) => ({
-				item,
-				year: parseYear(item.date) ?? NaN,
-				index,
-				gap: targetYear !== null ? (parseYear(item.date) ?? NaN) - targetYear : 0
-			}))
-			.filter((d): d is DatedItem => !isNaN(d.year))
+			.map((item, index) => {
+				const range = parseDateRange(item.date);
+				if (!range) return null;
+				return {
+					item,
+					year: range.start,
+					startYear: range.start,
+					endYear: range.end,
+					isRange: range.end !== undefined,
+					index,
+					gap: targetYear !== null ? range.start - targetYear : 0
+				} as DatedItem;
+			})
+			.filter((d): d is NonNullable<typeof d> => d !== null)
 			.sort((a, b) => a.year - b.year)
 	);
 
@@ -48,10 +58,13 @@
 	}
 
 	function formatYear(year: number): string {
-		if (year < 0) {
-			return `${Math.abs(year)}bce`;
-		}
+		if (year < 0) return `${Math.abs(year)}bce`;
 		return `${year}ce`;
+	}
+
+	function fmtDate(item: DatedItem): string {
+		if (item.isRange) return `${formatYear(item.startYear)}–${formatYear(item.endYear!)}`;
+		return formatYear(item.year);
 	}
 
 	function getSide(index: number): 'top' | 'bottom' {
@@ -110,7 +123,7 @@
 {#if datedItems.length > 0}
 	<div class="graph-container" bind:this={graphContainer} tabindex="-1">
 		<div class="timeline" style="width: {timelineWidth}px;">
-			{#each datedItems as { item, year, index, gap }, sortIdx (item.id)}
+			{#each datedItems as { item, year, index, gap, isRange, endYear }, sortIdx (item.id)}
 				{@const side = getSide(sortIdx)}
 				<div
 					class="node {side}"
@@ -137,6 +150,7 @@
 	{#if datedItems[focusedIndex]}
 		<div class="detail">
 			<strong>{datedItems[focusedIndex].item.title}</strong>
+			<small class="detail-date">{fmtDate(datedItems[focusedIndex])}</small>
 			<p>{datedItems[focusedIndex].item.description}</p>
 		</div>
 	{/if}
@@ -239,7 +253,7 @@
 	}
 
 	.node.bottom .node-content {
-		order: 2;
+		order: 3;
 		margin-top: 0.25rem;
 	}
 
@@ -287,6 +301,14 @@
 	.detail strong {
 		display: block;
 		font-size: 1rem;
+		margin-bottom: 0.25rem;
+	}
+
+	.detail .detail-date {
+		display: block;
+		font-family: menlo, monospace;
+		font-size: 0.75rem;
+		opacity: 0.7;
 		margin-bottom: 0.5rem;
 	}
 
