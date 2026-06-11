@@ -1,4 +1,9 @@
 {
-	"/": [],
-	"/settings": []
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/settings": [
+		"src/routes/+layout.ts"
+	]
 }

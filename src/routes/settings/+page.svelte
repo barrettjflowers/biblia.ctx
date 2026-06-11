@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../../app.css';
+	import { base } from '$app/paths';
 	import { settings } from '$lib/settings';
 	import { insights } from '$lib/dataset/insight';
 	import { insight as examples } from '$lib/dataset/example';
@@ -35,7 +36,7 @@
 	<p style="margin: 0.03rem 0;padding-bottom: 1rem; text-align: center;">
 		Configure search engine behavior.
 	</p>
-	<a href="/" class="settings-btn" aria-label="Open settings">
+	<a href={base} class="settings-btn" aria-label="Open settings">
 		<button class="btn" aria-label="Open settings">
 			<svg width="25" height="25" viewBox="0 0 24 18" fill="black">
 				<path

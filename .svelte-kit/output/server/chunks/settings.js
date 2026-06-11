@@ -1,4 +1,4 @@
-import { w as writable } from "./index2.js";
+import { w as writable } from "./url.js";
 const insights = [
   {
     id: "aaron",
