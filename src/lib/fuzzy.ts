@@ -1,6 +1,6 @@
 import { writable, derived, get } from 'svelte/store';
 import type { Cononical } from './types';
-import { insights, examples, luke, composite } from '../lib/dataset/composite';
+import { insights, composite } from '../lib/dataset/composite';
 import { settings } from './settings';
 import { parseYear, isWithinRange } from './dateUtils';
 
@@ -48,7 +48,7 @@ export const results = derived([query, settings], ([$query, $settings]) => {
 	}
 
 	const { yearsContext, dataset } = $settings;
-	const data = dataset === 'example' ? examples : dataset === 'luke' ? luke : dataset === 'composite' ? composite : insights;
+	const data = dataset === 'composite' ? composite : insights;
 
 	const scored = data.map((item) => ({
 		item,

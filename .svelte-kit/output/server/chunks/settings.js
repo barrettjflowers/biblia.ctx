@@ -583,11 +583,11 @@ const insights = [
   {
     id: "hazael",
     title: "Hazael",
-    description: "A Syrian king whom Elijah anointed as Hazael, who later became king of Damascus and oppressed Israel during Elisha's time.",
+    description: "A Syrian king of Damascus who oppressed Israel during the reign of Jehu and was used as an instrument of God's judgment.",
     source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Hazael/",
     href: "",
     scripture: [],
-    date: "905bce-845bce",
+    date: "c.876bce-c.846bce",
     tags: []
   },
   {
@@ -1291,7 +1291,7 @@ const insights = [
     tags: []
   }
 ];
-const insight = [
+const examples = [
   {
     id: "moabite-stone",
     title: "The Moabite Stone",
@@ -1349,7 +1349,7 @@ const insight = [
     tags: ["egypt", "pyramid", "monument"]
   },
   {
-    id: " UR",
+    id: "UR",
     title: "Royal Cemetery of Ur",
     description: "Mesopotamian burial site with rich grave goods",
     date: "c. 2600 BCE",
@@ -1524,8 +1524,9 @@ const luke = [
     tags: []
   }
 ];
+const composite = [...insights, ...examples, ...luke];
 const defaultSettings = {
-  yearsContext: 50,
+  yearsContext: 200,
   dataset: "insight",
   viewType: "list"
 };
@@ -1555,8 +1556,7 @@ function createSettingsStore() {
 }
 const settings = createSettingsStore();
 export {
-  insights as a,
-  insight as i,
-  luke as l,
+  composite as c,
+  insights as i,
   settings as s
 };

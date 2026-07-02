@@ -111,9 +111,12 @@
 		if (graphContainer) {
 			focusedIndex;
 			tick().then(() => {
-				const el = graphContainer.querySelector('.node.target');
+				const el = graphContainer.querySelector('.node.target') as HTMLElement | null;
 				if (el) {
-					el.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+					graphContainer.scrollTo({
+						left: el.offsetLeft - graphContainer.offsetWidth / 2 + el.offsetWidth / 2,
+						behavior: 'smooth'
+					});
 				}
 			});
 		}
@@ -131,15 +134,13 @@
 					style="left: {getPosition(year)}%;"
 					role="button"
 					tabindex="-1"
-					onclick={() => goTo(index)}
-					onkeydown={(e) => { if (e.key === 'Enter') goTo(index); }}
+					onclick={() => goTo(sortIdx)}
+					onkeydown={(e) => { if (e.key === 'Enter') goTo(sortIdx); }}
 				>
 					<div class="connector"></div>
 					<div class="node-content">
 						<strong>{item.title}</strong>
-						{#if gap !== 0}
-							<small class="gap" class:negative={gap < 0}>{gap > 0 ? '+' : ''}{gap}yr</small>
-						{/if}
+						<small class="gap" class:negative={gap < 0} class:invisible={gap === 0}>{gap > 0 ? '+' : ''}{gap}yr</small>
 					</div>
 					<div class="node-year">{formatYear(year)}</div>
 				</div>
@@ -148,10 +149,19 @@
 		</div>
 	</div>
 	{#if datedItems[focusedIndex]}
-		<div class="detail">
-			<strong>{datedItems[focusedIndex].item.title}</strong>
-			<small class="detail-date">{fmtDate(datedItems[focusedIndex])}</small>
-			<p>{datedItems[focusedIndex].item.description}</p>
+		{@const focused = datedItems[focusedIndex]}
+		{@const gapText = target && focused.item.id !== target.id
+			? focused.gap > 0
+				? `${focused.gap} year(s) after ${target.title}`
+				: `${-focused.gap} year(s) before ${target.title}`
+			: ''}
+		<div class="detail" onclick={() => focused.item.source && window.open(focused.item.source, '_blank')} role="button" tabindex="0" onkeydown={(e) => { if (e.key === 'Enter') focused.item.source && window.open(focused.item.source, '_blank'); }}>
+			<strong>{focused.item.title}</strong>
+			<small class="detail-date">{fmtDate(focused)}</small>
+			{#if gapText}
+				<small class="detail-gap">{gapText}</small>
+			{/if}
+			<p>{focused.item.description}</p>
 		</div>
 	{/if}
 {:else}
@@ -188,58 +198,40 @@
 
 	.node {
 		position: absolute;
-		top: 50%;
-		transform: translateX(-50%);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 150px;
 		cursor: pointer;
+		outline: none;
+		-webkit-tap-highlight-color: transparent;
 	}
 
 	.node.top {
-		margin-top: -120px;
+		bottom: calc(50% + 20px);
+		transform: translateX(-50%);
 	}
 
 	.node.bottom {
-		margin-top: 10px;
+		top: calc(50% + 20px);
+		transform: translateX(-50%);
 	}
 
 	.node.target {
-		border: 2px solid var(--text-color);
-		padding: 0.5rem;
+	  padding: 5px 0;
+		outline: 2px solid var(--text-color);
 		background: var(--input-bg);
-		z-index: 1;
+		z-index: 10;
+	}
+
+	.node.target .node-content {
+		padding: 0.25rem 0.75rem;
 	}
 
 	.connector {
 		width: 2px;
 		height: 20px;
 		background: var(--text-color);
-	}
-
-	.node.top .connector {
-		order: 2;
-	}
-
-	.node.top .node-year {
-		order: 3;
-	}
-
-	.node.top .node-content {
-		order: 1;
-	}
-
-	.node.bottom .connector {
-		order: 2;
-	}
-
-	.node.bottom .node-year {
-		order: 1;
-	}
-
-	.node.bottom .node-content {
-		order: 3;
 	}
 
 	.node-content {
@@ -250,6 +242,24 @@
 	.node.top .node-content {
 		order: 1;
 		margin-bottom: 0.25rem;
+	}
+
+	.node.top .node-year {
+		order: 2;
+		margin-bottom: 0.25rem;
+	}
+
+	.node.top .connector {
+		order: 3;
+	}
+
+	.node.bottom .connector {
+		order: 1;
+	}
+
+	.node.bottom .node-year {
+		order: 2;
+		margin-top: 0.25rem;
 	}
 
 	.node.bottom .node-content {
@@ -283,6 +293,10 @@
 		color: #8b4513;
 	}
 
+	.node-content small.gap.invisible {
+		visibility: hidden;
+	}
+
 	.node-year {
 		font-size: 0.75rem;
 		font-family: menlo, monospace;
@@ -296,6 +310,7 @@
 		max-width: 600px;
 		margin-left: auto;
 		margin-right: auto;
+		cursor: pointer;
 	}
 
 	.detail strong {
@@ -305,6 +320,14 @@
 	}
 
 	.detail .detail-date {
+		display: block;
+		font-family: menlo, monospace;
+		font-size: 0.75rem;
+		opacity: 0.7;
+		margin-bottom: 0.1rem;
+	}
+
+	.detail .detail-gap {
 		display: block;
 		font-family: menlo, monospace;
 		font-size: 0.75rem;

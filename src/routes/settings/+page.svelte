@@ -2,7 +2,7 @@
 	import '../../app.css';
 	import { base } from '$app/paths';
 	import { settings } from '$lib/settings';
-	import { insights, examples, luke, composite } from '$lib/dataset/composite';
+	import { insights, composite } from '$lib/dataset/composite';
 
 	let yearsContext = $settings.yearsContext;
 	let dataset = $settings.dataset;
@@ -11,9 +11,7 @@
 
 	const datasetOptions = [
 		{ value: 'insight', label: `Insight Book (${insights.length} entries)` },
-		{ value: 'composite', label: `Composite (${composite.length} entries)` },
-		{ value: 'example', label: `Examples (${examples.length} entries)` },
-		{ value: 'luke', label: `Luke (${luke.length} entries)` }
+		{ value: 'composite', label: `Composite (${composite.length} entries)` }
 	];
 
 	function saveSettings() {
@@ -35,7 +33,7 @@
 	<p style="margin: 0.03rem 0;padding-bottom: 1rem; text-align: center;">
 		Configure search engine behavior.
 	</p>
-	<a href={base} class="settings-btn" aria-label="Open settings">
+	<a href={base || '/'} class="settings-btn" aria-label="Open settings">
 		<button class="btn" aria-label="Open settings">
 			<svg width="25" height="25" viewBox="0 0 24 18" fill="black">
 				<path
@@ -60,18 +58,17 @@
 			<label for="view-type">View Type: </label>
 			<select name="view-type" id="view-type" bind:value={viewType}>
 				<option value="list"> List </option>
-				<option value="ortholinear"> Ortholinear Graph </option>
+				<option value="ortholinear"> Contextual Timeline </option>
 			</select>
 		</div>
 		<div>
 			<label for="years-context">Context Window: </label>
 			<select id="years-context" bind:value={yearsContext}>
-				<option value={50}>50 years</option>
 				<option value={100}>100 years</option>
 				<option value={200}>200 years</option>
 				<option value={500}>500 years</option>
 				<option value={1000}>1000 years</option>
-				<option value={2000}>2000 years</option>
+				<option value={9000}>All time</option>
 			</select>
 		</div>
 

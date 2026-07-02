@@ -5,14 +5,14 @@ const SETTINGS_KEY = 'biblia-settings';
 
 export interface Settings {
 	yearsContext: number;
-	dataset: 'insight' | 'example' | 'luke' | 'composite';
+	dataset: 'insight' | 'composite';
 	viewType: 'list' | 'ortholinear';
 }
 
 const defaultSettings: Settings = {
-	yearsContext: 50,
+	yearsContext: 200,
 	dataset: 'insight',
-	viewType: 'list'
+	viewType: 'ortholinear'
 };
 
 function loadSettings(): Settings {

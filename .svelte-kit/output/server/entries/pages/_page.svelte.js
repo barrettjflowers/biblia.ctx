@@ -1,5 +1,5 @@
 import { s as ssr_context, a as attr_style, b as stringify, c as ensure_array_like, d as attr_class, e as escape_html, f as derived$1, h as attr, i as store_get, u as unsubscribe_stores } from "../../chunks/root.js";
-import { s as settings, i as insight, l as luke, a as insights } from "../../chunks/settings.js";
+import { s as settings, c as composite, i as insights } from "../../chunks/settings.js";
 import { b as base } from "../../chunks/server.js";
 import { e as derived, w as writable } from "../../chunks/url.js";
 import "@sveltejs/kit/internal/server";
@@ -82,7 +82,7 @@ const results = derived([query, settings], ([$query, $settings]) => {
     return [];
   }
   const { yearsContext, dataset } = $settings;
-  const data = dataset === "example" ? insight : dataset === "luke" ? luke : insights;
+  const data = dataset === "composite" ? composite : insights;
   const scored = data.map((item) => ({
     item,
     score: Math.min(
