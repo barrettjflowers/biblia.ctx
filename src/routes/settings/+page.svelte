@@ -2,9 +2,7 @@
 	import '../../app.css';
 	import { base } from '$app/paths';
 	import { settings } from '$lib/settings';
-	import { insights } from '$lib/dataset/insight';
-	import { insight as examples } from '$lib/dataset/example';
-	import { luke } from '$lib/dataset/luke';
+	import { insights, examples, luke, composite } from '$lib/dataset/composite';
 
 	let yearsContext = $settings.yearsContext;
 	let dataset = $settings.dataset;
@@ -13,6 +11,7 @@
 
 	const datasetOptions = [
 		{ value: 'insight', label: `Insight Book (${insights.length} entries)` },
+		{ value: 'composite', label: `Composite (${composite.length} entries)` },
 		{ value: 'example', label: `Examples (${examples.length} entries)` },
 		{ value: 'luke', label: `Luke (${luke.length} entries)` }
 	];
