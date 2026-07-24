@@ -7,6 +7,11 @@
 
 	let focusedIndex = $state(0);
 	let graphContainer: HTMLDivElement = $state(null!);
+	let zoomLevel = $state(1.0);
+
+	const ZOOM_STEP = 0.25;
+	const MIN_ZOOM = 0.25;
+	const MAX_ZOOM = 3.0;
 
 	interface DatedItem {
 		item: Cononical;
@@ -43,12 +48,13 @@
 	let maxYear = $derived(datedItems.length > 0 ? Math.max(...datedItems.map((d) => d.year)) : 100);
 	let yearRange = $derived(maxYear - minYear || 1);
 	let containerW = $derived(graphContainer?.offsetWidth ?? 800);
-	let timelineWidth = $derived(Math.max(datedItems.length * 220, containerW));
+	let timelineWidth = $derived(Math.max(datedItems.length * 220 * zoomLevel, containerW));
 
 	$effect(() => {
 		if (datedItems.length > 0 && target) {
 			const idx = datedItems.findIndex((d) => d.item.id === target.id);
 			if (idx >= 0) focusedIndex = idx;
+			zoomLevel = 1.0;
 		}
 	});
 
@@ -81,6 +87,24 @@
 
 	function goTo(idx: number) {
 		focusedIndex = idx;
+	}
+
+	function zoomIn() {
+		const oldWidth = timelineWidth;
+		const centerFraction = (graphContainer.scrollLeft + graphContainer.offsetWidth / 2) / oldWidth;
+		zoomLevel = Math.min(zoomLevel + ZOOM_STEP, MAX_ZOOM);
+		tick().then(() => {
+			graphContainer.scrollLeft = centerFraction * timelineWidth - graphContainer.offsetWidth / 2;
+		});
+	}
+
+	function zoomOut() {
+		const oldWidth = timelineWidth;
+		const centerFraction = (graphContainer.scrollLeft + graphContainer.offsetWidth / 2) / oldWidth;
+		zoomLevel = Math.max(zoomLevel - ZOOM_STEP, MIN_ZOOM);
+		tick().then(() => {
+			graphContainer.scrollLeft = centerFraction * timelineWidth - graphContainer.offsetWidth / 2;
+		});
 	}
 
 	function onDocumentKeydown(e: KeyboardEvent) {
@@ -148,6 +172,11 @@
 			<div class="axis"></div>
 		</div>
 	</div>
+	<div class="zoom-controls">
+		<button onclick={zoomOut} aria-label="Zoom out" disabled={zoomLevel <= MIN_ZOOM}>−</button>
+		<span class="zoom-level">{Math.round(zoomLevel * 100)}%</span>
+		<button onclick={zoomIn} aria-label="Zoom in" disabled={zoomLevel >= MAX_ZOOM}>+</button>
+	</div>
 	{#if datedItems[focusedIndex]}
 		{@const focused = datedItems[focusedIndex]}
 		{@const gapText = target && focused.item.id !== target.id
@@ -180,6 +209,41 @@
 		display: none;
 	}
 
+	.zoom-controls {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.75rem;
+		padding: 0.5rem 0;
+	}
+
+	.zoom-controls button {
+		background: var(--input-bg);
+		color: var(--text-color);
+		border: 1px solid var(--text-color);
+		font-family: menlo, monospace;
+		font-size: 1rem;
+		width: 1.75rem;
+		height: 1.75rem;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		line-height: 1;
+	}
+
+	.zoom-controls button:disabled {
+		opacity: 0.3;
+		cursor: default;
+	}
+
+	.zoom-level {
+		font-family: menlo, monospace;
+		font-size: 0.75rem;
+		min-width: 3rem;
+		text-align: center;
+	}
+
 	.timeline {
 		position: relative;
 		height: 280px;
@@ -205,6 +269,7 @@
 		cursor: pointer;
 		outline: none;
 		-webkit-tap-highlight-color: transparent;
+		background: var(--bg-color);
 	}
 
 	.node.top {
