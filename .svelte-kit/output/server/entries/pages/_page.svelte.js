@@ -1,4 +1,4 @@
-import { s as ssr_context, a as attr_style, b as stringify, c as ensure_array_like, d as attr_class, e as escape_html, f as derived$1, h as attr, i as store_get, u as unsubscribe_stores } from "../../chunks/root.js";
+import { s as ssr_context, a as attr_style, b as stringify, c as ensure_array_like, d as attr_class, e as escape_html, f as attr, h as derived$1, i as store_get, u as unsubscribe_stores } from "../../chunks/root.js";
 import { s as settings, c as composite, i as insights } from "../../chunks/settings.js";
 import { b as base } from "../../chunks/server.js";
 import { e as derived, w as writable } from "../../chunks/url.js";
@@ -112,6 +112,10 @@ function OrthoLinearGraph($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     let { results: results2 = [], target = null } = $$props;
     let focusedIndex = 0;
+    let zoomLevel = 1;
+    const MIN_ZOOM = 0.25;
+    const MAX_ZOOM = 3;
+    const NODE_WIDTH = 150;
     let targetYear = derived$1(() => target ? parseDateRange(target.date)?.start ?? null : null);
     let datedItems = derived$1(() => results2.map((item, index) => {
       const range = parseDateRange(item.date);
@@ -130,10 +134,60 @@ function OrthoLinearGraph($$renderer, $$props) {
     let maxYear = derived$1(() => datedItems().length > 0 ? Math.max(...datedItems().map((d) => d.year)) : 100);
     let yearRange = derived$1(() => maxYear() - minYear() || 1);
     let containerW = derived$1(() => 800);
-    let timelineWidth = derived$1(() => Math.max(datedItems().length * 220, containerW()));
+    let timelineWidth = derived$1(() => Math.max(datedItems().length * 220 * zoomLevel, containerW()));
+    let visibility = derived$1(() => {
+      const focusedItem = datedItems()[focusedIndex] ?? null;
+      const visibleIds = /* @__PURE__ */ new Set();
+      const allHidden = [];
+      if (focusedItem) visibleIds.add(focusedItem.item.id);
+      for (const side of ["top", "bottom"]) {
+        const nodes = datedItems().map((d, i) => ({ d, sortIdx: i, pixelCenter: getPixelCenter(d.year) })).filter(({ sortIdx }) => getSide(sortIdx) === side).sort((a, b) => a.pixelCenter - b.pixelCenter);
+        let lastRight = -Infinity;
+        for (const { d, pixelCenter } of nodes) {
+          const left = pixelCenter - NODE_WIDTH / 2;
+          const right = pixelCenter + NODE_WIDTH / 2;
+          const isFocused = focusedItem && d.item.id === focusedItem.item.id;
+          if (left >= lastRight || isFocused) {
+            visibleIds.add(d.item.id);
+            if (right > lastRight) lastRight = right;
+          } else {
+            allHidden.push(pixelCenter);
+          }
+        }
+      }
+      allHidden.sort((a, b) => a - b);
+      const hiddenGroups = [];
+      let group = [];
+      for (const pc of allHidden) {
+        if (group.length === 0 || pc - group[group.length - 1] < NODE_WIDTH) {
+          group.push(pc);
+        } else {
+          hiddenGroups.push({
+            side: "top",
+            count: group.length,
+            pixelCenter: group.reduce((s, v) => s + v, 0) / group.length
+          });
+          group = [pc];
+        }
+      }
+      if (group.length > 0) {
+        hiddenGroups.push({
+          side: "top",
+          count: group.length,
+          pixelCenter: group.reduce((s, v) => s + v, 0) / group.length
+        });
+      }
+      return {
+        visibleItems: datedItems().map((d, i) => ({ datedItem: d, sortIdx: i })).filter(({ datedItem }) => visibleIds.has(datedItem.item.id)),
+        hiddenGroups
+      };
+    });
     function getPosition(year) {
       const padding = 10;
       return padding + (year - minYear()) / yearRange() * (100 - padding * 2);
+    }
+    function getPixelCenter(year) {
+      return getPosition(year) / 100 * timelineWidth();
     }
     function formatYear(year) {
       if (year < 0) return `${Math.abs(year)}bce`;
@@ -174,23 +228,34 @@ function OrthoLinearGraph($$renderer, $$props) {
     if (datedItems().length > 0) {
       $$renderer2.push("<!--[0-->");
       $$renderer2.push(`<div class="graph-container svelte-a7d427" tabindex="-1"><div class="timeline svelte-a7d427"${attr_style(`width: ${stringify(timelineWidth())}px;`)}><!--[-->`);
-      const each_array = ensure_array_like(datedItems());
-      for (let sortIdx = 0, $$length = each_array.length; sortIdx < $$length; sortIdx++) {
-        let { item, year, index, gap, isRange, endYear } = each_array[sortIdx];
+      const each_array = ensure_array_like(visibility().visibleItems);
+      for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
+        let {
+          datedItem: { item, year, index, gap, isRange, endYear },
+          sortIdx
+        } = each_array[$$index];
         const side = getSide(sortIdx);
-        $$renderer2.push(`<div${attr_class(`node ${stringify(side)}`, "svelte-a7d427", { "target": datedItems()[focusedIndex]?.item.id === item.id })}${attr_style(`left: ${stringify(getPosition(year))}%;`)} role="button" tabindex="-1"><div class="connector svelte-a7d427"></div> <div class="node-content svelte-a7d427"><strong class="svelte-a7d427">${escape_html(item.title)}</strong> `);
-        if (gap !== 0) {
+        $$renderer2.push(`<div${attr_class(`node ${stringify(side)}`, "svelte-a7d427", { "target": datedItems()[focusedIndex]?.item.id === item.id })}${attr_style(`left: ${stringify(getPosition(year))}%;`)} role="button" tabindex="-1"><div class="connector svelte-a7d427"></div> <div class="node-content svelte-a7d427"><strong class="svelte-a7d427">${escape_html(item.title)}</strong> <small${attr_class("gap svelte-a7d427", void 0, { "negative": gap < 0, "invisible": gap === 0 })}>${escape_html(gap > 0 ? "+" : "")}${escape_html(gap)}yr</small></div> <div class="node-year svelte-a7d427">${escape_html(formatYear(year))}</div></div>`);
+      }
+      $$renderer2.push(`<!--]--> <!--[-->`);
+      const each_array_1 = ensure_array_like(visibility().hiddenGroups);
+      for (let $$index_1 = 0, $$length = each_array_1.length; $$index_1 < $$length; $$index_1++) {
+        let group = each_array_1[$$index_1];
+        $$renderer2.push(`<div${attr_class(`overflow-badge ${stringify(group.side)}`, "svelte-a7d427")}${attr_style(`left: ${stringify(group.pixelCenter / timelineWidth() * 100)}%;`)} role="status">+${escape_html(group.count)}</div>`);
+      }
+      $$renderer2.push(`<!--]--> <div class="axis svelte-a7d427"></div></div></div> <div class="zoom-controls svelte-a7d427"><button aria-label="Zoom out"${attr("disabled", zoomLevel <= MIN_ZOOM, true)} class="svelte-a7d427">−</button> <span class="zoom-level svelte-a7d427">${escape_html(Math.round(zoomLevel * 100))}%</span> <button aria-label="Zoom in"${attr("disabled", zoomLevel >= MAX_ZOOM, true)} class="svelte-a7d427">+</button></div> `);
+      if (datedItems()[focusedIndex]) {
+        $$renderer2.push("<!--[0-->");
+        const focused = datedItems()[focusedIndex];
+        const gapText = target && focused.item.id !== target.id ? focused.gap > 0 ? `${focused.gap} year(s) after ${target.title}` : `${-focused.gap} year(s) before ${target.title}` : "";
+        $$renderer2.push(`<div class="detail svelte-a7d427" role="button" tabindex="0"><strong class="svelte-a7d427">${escape_html(focused.item.title)}</strong> <small class="detail-date svelte-a7d427">${escape_html(fmtDate(focused))}</small> `);
+        if (gapText) {
           $$renderer2.push("<!--[0-->");
-          $$renderer2.push(`<small${attr_class("gap svelte-a7d427", void 0, { "negative": gap < 0 })}>${escape_html(gap > 0 ? "+" : "")}${escape_html(gap)}yr</small>`);
+          $$renderer2.push(`<small class="detail-gap svelte-a7d427">${escape_html(gapText)}</small>`);
         } else {
           $$renderer2.push("<!--[-1-->");
         }
-        $$renderer2.push(`<!--]--></div> <div class="node-year svelte-a7d427">${escape_html(formatYear(year))}</div></div>`);
-      }
-      $$renderer2.push(`<!--]--> <div class="axis svelte-a7d427"></div></div></div> `);
-      if (datedItems()[focusedIndex]) {
-        $$renderer2.push("<!--[0-->");
-        $$renderer2.push(`<div class="detail svelte-a7d427"><strong class="svelte-a7d427">${escape_html(datedItems()[focusedIndex].item.title)}</strong> <small class="detail-date svelte-a7d427">${escape_html(fmtDate(datedItems()[focusedIndex]))}</small> <p class="svelte-a7d427">${escape_html(datedItems()[focusedIndex].item.description)}</p></div>`);
+        $$renderer2.push(`<!--]--> <p class="svelte-a7d427">${escape_html(focused.item.description)}</p></div>`);
       } else {
         $$renderer2.push("<!--[-1-->");
       }

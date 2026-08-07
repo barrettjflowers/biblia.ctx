@@ -1,4 +1,4 @@
-import { i as store_get, h as attr, c as ensure_array_like, e as escape_html, u as unsubscribe_stores } from "../../../chunks/root.js";
+import { i as store_get, f as attr, c as ensure_array_like, e as escape_html, u as unsubscribe_stores } from "../../../chunks/root.js";
 import { s as settings, i as insights, c as composite } from "../../../chunks/settings.js";
 import { b as base } from "../../../chunks/server.js";
 import "../../../chunks/url.js";
@@ -37,7 +37,7 @@ function _page($$renderer, $$props) {
         $$renderer4.push(`List`);
       });
       $$renderer3.option({ value: "ortholinear" }, ($$renderer4) => {
-        $$renderer4.push(`Ortholinear Graph`);
+        $$renderer4.push(`Contextual Timeline`);
       });
     });
     $$renderer2.push(`</div> <div><label for="years-context">Context Window:</label> `);

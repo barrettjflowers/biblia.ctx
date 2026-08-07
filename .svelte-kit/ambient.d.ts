@@ -45,7 +45,6 @@ declare module '$env/static/private' {
 	export const COLORTERM: string;
 	export const HYPRLAND_CMD: string;
 	export const npm_config_cache: string;
-	export const XDG_SESSION_PATH: string;
 	export const HISTCONTROL: string;
 	export const NVIM_CONFIG: string;
 	export const XDG_BACKEND: string;
@@ -56,7 +55,6 @@ declare module '$env/static/private' {
 	export const AGENT: string;
 	export const COLOR: string;
 	export const npm_config_local_prefix: string;
-	export const DESKTOP_SESSION: string;
 	export const HL_INITIAL_WORKSPACE_TOKEN: string;
 	export const KITTY_PID: string;
 	export const npm_config_globalconfig: string;
@@ -85,7 +83,6 @@ declare module '$env/static/private' {
 	export const WAYLAND_DISPLAY: string;
 	export const TG_TOKEN: string;
 	export const KITTY_WINDOW_ID: string;
-	export const XDG_SEAT_PATH: string;
 	export const CLICOLOR: string;
 	export const INIT_CWD: string;
 	export const npm_lifecycle_script: string;
@@ -228,7 +225,6 @@ declare module '$env/dynamic/private' {
 		COLORTERM: string;
 		HYPRLAND_CMD: string;
 		npm_config_cache: string;
-		XDG_SESSION_PATH: string;
 		HISTCONTROL: string;
 		NVIM_CONFIG: string;
 		XDG_BACKEND: string;
@@ -239,7 +235,6 @@ declare module '$env/dynamic/private' {
 		AGENT: string;
 		COLOR: string;
 		npm_config_local_prefix: string;
-		DESKTOP_SESSION: string;
 		HL_INITIAL_WORKSPACE_TOKEN: string;
 		KITTY_PID: string;
 		npm_config_globalconfig: string;
@@ -268,7 +263,6 @@ declare module '$env/dynamic/private' {
 		WAYLAND_DISPLAY: string;
 		TG_TOKEN: string;
 		KITTY_WINDOW_ID: string;
-		XDG_SEAT_PATH: string;
 		CLICOLOR: string;
 		INIT_CWD: string;
 		npm_lifecycle_script: string;

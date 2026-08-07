@@ -1528,7 +1528,7 @@ const composite = [...insights, ...examples, ...luke];
 const defaultSettings = {
   yearsContext: 200,
   dataset: "insight",
-  viewType: "list"
+  viewType: "ortholinear"
 };
 function loadSettings() {
   return defaultSettings;

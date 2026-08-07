@@ -12,6 +12,13 @@
 	const ZOOM_STEP = 0.25;
 	const MIN_ZOOM = 0.25;
 	const MAX_ZOOM = 3.0;
+	const NODE_WIDTH = 150;
+
+	interface HiddenGroup {
+		side: 'top' | 'bottom';
+		count: number;
+		pixelCenter: number;
+	}
 
 	interface DatedItem {
 		item: Cononical;
@@ -48,7 +55,69 @@
 	let maxYear = $derived(datedItems.length > 0 ? Math.max(...datedItems.map((d) => d.year)) : 100);
 	let yearRange = $derived(maxYear - minYear || 1);
 	let containerW = $derived(graphContainer?.offsetWidth ?? 800);
-	let timelineWidth = $derived(Math.max(datedItems.length * 220 * zoomLevel, containerW));
+	let zoomMultiplier = $derived(zoomLevel * zoomLevel);
+	let timelineWidth = $derived(Math.max(datedItems.length * 220 * zoomMultiplier, containerW));
+
+	let visibility = $derived.by(() => {
+		const focusedItem = datedItems[focusedIndex] ?? null;
+		const visibleIds = new Set<string>();
+		const allHidden: number[] = [];
+
+		if (focusedItem) visibleIds.add(focusedItem.item.id);
+
+		for (const side of ['top', 'bottom'] as const) {
+			const nodes = datedItems
+				.map((d, i) => ({ d, sortIdx: i, pixelCenter: getPixelCenter(d.year) }))
+				.filter(({ sortIdx }) => getSide(sortIdx) === side)
+				.sort((a, b) => a.pixelCenter - b.pixelCenter);
+
+			let lastRight = -Infinity;
+
+			for (const { d, pixelCenter } of nodes) {
+				const left = pixelCenter - NODE_WIDTH / 2;
+				const right = pixelCenter + NODE_WIDTH / 2;
+				const isFocused = focusedItem && d.item.id === focusedItem.item.id;
+
+				if (left >= lastRight || isFocused) {
+					visibleIds.add(d.item.id);
+					if (right > lastRight) lastRight = right;
+				} else {
+					allHidden.push(pixelCenter);
+				}
+			}
+		}
+
+		allHidden.sort((a, b) => a - b);
+		const hiddenGroups: HiddenGroup[] = [];
+		let group: number[] = [];
+
+		for (const pc of allHidden) {
+			if (group.length === 0 || pc - group[group.length - 1] < NODE_WIDTH) {
+				group.push(pc);
+			} else {
+				hiddenGroups.push({
+					side: 'top',
+					count: group.length,
+					pixelCenter: group.reduce((s, v) => s + v, 0) / group.length
+				});
+				group = [pc];
+			}
+		}
+		if (group.length > 0) {
+			hiddenGroups.push({
+				side: 'top',
+				count: group.length,
+				pixelCenter: group.reduce((s, v) => s + v, 0) / group.length
+			});
+		}
+
+		return {
+			visibleItems: datedItems
+				.map((d, i) => ({ datedItem: d, sortIdx: i }))
+				.filter(({ datedItem }) => visibleIds.has(datedItem.item.id)),
+			hiddenGroups
+		};
+	});
 
 	$effect(() => {
 		if (datedItems.length > 0 && target) {
@@ -61,6 +130,10 @@
 	function getPosition(year: number): number {
 		const padding = 10;
 		return padding + ((year - minYear) / yearRange) * (100 - padding * 2);
+	}
+
+	function getPixelCenter(year: number): number {
+		return (getPosition(year) / 100) * timelineWidth;
 	}
 
 	function formatYear(year: number): string {
@@ -89,22 +162,23 @@
 		focusedIndex = idx;
 	}
 
-	function zoomIn() {
-		const oldWidth = timelineWidth;
-		const centerFraction = (graphContainer.scrollLeft + graphContainer.offsetWidth / 2) / oldWidth;
-		zoomLevel = Math.min(zoomLevel + ZOOM_STEP, MAX_ZOOM);
+	function zoomTo(next: number) {
+		const tl = graphContainer;
+		const oldTotal = tl.scrollWidth;
+		const oldCenter = tl.scrollLeft + tl.clientWidth / 2;
+		zoomLevel = Math.min(Math.max(next, MIN_ZOOM), MAX_ZOOM);
 		tick().then(() => {
-			graphContainer.scrollLeft = centerFraction * timelineWidth - graphContainer.offsetWidth / 2;
+			const frac = oldTotal > 0 ? oldCenter / oldTotal : 0.5;
+			tl.scrollLeft = frac * tl.scrollWidth - tl.clientWidth / 2;
 		});
 	}
 
+	function zoomIn() {
+		zoomTo(zoomLevel + ZOOM_STEP);
+	}
+
 	function zoomOut() {
-		const oldWidth = timelineWidth;
-		const centerFraction = (graphContainer.scrollLeft + graphContainer.offsetWidth / 2) / oldWidth;
-		zoomLevel = Math.max(zoomLevel - ZOOM_STEP, MIN_ZOOM);
-		tick().then(() => {
-			graphContainer.scrollLeft = centerFraction * timelineWidth - graphContainer.offsetWidth / 2;
-		});
+		zoomTo(zoomLevel - ZOOM_STEP);
 	}
 
 	function onDocumentKeydown(e: KeyboardEvent) {
@@ -150,32 +224,49 @@
 {#if datedItems.length > 0}
 	<div class="graph-container" bind:this={graphContainer} tabindex="-1">
 		<div class="timeline" style="width: {timelineWidth}px;">
-			{#each datedItems as { item, year, index, gap, isRange, endYear }, sortIdx (item.id)}
-				{@const side = getSide(sortIdx)}
-				<div
-					class="node {side}"
-					class:target={datedItems[focusedIndex]?.item.id === item.id}
-					style="left: {getPosition(year)}%;"
-					role="button"
-					tabindex="-1"
-					onclick={() => goTo(sortIdx)}
-					onkeydown={(e) => { if (e.key === 'Enter') goTo(sortIdx); }}
-				>
-					<div class="connector"></div>
-					<div class="node-content">
-						<strong>{item.title}</strong>
-						<small class="gap" class:negative={gap < 0} class:invisible={gap === 0}>{gap > 0 ? '+' : ''}{gap}yr</small>
-					</div>
-					<div class="node-year">{formatYear(year)}</div>
+		{#each visibility.visibleItems as { datedItem: { item, year, index, gap, isRange, endYear }, sortIdx } (item.id)}
+			{@const side = getSide(sortIdx)}
+			<div
+				class="node {side}"
+				class:target={datedItems[focusedIndex]?.item.id === item.id}
+				style="left: {getPosition(year)}%;"
+				role="button"
+				tabindex="-1"
+				onclick={() => goTo(sortIdx)}
+				onkeydown={(e) => { if (e.key === 'Enter') goTo(sortIdx); }}
+			>
+				<div class="connector"></div>
+				<div class="node-content">
+					<strong>{item.title}</strong>
+					<small class="gap" class:negative={gap < 0} class:invisible={gap === 0}>{gap > 0 ? '+' : ''}{gap}yr</small>
 				</div>
-			{/each}
+				<div class="node-year">{formatYear(year)}</div>
+			</div>
+		{/each}
+		{#each visibility.hiddenGroups as group (group.side + group.count + group.pixelCenter)}
+			<div
+				class="overflow-badge {group.side}"
+				style="left: {(group.pixelCenter / timelineWidth) * 100}%;"
+				role="status"
+			>
+				+{group.count}
+			</div>
+		{/each}
 			<div class="axis"></div>
 		</div>
 	</div>
 	<div class="zoom-controls">
-		<button onclick={zoomOut} aria-label="Zoom out" disabled={zoomLevel <= MIN_ZOOM}>−</button>
-		<span class="zoom-level">{Math.round(zoomLevel * 100)}%</span>
-		<button onclick={zoomIn} aria-label="Zoom in" disabled={zoomLevel >= MAX_ZOOM}>+</button>
+		<button class="arrow-btn" onclick={goLeft} aria-label="Previous item" disabled={focusedIndex <= 0}>
+			<svg class="arrow-icon" width="1rem" height="1rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
+		</button>
+		<div class="zoom-group">
+			<button onclick={zoomOut} aria-label="Zoom out" disabled={zoomLevel <= MIN_ZOOM}>−</button>
+			<span class="zoom-level">{Math.round(zoomLevel * 100)}%</span>
+			<button onclick={zoomIn} aria-label="Zoom in" disabled={zoomLevel >= MAX_ZOOM}>+</button>
+		</div>
+		<button class="arrow-btn" onclick={goRight} aria-label="Next item" disabled={focusedIndex >= datedItems.length - 1}>
+			<svg class="arrow-icon" width="1rem" height="1rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+		</button>
 	</div>
 	{#if datedItems[focusedIndex]}
 		{@const focused = datedItems[focusedIndex]}
@@ -201,6 +292,7 @@
 	.graph-container {
 		padding: 2rem 3rem;
 		overflow-x: auto;
+		overflow-anchor: none;
 		scrollbar-width: none;
 		outline: none;
 	}
@@ -213,8 +305,15 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		gap: 1.5rem;
+		padding: 0.5rem 2rem;
+	}
+
+	.zoom-group {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		gap: 0.75rem;
-		padding: 0.5rem 0;
 	}
 
 	.zoom-controls button {
@@ -222,14 +321,19 @@
 		color: var(--text-color);
 		border: 1px solid var(--text-color);
 		font-family: menlo, monospace;
-		font-size: 1rem;
-		width: 1.75rem;
-		height: 1.75rem;
+		font-size: 1.25rem;
+		width: 2.25rem;
+		height: 2.25rem;
 		cursor: pointer;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		line-height: 1;
+	}
+
+	.zoom-controls button.arrow-btn {
+		padding: 0;
+		line-height: 0;
 	}
 
 	.zoom-controls button:disabled {
@@ -405,5 +509,22 @@
 		font-size: 0.85rem;
 		line-height: 1.5;
 		opacity: 0.9;
+	}
+
+	.overflow-badge {
+		position: absolute;
+		transform: translateX(-50%);
+		font-family: menlo, monospace;
+		font-size: 1rem;
+		font-weight: bold;
+		padding: 2px 6px;
+		background: transparent;
+		cursor: default;
+		z-index: 5;
+		white-space: nowrap;
+	}
+
+	.overflow-badge.top {
+		top: -10px;
 	}
 </style>
