@@ -3,6 +3,6 @@
 export const index = 3;
 let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/settings/_page.svelte.js')).default;
-export const imports = ["_app/immutable/nodes/3.DbpG1f2v.js","_app/immutable/chunks/wm8tUp-P.js","_app/immutable/chunks/CKq8ZO5X.js","_app/immutable/chunks/CyRISe-T.js","_app/immutable/chunks/DCl7gnXt.js","_app/immutable/chunks/D1MKmkwK.js","_app/immutable/chunks/Bp4rxtSB.js","_app/immutable/chunks/CB7GZfLs.js","_app/immutable/chunks/9h64GRdS.js"];
-export const stylesheets = ["_app/immutable/assets/settings.B6a_Yb0j.css","_app/immutable/assets/3.C7eiF-ae.css"];
+export const imports = ["_app/immutable/nodes/3.Dk-PwuiE.js","_app/immutable/chunks/wm8tUp-P.js","_app/immutable/chunks/CKq8ZO5X.js","_app/immutable/chunks/CyRISe-T.js","_app/immutable/chunks/DCl7gnXt.js","_app/immutable/chunks/D1MKmkwK.js","_app/immutable/chunks/CWCXCdCY.js","_app/immutable/chunks/bVC_ISJo.js","_app/immutable/chunks/9h64GRdS.js"];
+export const stylesheets = ["_app/immutable/assets/settings.BNRuxauk.css","_app/immutable/assets/3.BwpDlpnk.css"];
 export const fonts = [];

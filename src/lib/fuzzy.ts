@@ -50,21 +50,25 @@ export const results = derived([query, settings], ([$query, $settings]) => {
 	const { yearsContext, dataset } = $settings;
 	const data = dataset === 'composite' ? composite : insights;
 
-	const scored = data.map((item) => ({
-		item,
-		score: Math.min(
-			fuzzyScore(item.title, $query),
-			fuzzyScore(item.description, $query),
-			item.tags ? fuzzyScore(item.tags.join(' '), $query) : Infinity
-		)
-	}));
+	const scored = data.map((item) => {
+		const titleScore = fuzzyScore(item.title, $query);
+		const descriptionScore = fuzzyScore(item.description, $query);
+		const tagsScore = item.tags ? fuzzyScore(item.tags.join(' '), $query) : Infinity;
+		const bestMatch = Math.min(titleScore, descriptionScore, tagsScore);
+		const isTitleMatch = titleScore === bestMatch && titleScore < Infinity;
+		return {
+			item,
+			bestMatch,
+			rank: isTitleMatch ? titleScore : bestMatch + 1000
+		};
+	});
 
 	const topResult = scored.reduce(
-		(best, curr) => (curr.score < best.score ? curr : best),
+		(best, curr) => (curr.rank < best.rank ? curr : best),
 		scored[0]
 	);
 
-	if (!topResult || topResult.score > Math.max(2, $query.length / 3)) {
+	if (!topResult || topResult.bestMatch > Math.max(2, $query.length / 3)) {
 		targetResult.set(null);
 		return [];
 	}
@@ -79,7 +83,7 @@ export const results = derived([query, settings], ([$query, $settings]) => {
 
 	const filteredByDate = scored
 		.filter((r) => isWithinRange(r.item.date, referenceYear, yearsContext))
-		.sort((a, b) => a.score - b.score);
+		.sort((a, b) => a.rank - b.rank);
 
 	return filteredByDate.map((r) => r.item);
 });

@@ -83,19 +83,23 @@ const results = derived([query, settings], ([$query, $settings]) => {
   }
   const { yearsContext, dataset } = $settings;
   const data = dataset === "composite" ? composite : insights;
-  const scored = data.map((item) => ({
-    item,
-    score: Math.min(
-      fuzzyScore(item.title, $query),
-      fuzzyScore(item.description, $query),
-      item.tags ? fuzzyScore(item.tags.join(" "), $query) : Infinity
-    )
-  }));
+  const scored = data.map((item) => {
+    const titleScore = fuzzyScore(item.title, $query);
+    const descriptionScore = fuzzyScore(item.description, $query);
+    const tagsScore = item.tags ? fuzzyScore(item.tags.join(" "), $query) : Infinity;
+    const bestMatch = Math.min(titleScore, descriptionScore, tagsScore);
+    const isTitleMatch = titleScore === bestMatch && titleScore < Infinity;
+    return {
+      item,
+      bestMatch,
+      rank: isTitleMatch ? titleScore : bestMatch + 1e3
+    };
+  });
   const topResult = scored.reduce(
-    (best, curr) => curr.score < best.score ? curr : best,
+    (best, curr) => curr.rank < best.rank ? curr : best,
     scored[0]
   );
-  if (!topResult || topResult.score > Math.max(2, $query.length / 3)) {
+  if (!topResult || topResult.bestMatch > Math.max(2, $query.length / 3)) {
     targetResult.set(null);
     return [];
   }
@@ -105,7 +109,7 @@ const results = derived([query, settings], ([$query, $settings]) => {
     targetResult.set(null);
     return [];
   }
-  const filteredByDate = scored.filter((r) => isWithinRange(r.item.date, referenceYear, yearsContext)).sort((a, b) => a.score - b.score);
+  const filteredByDate = scored.filter((r) => isWithinRange(r.item.date, referenceYear, yearsContext)).sort((a, b) => a.rank - b.rank);
   return filteredByDate.map((r) => r.item);
 });
 function OrthoLinearGraph($$renderer, $$props) {
@@ -134,7 +138,8 @@ function OrthoLinearGraph($$renderer, $$props) {
     let maxYear = derived$1(() => datedItems().length > 0 ? Math.max(...datedItems().map((d) => d.year)) : 100);
     let yearRange = derived$1(() => maxYear() - minYear() || 1);
     let containerW = derived$1(() => 800);
-    let timelineWidth = derived$1(() => Math.max(datedItems().length * 220 * zoomLevel, containerW()));
+    let zoomMultiplier = derived$1(() => zoomLevel * zoomLevel);
+    let timelineWidth = derived$1(() => Math.max(datedItems().length * 220 * zoomMultiplier(), containerW()));
     let visibility = derived$1(() => {
       const focusedItem = datedItems()[focusedIndex] ?? null;
       const visibleIds = /* @__PURE__ */ new Set();
@@ -243,7 +248,7 @@ function OrthoLinearGraph($$renderer, $$props) {
         let group = each_array_1[$$index_1];
         $$renderer2.push(`<div${attr_class(`overflow-badge ${stringify(group.side)}`, "svelte-a7d427")}${attr_style(`left: ${stringify(group.pixelCenter / timelineWidth() * 100)}%;`)} role="status">+${escape_html(group.count)}</div>`);
       }
-      $$renderer2.push(`<!--]--> <div class="axis svelte-a7d427"></div></div></div> <div class="zoom-controls svelte-a7d427"><button aria-label="Zoom out"${attr("disabled", zoomLevel <= MIN_ZOOM, true)} class="svelte-a7d427">−</button> <span class="zoom-level svelte-a7d427">${escape_html(Math.round(zoomLevel * 100))}%</span> <button aria-label="Zoom in"${attr("disabled", zoomLevel >= MAX_ZOOM, true)} class="svelte-a7d427">+</button></div> `);
+      $$renderer2.push(`<!--]--> <div class="axis svelte-a7d427"></div></div></div> <div class="zoom-controls svelte-a7d427"><button class="arrow-btn svelte-a7d427" aria-label="Previous item"${attr("disabled", focusedIndex <= 0, true)}><svg class="arrow-icon" width="1rem" height="1rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg></button> <div class="zoom-group svelte-a7d427"><button aria-label="Zoom out"${attr("disabled", zoomLevel <= MIN_ZOOM, true)} class="svelte-a7d427">−</button> <span class="zoom-level svelte-a7d427">${escape_html(Math.round(zoomLevel * 100))}%</span> <button aria-label="Zoom in"${attr("disabled", zoomLevel >= MAX_ZOOM, true)} class="svelte-a7d427">+</button></div> <button class="arrow-btn svelte-a7d427" aria-label="Next item"${attr("disabled", focusedIndex >= datedItems().length - 1, true)}><svg class="arrow-icon" width="1rem" height="1rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></button></div> `);
       if (datedItems()[focusedIndex]) {
         $$renderer2.push("<!--[0-->");
         const focused = datedItems()[focusedIndex];

@@ -45,7 +45,11 @@
 </div>
 
 <main>
-	<div class="settings">
+	<div class="settings-wrap">
+		{#if saved}
+			<p class="saved-msg">Changes Saved</p>
+		{/if}
+		<div class="settings">
 		<div>
 			Dataset:
 			<select name="search-type" id="search-type" bind:value={dataset}>
@@ -73,20 +77,44 @@
 		</div>
 
 		<div>
-			<button onclick={saveSettings}> Save </button>
+			<div class="save-row">
+				<button onclick={saveSettings}> Save </button>
+			</div>
 		</div>
-		{#if saved}
-			<p class="saved-msg">Changes Saved</p>
-		{/if}
+	</div>
 	</div>
 </main>
 
 <div class="footer"></div>
 
 <style>
+	.settings-wrap {
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.save-row {
+		display: flex;
+		justify-content: center;
+	}
+
+	.settings > div {
+		margin-bottom: 0.2rem;
+	}
+
+	.settings > div:last-child {
+		margin-top: 1.25rem;
+		margin-bottom: 0;
+	}
+
 	.saved-msg {
-		text-align: center;
-		margin-top: 1rem;
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-bottom: 0.5rem;
 		color: var(--accent-color);
 		font-weight: bold;
 	}
