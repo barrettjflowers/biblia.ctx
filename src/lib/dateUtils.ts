@@ -5,7 +5,7 @@ export function parseYear(dateStr: string | undefined | null): number | null {
 
 export function parseDateRange(
 	dateStr: string | undefined | null
-): { start: number; end?: number } | null {
+): { start: number; end?: number; circa?: boolean } | null {
 	if (!dateStr || typeof dateStr !== 'string') return null;
 
 	let working = dateStr.toLowerCase().replace(/[.\s]/g, '');
@@ -24,18 +24,19 @@ export function parseDateRange(
 
 	const suffix = isBce ? 'bce' : 'ce';
 	const body = working.replace(new RegExp(`${suffix}$`), '');
+	const circa = /^c/.test(body);
 	const parts = body.split('-').map((p) => p.replace(/^c+/, ''));
 
 	const nums = parts.map((p) => parseInt(p, 10)).filter((n) => !isNaN(n));
 	if (nums.length === 0) return null;
 
 	if (nums.length === 1) {
-		return { start: isBce ? -nums[0] : nums[0] };
+		return { start: isBce ? -nums[0] : nums[0], circa };
 	}
 
 	const start = isBce ? -nums[0] : nums[0];
 	const end = isBce ? -nums[nums.length - 1] : nums[nums.length - 1];
-	return { start: Math.min(start, end), end: Math.max(start, end) };
+	return { start: Math.min(start, end), end: Math.max(start, end), circa };
 }
 
 export function isWithinRange(

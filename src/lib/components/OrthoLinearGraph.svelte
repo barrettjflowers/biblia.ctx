@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount, onDestroy, tick } from 'svelte';
+	import { fade } from 'svelte/transition';
 	import type { Cononical } from '$lib/types';
 	import { parseDateRange } from '$lib/dateUtils';
 
@@ -8,6 +9,7 @@
 	let focusedIndex = $state(0);
 	let graphContainer: HTMLDivElement = $state(null!);
 	let zoomLevel = $state(1.0);
+	let scrollLeft = $state(0);
 
 	const ZOOM_STEP = 0.25;
 	const MIN_ZOOM = 0.25;
@@ -26,6 +28,7 @@
 		index: number;
 		gap: number;
 		isRange: boolean;
+		circa: boolean;
 		startYear: number;
 		endYear?: number;
 	}
@@ -43,6 +46,7 @@
 					startYear: range.start,
 					endYear: range.end,
 					isRange: range.end !== undefined,
+					circa: range.circa ?? false,
 					index,
 					gap: targetYear !== null ? range.start - targetYear : 0
 				} as DatedItem;
@@ -61,7 +65,9 @@
 	let visibility = $derived.by(() => {
 		const focusedItem = datedItems[focusedIndex] ?? null;
 		const visibleIds = new Set<string>();
-		const allHidden: number[] = [];
+		const hiddenBySide: Record<'top' | 'bottom', number[]> = { top: [], bottom: [] };
+		const viewportLeft = scrollLeft;
+		const viewportRight = scrollLeft + containerW;
 
 		if (focusedItem) visibleIds.add(focusedItem.item.id);
 
@@ -82,32 +88,29 @@
 					visibleIds.add(d.item.id);
 					if (right > lastRight) lastRight = right;
 				} else {
-					allHidden.push(pixelCenter);
+					if (pixelCenter >= viewportLeft && pixelCenter <= viewportRight) {
+						hiddenBySide[side].push(pixelCenter);
+					}
 				}
 			}
 		}
 
-		allHidden.sort((a, b) => a - b);
 		const hiddenGroups: HiddenGroup[] = [];
-		let group: number[] = [];
-
-		for (const pc of allHidden) {
-			if (group.length === 0 || pc - group[group.length - 1] < NODE_WIDTH) {
-				group.push(pc);
-			} else {
-				hiddenGroups.push({
-					side: 'top',
-					count: group.length,
-					pixelCenter: group.reduce((s, v) => s + v, 0) / group.length
-				});
-				group = [pc];
-			}
-		}
-		if (group.length > 0) {
+		const allHidden = [...hiddenBySide.top, ...hiddenBySide.bottom];
+		if (allHidden.length > 0) {
+			const avgCenter = allHidden.reduce((s, v) => s + v, 0) / allHidden.length;
+			const topVisible = datedItems
+				.filter((d, i) => getSide(i) === 'top' && visibleIds.has(d.item.id))
+				.map(d => getPixelCenter(d.year));
+			const snapped = topVisible.length > 0
+				? topVisible.reduce((closest, px) =>
+					Math.abs(px - avgCenter) < Math.abs(closest - avgCenter) ? px : closest
+				)
+				: avgCenter;
 			hiddenGroups.push({
 				side: 'top',
-				count: group.length,
-				pixelCenter: group.reduce((s, v) => s + v, 0) / group.length
+				count: allHidden.length,
+				pixelCenter: snapped
 			});
 		}
 
@@ -136,14 +139,16 @@
 		return (getPosition(year) / 100) * timelineWidth;
 	}
 
-	function formatYear(year: number): string {
-		if (year < 0) return `${Math.abs(year)}bce`;
-		return `${year}ce`;
+	function formatYear(year: number, circa?: boolean): string {
+		const prefix = circa ? 'c. ' : '';
+		if (year < 0) return `${prefix}${Math.abs(year)}bce`;
+		return `${prefix}${year}ce`;
 	}
 
 	function fmtDate(item: DatedItem): string {
-		if (item.isRange) return `${formatYear(item.startYear)}–${formatYear(item.endYear!)}`;
-		return formatYear(item.year);
+		const prefix = item.circa ? 'circa ' : '';
+		if (item.isRange) return `${prefix}${formatYear(item.startYear)}–${formatYear(item.endYear!)}`;
+		return `${prefix}${formatYear(item.year)}`;
 	}
 
 	function getSide(index: number): 'top' | 'bottom' {
@@ -222,9 +227,9 @@
 </script>
 
 {#if datedItems.length > 0}
-	<div class="graph-container" bind:this={graphContainer} tabindex="-1">
+	<div class="graph-container" bind:this={graphContainer} tabindex="-1" onscroll={(e) => scrollLeft = e.currentTarget.scrollLeft}>
 		<div class="timeline" style="width: {timelineWidth}px;">
-		{#each visibility.visibleItems as { datedItem: { item, year, index, gap, isRange, endYear }, sortIdx } (item.id)}
+		{#each visibility.visibleItems as { datedItem: { item, year, index, gap, isRange, endYear, circa }, sortIdx } (item.id)}
 			{@const side = getSide(sortIdx)}
 			<div
 				class="node {side}"
@@ -240,18 +245,20 @@
 					<strong>{item.title}</strong>
 					<small class="gap" class:negative={gap < 0} class:invisible={gap === 0}>{gap > 0 ? '+' : ''}{gap}yr</small>
 				</div>
-				<div class="node-year">{formatYear(year)}</div>
+				<div class="node-year">{formatYear(year, circa)}</div>
 			</div>
 		{/each}
-		{#each visibility.hiddenGroups as group (group.side + group.count + group.pixelCenter)}
+		{#if visibility.hiddenGroups.length > 0}
+			{@const group = visibility.hiddenGroups[0]}
 			<div
-				class="overflow-badge {group.side}"
+				class="overflow-badge"
 				style="left: {(group.pixelCenter / timelineWidth) * 100}%;"
 				role="status"
+				transition:fade={{ duration: 150 }}
 			>
 				+{group.count}
 			</div>
-		{/each}
+		{/if}
 			<div class="axis"></div>
 		</div>
 	</div>
@@ -513,6 +520,7 @@
 
 	.overflow-badge {
 		position: absolute;
+		top: -10px;
 		transform: translateX(-50%);
 		font-family: menlo, monospace;
 		font-size: 1rem;
@@ -522,9 +530,6 @@
 		cursor: default;
 		z-index: 5;
 		white-space: nowrap;
-	}
-
-	.overflow-badge.top {
-		top: -10px;
+		transition: left 0.15s ease-out;
 	}
 </style>

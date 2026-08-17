@@ -17,7 +17,7 @@ const insights = [
     source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Abel/",
     href: "",
     scripture: [],
-    date: "c.4026bce-c.3896bce",
+    date: "c.4000bce-c.3896bce",
     tags: []
   },
   {
@@ -27,7 +27,7 @@ const insights = [
     source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Abihu/",
     href: "",
     scripture: [],
-    date: "1512bce",
+    date: "c.1512bce",
     tags: []
   },
   {
@@ -37,7 +37,7 @@ const insights = [
     source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Abraham/",
     href: "",
     scripture: [],
-    date: "2018bce-1843bce",
+    date: "c.2018bce-c.1843bce",
     tags: []
   },
   {
@@ -47,7 +47,7 @@ const insights = [
     source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Absalom/",
     href: "",
     scripture: [],
-    date: "1070bce",
+    date: "c.1070bce",
     tags: []
   },
   {
@@ -77,37 +77,27 @@ const insights = [
     source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Adonijah/",
     href: "",
     scripture: [],
-    date: "537bce",
+    date: "c.1010bce-c.970bce",
     tags: []
   },
   {
     id: "agabus",
     title: "Agabus",
-    description: "A Christian prophet in the early church who predicted a famine during Claudius's reign and later bound Paul with his own belt to symbolize his fate in Jerusalem.",
+    description: "A Christian prophet in the early congregation who predicted a famine during Claudius's reign and later bound Paul with his own belt to symbolize his fate in Jerusalem.",
     source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Agabus/",
     href: "",
     scripture: [],
-    date: "54ce-c.56ce",
+    date: "c.54ce",
     tags: []
   },
   {
     id: "ahab",
     title: "Ahab",
-    description: "The seventh king of Israel (c. 940–910 BCE), notorious for his wickedness, idolatry, marriage to Jezebel, and conflict with the prophet Elijah.",
+    description: "The seventh king of Israel, notorious for his wickedness, idolatry, marriage to Jezebel, and conflict with the prophet Elijah.",
     source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Ahab/",
     href: "",
     scripture: [],
-    date: "c.940bce",
-    tags: []
-  },
-  {
-    id: "ammonites",
-    title: "Ammonites",
-    description: "A pagan nation descended from Lot, occupying territory east of Jordan, often hostile to Israel, with Molech worship and involved in battles against Judah's kings.",
-    source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Ammonites/",
-    href: "",
-    scripture: [],
-    date: "911bce-537bce",
+    date: "c.918bce",
     tags: []
   },
   {
@@ -141,8 +131,8 @@ const insights = [
     tags: []
   },
   {
-    id: "aram",
-    title: "Aram",
+    id: "aram-region",
+    title: "Aram-region",
     description: "The region of Syria and upper Mesopotamia, home to the Aramaean people, whose kings fought against Israel and who influenced Israel's language and culture.",
     source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Aram/",
     href: "",
@@ -153,11 +143,11 @@ const insights = [
   {
     id: "ark-of-the-covenant",
     title: "Ark of the Covenant",
-    description: "The sacred chest containing the Ten Commandments, Aaron's rod, and manna, overlaid with gold, topped by the mercy seat, and housed in the Most Holy.",
+    description: "The sacred chest containing the Ten Commandments, Aaron's rod, and manna, overlaid with gold, and housed in the Most Holy.",
     source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Ark-Of-The-Covenant/",
     href: "",
     scripture: [],
-    date: "1467bce-642bce",
+    date: "c.1445bce",
     tags: []
   },
   {
@@ -175,9 +165,9 @@ const insights = [
     title: "Athaliah",
     description: "The daughter of Ahab and Jezebel who became queen of Judah by killing her grandchildren, ruling for six years before being overthrown by Jehu.",
     source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Athaliah/",
-    href: "",
+    href: "WIP",
     scripture: [],
-    date: "899bce-468bce",
+    date: "c.899bce",
     tags: []
   },
   {
@@ -1414,43 +1404,23 @@ const examples = [
 ];
 const luke = [
   {
-    id: "adam-created",
-    title: "Adam created",
-    description: "Adam created",
-    source: "https://www.jw.org/finder?wtlocale=E&docid=1200000970&srctype=wol&srcid=share&par=114",
-    href: "https://cms-imgp.jw-cdn.org/img/p/1102005136/univ/art/1102005136_univ_cnt_3_xl.jpg",
-    scripture: [],
-    date: "4026bce",
-    tags: []
-  },
-  {
-    id: "flood-started",
+    id: "flood",
     title: "Flood started",
     description: "Flood started",
     source: "https://www.jw.org/finder?wtlocale=E&docid=1200000970&srctype=wol&srcid=share&par=117",
     href: "https://cms-imgp.jw-cdn.org/img/p/1102009453/univ/art/1102009453_univ_lsr_xl.jpg",
     scripture: [],
     date: "2370bce",
-    tags: []
+    tags: ["deluge"]
   },
   {
-    id: "flood-stops-raining",
-    title: "Flood stops raining",
-    description: "Flood stops raining",
-    source: "https://www.jw.org/finder?wtlocale=E&docid=2013566&srctype=wol&srcid=share&par=17",
-    href: "",
-    scripture: [],
-    date: "2370bce",
-    tags: []
-  },
-  {
-    id: "john-the-baptist-ministry",
+    id: "john-the-baptist",
     title: "John the Baptist begins his ministry",
     description: "John the Baptist begins his ministry",
     source: "https://wol.jw.org/en/wol/dx/r1/lp-e/1001070146/25130",
     href: "",
     scripture: [],
-    date: "29ce",
+    date: "c.6ce",
     tags: []
   },
   {
@@ -1474,7 +1444,7 @@ const luke = [
     tags: []
   },
   {
-    id: "david-born",
+    id: "david",
     title: "David born",
     description: "David born",
     source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Chronology/#p260-p261",
@@ -1484,8 +1454,8 @@ const luke = [
     tags: []
   },
   {
-    id: "samuel-finished-judges",
-    title: "Samuel finished writing Judges",
+    id: "judges-book-of",
+    title: "Judges",
     description: "Samuel finished writing Judges",
     source: "https://www.jw.org/finder?wtlocale=E&docid=1200000970&srctype=wol&srcid=share&par=262-263",
     href: "",
@@ -1494,8 +1464,8 @@ const luke = [
     tags: []
   },
   {
-    id: "samuel-finished-ruth",
-    title: "Samuel finished writing Ruth",
+    id: "ruth-book-of",
+    title: "Ruth, Book of",
     description: "Samuel finished writing Ruth",
     source: "https://www.jw.org/finder?wtlocale=E&docid=1200000970&srctype=wol&srcid=share&par=264-265",
     href: "",

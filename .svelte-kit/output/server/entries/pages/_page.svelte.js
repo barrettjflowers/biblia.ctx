@@ -27,15 +27,16 @@ function parseDateRange(dateStr) {
   }
   const suffix = isBce ? "bce" : "ce";
   const body = working.replace(new RegExp(`${suffix}$`), "");
+  const circa = /^c/.test(body);
   const parts = body.split("-").map((p) => p.replace(/^c+/, ""));
   const nums = parts.map((p) => parseInt(p, 10)).filter((n) => !isNaN(n));
   if (nums.length === 0) return null;
   if (nums.length === 1) {
-    return { start: isBce ? -nums[0] : nums[0] };
+    return { start: isBce ? -nums[0] : nums[0], circa };
   }
   const start = isBce ? -nums[0] : nums[0];
   const end = isBce ? -nums[nums.length - 1] : nums[nums.length - 1];
-  return { start: Math.min(start, end), end: Math.max(start, end) };
+  return { start: Math.min(start, end), end: Math.max(start, end), circa };
 }
 function isWithinRange(dateStr, referenceYear, contextYears) {
   const range = parseDateRange(dateStr);
@@ -130,6 +131,7 @@ function OrthoLinearGraph($$renderer, $$props) {
         startYear: range.start,
         endYear: range.end,
         isRange: range.end !== void 0,
+        circa: range.circa ?? false,
         index,
         gap: targetYear() !== null ? range.start - targetYear() : 0
       };
@@ -194,13 +196,15 @@ function OrthoLinearGraph($$renderer, $$props) {
     function getPixelCenter(year) {
       return getPosition(year) / 100 * timelineWidth();
     }
-    function formatYear(year) {
-      if (year < 0) return `${Math.abs(year)}bce`;
-      return `${year}ce`;
+    function formatYear(year, circa) {
+      const prefix = circa ? "c. " : "";
+      if (year < 0) return `${prefix}${Math.abs(year)}bce`;
+      return `${prefix}${year}ce`;
     }
     function fmtDate(item) {
-      if (item.isRange) return `${formatYear(item.startYear)}–${formatYear(item.endYear)}`;
-      return formatYear(item.year);
+      const prefix = item.circa ? "circa " : "";
+      if (item.isRange) return `${prefix}${formatYear(item.startYear)}–${formatYear(item.endYear)}`;
+      return `${prefix}${formatYear(item.year)}`;
     }
     function getSide(index) {
       return index % 2 === 0 ? "top" : "bottom";
@@ -236,11 +240,11 @@ function OrthoLinearGraph($$renderer, $$props) {
       const each_array = ensure_array_like(visibility().visibleItems);
       for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
         let {
-          datedItem: { item, year, index, gap, isRange, endYear },
+          datedItem: { item, year, index, gap, isRange, endYear, circa },
           sortIdx
         } = each_array[$$index];
         const side = getSide(sortIdx);
-        $$renderer2.push(`<div${attr_class(`node ${stringify(side)}`, "svelte-a7d427", { "target": datedItems()[focusedIndex]?.item.id === item.id })}${attr_style(`left: ${stringify(getPosition(year))}%;`)} role="button" tabindex="-1"><div class="connector svelte-a7d427"></div> <div class="node-content svelte-a7d427"><strong class="svelte-a7d427">${escape_html(item.title)}</strong> <small${attr_class("gap svelte-a7d427", void 0, { "negative": gap < 0, "invisible": gap === 0 })}>${escape_html(gap > 0 ? "+" : "")}${escape_html(gap)}yr</small></div> <div class="node-year svelte-a7d427">${escape_html(formatYear(year))}</div></div>`);
+        $$renderer2.push(`<div${attr_class(`node ${stringify(side)}`, "svelte-a7d427", { "target": datedItems()[focusedIndex]?.item.id === item.id })}${attr_style(`left: ${stringify(getPosition(year))}%;`)} role="button" tabindex="-1"><div class="connector svelte-a7d427"></div> <div class="node-content svelte-a7d427"><strong class="svelte-a7d427">${escape_html(item.title)}</strong> <small${attr_class("gap svelte-a7d427", void 0, { "negative": gap < 0, "invisible": gap === 0 })}>${escape_html(gap > 0 ? "+" : "")}${escape_html(gap)}yr</small></div> <div class="node-year svelte-a7d427">${escape_html(formatYear(year, circa))}</div></div>`);
       }
       $$renderer2.push(`<!--]--> <!--[-->`);
       const each_array_1 = ensure_array_like(visibility().hiddenGroups);
