@@ -17,7 +17,7 @@
 	function saveSettings() {
 		settings.set({ yearsContext, dataset, viewType });
 		saved = true;
-		setTimeout(() => saved = false, 2000);
+		setTimeout(() => saved = false, 3000);
 	}
 </script>
 
@@ -89,10 +89,12 @@
 
 <style>
 	.settings-wrap {
-		position: absolute;
-		top: 30%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: none;
+		max-width: 300px;
+		margin: 3rem auto 0;
 	}
 
 	.save-row {
@@ -110,12 +112,14 @@
 	}
 
 	.saved-msg {
-		position: absolute;
-		bottom: 100%;
-		left: 50%;
-		transform: translateX(-50%);
-		margin-bottom: 0.5rem;
+		position: fixed;
+		top: 9rem;
+		right: 1rem;
+		border: none;
+		margin: 1;
 		color: var(--accent-color);
 		font-weight: bold;
+		background-color: var(--input-bg);
+		padding: 0.5rem 1rem;
 	}
 </style>

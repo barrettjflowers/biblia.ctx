@@ -76,6 +76,6 @@
 			</ul>
 		{/if}
 	{:else}
-		<p>No results</p>
+		<p style="margin-top: 2em;">No results</p>
 	{/if}
 </main>

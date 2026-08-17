@@ -292,7 +292,7 @@
 		</div>
 	{/if}
 {:else}
-	<p>No results with valid dates to display</p>
+	<p style="margin-top: 2rem;">No results with valid dates to display</p>
 {/if}
 
 <style>
@@ -326,7 +326,8 @@
 	.zoom-controls button {
 		background: var(--input-bg);
 		color: var(--text-color);
-		border: 1px solid var(--text-color);
+		border: 1px solid transparent;
+		box-shadow: 0 0 0 3px var(--input-bg), 8px 8px 0 0 #000;
 		font-family: menlo, monospace;
 		font-size: 1.25rem;
 		width: 2.25rem;
@@ -350,7 +351,7 @@
 
 	.zoom-level {
 		font-family: menlo, monospace;
-		font-size: 0.75rem;
+		font-size: 1rem;
 		min-width: 3rem;
 		text-align: center;
 	}
@@ -394,14 +395,16 @@
 	}
 
 	.node.target {
-	  padding: 5px 0;
-		outline: 2px solid var(--text-color);
+		box-sizing: border-box;
+		padding: 0 1.5rem;
+		border: 2px solid transparent;
+		box-shadow: 0 0 0 4px var(--input-bg), 0 0 0 6px var(--text-color), 10px 10px 0 0 #000;
 		background: var(--input-bg);
 		z-index: 10;
 	}
 
 	.node.target .node-content {
-		padding: 0.25rem 0.75rem;
+		padding: 0;
 	}
 
 	.connector {
@@ -481,8 +484,9 @@
 	.detail {
 		margin-top: 2rem;
 		padding: 1rem;
-		border: 2px solid var(--text-color);
-		background: var(--bg-color);
+		border: 2px solid transparent;
+		box-shadow: 0 0 0 4px var(--input-bg), 0 0 0 6px var(--text-color), 10px 10px 0 0 #000;
+		background: var(--input-bg);
 		max-width: 600px;
 		margin-left: auto;
 		margin-right: auto;
