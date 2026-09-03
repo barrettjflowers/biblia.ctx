@@ -1,0 +1,4 @@
+- [ ] truncate long titles
+- [ ] stylize settings page w/ box shadows
+- [ ] add a kofi button and link to my github in footer
+- [ ] feat: add bookmark node button 
