@@ -8,7 +8,7 @@
 
 <div class="header">
 	<span class="title-inner">
-		<h1 class="title" style="text-align: center; margin-bottom: 1.5rem; margin-top: 0rem;">
+		<h1 class="title" style="text-align: center;">
 			Biblia<span class="accent">.ctx</span>
 		</h1>
 		<svg

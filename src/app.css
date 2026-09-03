@@ -13,6 +13,13 @@
 
 	font-family: menlo;
 	background-color: var(--bg-color);
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
 }
 
 .header {

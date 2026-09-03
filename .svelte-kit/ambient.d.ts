@@ -87,6 +87,7 @@ declare module '$env/static/private' {
 	export const npm_config_npm_version: string;
 	export const CALDAV_PASS: string;
 	export const XDG_SESSION_CLASS: string;
+	export const TRELLO_TOKEN: string;
 	export const TERMINFO: string;
 	export const TERM: string;
 	export const npm_package_name: string;
@@ -97,8 +98,8 @@ declare module '$env/static/private' {
 	export const DISPLAY: string;
 	export const npm_lifecycle_event: string;
 	export const SHLVL: string;
-	export const HL_EXEC_RULE_TOKEN: string;
 	export const MOZ_ENABLE_WAYLAND: string;
+	export const TRELLO_API_KEY: string;
 	export const XDG_VTNR: string;
 	export const XDG_SESSION_ID: string;
 	export const OUTLINE_TOKEN: string;
@@ -263,6 +264,7 @@ declare module '$env/dynamic/private' {
 		npm_config_npm_version: string;
 		CALDAV_PASS: string;
 		XDG_SESSION_CLASS: string;
+		TRELLO_TOKEN: string;
 		TERMINFO: string;
 		TERM: string;
 		npm_package_name: string;
@@ -273,8 +275,8 @@ declare module '$env/dynamic/private' {
 		DISPLAY: string;
 		npm_lifecycle_event: string;
 		SHLVL: string;
-		HL_EXEC_RULE_TOKEN: string;
 		MOZ_ENABLE_WAYLAND: string;
+		TRELLO_API_KEY: string;
 		XDG_VTNR: string;
 		XDG_SESSION_ID: string;
 		OUTLINE_TOKEN: string;
