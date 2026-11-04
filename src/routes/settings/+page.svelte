@@ -23,7 +23,7 @@
 
 <div class="header">
 	<span class="title-inner">
-		<h1 class="title" style="text-align: center; margin-bottom: 1.5rem; margin-top: 0rem;">
+		<h1 class="title" style="text-align: center;">
 			Settings
 		</h1>
 	</span>
@@ -100,6 +100,10 @@
 	.save-row {
 		display: flex;
 		justify-content: center;
+	}
+
+	.settings {
+		box-shadow: 0 0 0 4px var(--input-bg), 0 0 0 6px var(--text-color), 10px 10px 0 0 #000;
 	}
 
 	.settings > div {

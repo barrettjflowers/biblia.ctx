@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { onMount, onDestroy, tick } from 'svelte';
+	import { onMount, onDestroy, tick, flushSync } from 'svelte';
 	import { fade } from 'svelte/transition';
+	import { cubicOut } from 'svelte/easing';
 	import type { Cononical } from '$lib/types';
 	import { parseDateRange } from '$lib/dateUtils';
 
@@ -9,12 +10,27 @@
 	let focusedIndex = $state(0);
 	let graphContainer: HTMLDivElement = $state(null!);
 	let zoomLevel = $state(1.0);
+	// Animated zoom actually used for layout; zoomLevel is the target.
+	let displayZoom = $state(1.0);
+	let zooming = false;
+	let zoomFrame = 0;
 	let scrollLeft = $state(0);
 
 	const ZOOM_STEP = 0.25;
 	const MIN_ZOOM = 0.25;
 	const MAX_ZOOM = 3.0;
 	const NODE_WIDTH = 150;
+
+	// Fade in while sliding out from the axis: top nodes rise, bottom nodes drop.
+	function popFromAxis(_node: Element, { side, duration = 250 }: { side: 'top' | 'bottom'; duration?: number }) {
+		const offset = side === 'top' ? 16 : -16;
+		return {
+			duration: zooming ? 0 : duration,
+			easing: cubicOut,
+			css: (t: number, u: number) =>
+				`opacity: ${t}; transform: translateX(-50%) translateY(${u * offset}px);`
+		};
+	}
 
 	interface HiddenGroup {
 		side: 'top' | 'bottom';
@@ -59,7 +75,7 @@
 	let maxYear = $derived(datedItems.length > 0 ? Math.max(...datedItems.map((d) => d.year)) : 100);
 	let yearRange = $derived(maxYear - minYear || 1);
 	let containerW = $derived(graphContainer?.offsetWidth ?? 800);
-	let zoomMultiplier = $derived(zoomLevel * zoomLevel);
+	let zoomMultiplier = $derived(displayZoom * displayZoom);
 	let timelineWidth = $derived(Math.max(datedItems.length * 220 * zoomMultiplier, containerW));
 
 	let visibility = $derived.by(() => {
@@ -71,36 +87,40 @@
 
 		if (focusedItem) visibleIds.add(focusedItem.item.id);
 
+		// Items visible with no selection forcing; the badge anchors only to these so it doesn't jump.
+		const baseVisibleIds = new Set<string>();
+
 		for (const side of ['top', 'bottom'] as const) {
 			const nodes = datedItems
 				.map((d, i) => ({ d, sortIdx: i, pixelCenter: getPixelCenter(d.year) }))
 				.filter(({ sortIdx }) => getSide(sortIdx) === side)
 				.sort((a, b) => a.pixelCenter - b.pixelCenter);
 
-			let lastRight = -Infinity;
+			let baseLastRight = -Infinity;
 
 			for (const { d, pixelCenter } of nodes) {
 				const left = pixelCenter - NODE_WIDTH / 2;
 				const right = pixelCenter + NODE_WIDTH / 2;
-				const isFocused = focusedItem && d.item.id === focusedItem.item.id;
 
-				if (left >= lastRight || isFocused) {
-					visibleIds.add(d.item.id);
-					if (right > lastRight) lastRight = right;
-				} else {
-					if (pixelCenter >= viewportLeft && pixelCenter <= viewportRight) {
-						hiddenBySide[side].push(pixelCenter);
-					}
+				// Hidden count uses the no-selection layout so it stays the same while navigating.
+				if (left >= baseLastRight) {
+					baseVisibleIds.add(d.item.id);
+					baseLastRight = right;
+				} else if (pixelCenter >= viewportLeft && pixelCenter <= viewportRight) {
+					hiddenBySide[side].push(pixelCenter);
 				}
 			}
 		}
+
+		// The selected item is laid over the base layout, so showing it never reshuffles the others.
+		for (const id of baseVisibleIds) visibleIds.add(id);
 
 		const hiddenGroups: HiddenGroup[] = [];
 		const allHidden = [...hiddenBySide.top, ...hiddenBySide.bottom];
 		if (allHidden.length > 0) {
 			const avgCenter = allHidden.reduce((s, v) => s + v, 0) / allHidden.length;
 			const topVisible = datedItems
-				.filter((d, i) => getSide(i) === 'top' && visibleIds.has(d.item.id))
+				.filter((d, i) => getSide(i) === 'top' && baseVisibleIds.has(d.item.id))
 				.map(d => getPixelCenter(d.year));
 			const snapped = topVisible.length > 0
 				? topVisible.reduce((closest, px) =>
@@ -126,7 +146,10 @@
 		if (datedItems.length > 0 && target) {
 			const idx = datedItems.findIndex((d) => d.item.id === target.id);
 			if (idx >= 0) focusedIndex = idx;
+			cancelAnimationFrame(zoomFrame);
+			zooming = false;
 			zoomLevel = 1.0;
+			displayZoom = 1.0;
 		}
 	});
 
@@ -168,14 +191,32 @@
 	}
 
 	function zoomTo(next: number) {
+		const target = Math.min(Math.max(next, MIN_ZOOM), MAX_ZOOM);
+		if (target === zoomLevel) return;
 		const tl = graphContainer;
-		const oldTotal = tl.scrollWidth;
-		const oldCenter = tl.scrollLeft + tl.clientWidth / 2;
-		zoomLevel = Math.min(Math.max(next, MIN_ZOOM), MAX_ZOOM);
-		tick().then(() => {
-			const frac = oldTotal > 0 ? oldCenter / oldTotal : 0.5;
-			tl.scrollLeft = frac * tl.scrollWidth - tl.clientWidth / 2;
-		});
+		const focused = datedItems[focusedIndex];
+		const frac = tl.scrollWidth > 0 ? (tl.scrollLeft + tl.clientWidth / 2) / tl.scrollWidth : 0.5;
+		// Where the selected item sits on screen; kept fixed while zooming.
+		const anchorX = focused ? getPixelCenter(focused.year) - tl.scrollLeft : 0;
+		const from = displayZoom;
+		const start = performance.now();
+		const duration = 300;
+		zoomLevel = target;
+		zooming = true;
+		cancelAnimationFrame(zoomFrame);
+
+		// Stretch the timeline frame by frame, keeping the selected item in place.
+		const step = (now: number) => {
+			const p = Math.min((now - start) / duration, 1);
+			displayZoom = from + (target - from) * cubicOut(p);
+			flushSync();
+			tl.scrollLeft = focused
+				? getPixelCenter(focused.year) - anchorX
+				: frac * tl.scrollWidth - tl.clientWidth / 2;
+			if (p < 1) zoomFrame = requestAnimationFrame(step);
+			else zooming = false;
+		};
+		zoomFrame = requestAnimationFrame(step);
 	}
 
 	function zoomIn() {
@@ -207,6 +248,7 @@
 	});
 
 	onDestroy(() => {
+		cancelAnimationFrame(zoomFrame);
 		document.removeEventListener('keydown', onDocumentKeydown);
 	});
 
@@ -235,6 +277,7 @@
 				class="node {side}"
 				class:target={datedItems[focusedIndex]?.item.id === item.id}
 				style="left: {getPosition(year)}%;"
+				transition:popFromAxis={{ side }}
 				role="button"
 				tabindex="-1"
 				onclick={() => goTo(sortIdx)}
@@ -256,7 +299,7 @@
 				role="status"
 				transition:fade={{ duration: 150 }}
 			>
-				+{group.count}
+				+{group.count} More
 			</div>
 		{/if}
 			<div class="axis"></div>
@@ -298,6 +341,8 @@
 <style>
 	.graph-container {
 		padding: 2rem 3rem;
+		/* Top matches the visible gap below: search drop shadow sticks out 10px, zoom button ring 3px. */
+		margin: calc(2rem + 7px) 2rem 1.5rem;
 		overflow-x: auto;
 		overflow-anchor: none;
 		scrollbar-width: none;
@@ -524,13 +569,15 @@
 
 	.overflow-badge {
 		position: absolute;
-		top: -10px;
+		top: -22px;
 		transform: translateX(-50%);
 		font-family: menlo, monospace;
-		font-size: 1rem;
+		font-size: 0.85rem;
 		font-weight: bold;
-		padding: 2px 6px;
-		background: transparent;
+		padding: 2px 8px;
+		background: var(--input-bg);
+		color: var(--text-color);
+		box-shadow: 0 0 0 3px var(--input-bg), 8px 8px 0 0 #000;
 		cursor: default;
 		z-index: 5;
 		white-space: nowrap;

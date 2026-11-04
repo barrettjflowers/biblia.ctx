@@ -45,6 +45,7 @@ declare module '$env/static/private' {
 	export const COLORTERM: string;
 	export const HYPRLAND_CMD: string;
 	export const npm_config_cache: string;
+	export const TG_CHAT_ID: string;
 	export const HISTCONTROL: string;
 	export const NVIM_CONFIG: string;
 	export const XDG_BACKEND: string;
@@ -79,6 +80,7 @@ declare module '$env/static/private' {
 	export const WAYLAND_DISPLAY: string;
 	export const TG_TOKEN: string;
 	export const KITTY_WINDOW_ID: string;
+	export const FRESHDESK_API_KEY: string;
 	export const CLICOLOR: string;
 	export const INIT_CWD: string;
 	export const npm_lifecycle_script: string;
@@ -98,6 +100,7 @@ declare module '$env/static/private' {
 	export const DISPLAY: string;
 	export const npm_lifecycle_event: string;
 	export const SHLVL: string;
+	export const HL_EXEC_RULE_TOKEN: string;
 	export const MOZ_ENABLE_WAYLAND: string;
 	export const TRELLO_API_KEY: string;
 	export const XDG_VTNR: string;
@@ -222,6 +225,7 @@ declare module '$env/dynamic/private' {
 		COLORTERM: string;
 		HYPRLAND_CMD: string;
 		npm_config_cache: string;
+		TG_CHAT_ID: string;
 		HISTCONTROL: string;
 		NVIM_CONFIG: string;
 		XDG_BACKEND: string;
@@ -256,6 +260,7 @@ declare module '$env/dynamic/private' {
 		WAYLAND_DISPLAY: string;
 		TG_TOKEN: string;
 		KITTY_WINDOW_ID: string;
+		FRESHDESK_API_KEY: string;
 		CLICOLOR: string;
 		INIT_CWD: string;
 		npm_lifecycle_script: string;
@@ -275,6 +280,7 @@ declare module '$env/dynamic/private' {
 		DISPLAY: string;
 		npm_lifecycle_event: string;
 		SHLVL: string;
+		HL_EXEC_RULE_TOKEN: string;
 		MOZ_ENABLE_WAYLAND: string;
 		TRELLO_API_KEY: string;
 		XDG_VTNR: string;
