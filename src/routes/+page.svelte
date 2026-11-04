@@ -4,8 +4,11 @@
 	import { query, results, targetResult } from '../lib/fuzzy';
 	import { settings } from '../lib/settings';
 	import OrthoLinearGraph from '../lib/components/OrthoLinearGraph.svelte';
+	import SiteFooter from '../lib/components/SiteFooter.svelte';
 </script>
 
+<!-- Full-height column so the footer sits at the bottom of the screen when content is short. -->
+<div class="page">
 <div class="header">
 	<span class="title-inner">
 		<h1 class="title" style="text-align: center;">
@@ -31,7 +34,7 @@
 	<hr
 		style="margin-top: 0rem; margin-bottom: 1rem; margin-left: 1rem; margin-right: 1rem; border: none; border-top: 1px solid var(--text-color);"
 	/>
-	<p style="padding-bottom: 1rem; text-align: center;">Quick anthropological context.</p>
+	<p style="padding-bottom: 1rem; margin-bottom: 0; text-align: center;">Quick anthropological context.</p>
 	<a href="{base}/settings" class="settings-btn" aria-label="Open settings">
 		<button class="btn" aria-label="Open settings">
 			<svg
@@ -79,3 +82,18 @@
 		<p style="margin-top: 2em;">No results</p>
 	{/if}
 </main>
+
+<SiteFooter />
+</div>
+
+<style>
+	.page {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.page > main {
+		flex: 1;
+	}
+</style>

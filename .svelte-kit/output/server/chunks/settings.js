@@ -341,16 +341,6 @@ const insights = [
     tags: []
   },
   {
-    id: "david",
-    title: "David",
-    description: "The second king of Israel, a man after God's own heart, who defeated Goliath, united the nation, conquered Jerusalem, and received the covenant for an everlasting kingdom.",
-    source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/David/",
-    href: "",
-    scripture: [],
-    date: "1077bce",
-    tags: []
-  },
-  {
     id: "david-city-of",
     title: "David, City of",
     description: "Another name for Jerusalem, specifically the original Jebusite stronghold captured by David, which became the capital of the united kingdom and the site of the temple.",
@@ -1444,7 +1434,7 @@ const luke = [
     tags: []
   },
   {
-    id: "david",
+    id: "david-born",
     title: "David born",
     description: "David born",
     source: "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Chronology/#p260-p261",

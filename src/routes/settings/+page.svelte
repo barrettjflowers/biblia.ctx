@@ -3,6 +3,7 @@
 	import { base } from '$app/paths';
 	import { settings } from '$lib/settings';
 	import { insights, composite } from '$lib/dataset/composite';
+	import SiteFooter from '$lib/components/SiteFooter.svelte';
 
 	let yearsContext = $settings.yearsContext;
 	let dataset = $settings.dataset;
@@ -84,6 +85,8 @@
 	</div>
 	</div>
 </main>
+
+<SiteFooter />
 
 <div class="footer"></div>
 

@@ -1,4 +1,4 @@
-import { b as browser } from "./false.js";
+import { D as DEV } from "./false.js";
 import { clsx as clsx$1 } from "clsx";
 import * as devalue from "devalue";
 const DERIVED = 1 << 1;
@@ -1440,7 +1440,7 @@ class Batch {
   }
   flush() {
     try {
-      if (browser) ;
+      if (DEV) ;
       is_processing = true;
       current_batch = this;
       this.#process();
@@ -2230,7 +2230,7 @@ function update_effect(effect) {
     effect.teardown = typeof teardown === "function" ? teardown : null;
     effect.wv = write_version;
     var dep;
-    if (browser && tracing_mode_flag && (effect.f & DIRTY) !== 0 && effect.deps !== null) ;
+    if (DEV && tracing_mode_flag && (effect.f & DIRTY) !== 0 && effect.deps !== null) ;
   } finally {
     is_updating_effect = was_updating_effect;
     active_effect = previous_effect;

@@ -43,9 +43,9 @@
     "file": "chunks/server.js",
     "name": "server"
   },
-  "_settings.BNRuxauk.css": {
-    "file": "_app/immutable/assets/settings.BNRuxauk.css",
-    "src": "_settings.BNRuxauk.css"
+  "_settings.CcaZih6F.css": {
+    "file": "_app/immutable/assets/settings.CcaZih6F.css",
+    "src": "_settings.CcaZih6F.css"
   },
   "_settings.js": {
     "file": "chunks/settings.js",
@@ -54,7 +54,7 @@
       "_url.js"
     ],
     "css": [
-      "_app/immutable/assets/settings.BNRuxauk.css"
+      "_app/immutable/assets/settings.CcaZih6F.css"
     ]
   },
   "_url.js": {
@@ -138,7 +138,7 @@
       "_url.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.BoFQYEYI.css"
+      "_app/immutable/assets/_page.Dj9kGnBa.css"
     ]
   },
   "src/routes/settings/+page.svelte": {
@@ -153,7 +153,7 @@
       "_url.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.BwpDlpnk.css"
+      "_app/immutable/assets/_page.GJ420lwc.css"
     ]
   }
 }
