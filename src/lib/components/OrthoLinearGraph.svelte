@@ -532,7 +532,9 @@
 		border: 2px solid transparent;
 		box-shadow: 0 0 0 4px var(--input-bg), 0 0 0 6px var(--text-color), 10px 10px 0 0 #000;
 		background: var(--input-bg);
-		max-width: 600px;
+		/* On narrow screens leave a 1.25rem gutter each side (same as the search box):
+		   subtract the gutters plus this box's own padding and border. */
+		max-width: min(600px, calc(100% - 2.5rem - 2rem - 4px));
 		margin-left: auto;
 		margin-right: auto;
 		cursor: pointer;

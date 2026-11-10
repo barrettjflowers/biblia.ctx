@@ -28,6 +28,7 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 1000;
 	background-color: var(--input-bg);
 }
 
@@ -90,6 +91,8 @@ p {
 	/* Visible gap below header matches the timeline gaps (~29px); input ring sticks out 6px. */
 	margin-top: calc(2rem + 3px);
 	margin-bottom: 0rem;
+	/* Side gutter so the input ring and shadow don't touch the screen edge on narrow screens. */
+	padding: 0 1.25rem;
 }
 
 .input-container input {

@@ -13,7 +13,7 @@
 	<p>
 		Made by <a href="https://barrettjflowers.dev" target="_blank" rel="noopener">Barrett Flowers</a>
 		· <a href="https://github.com/barrettjflowers/biblia.ctx" target="_blank" rel="noopener">Source</a>
-		· Updated 2026-11-04
+		· Updated 2026-11-09
 	</p>
 </footer>
 
