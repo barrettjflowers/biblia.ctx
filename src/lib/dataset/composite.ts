@@ -164,11 +164,11 @@ const insights: Cononical[] = [
 	{
 		id: 'athaliah',
 		title: 'Athaliah',
-		description: 'The daughter of Ahab and Jezebel who became queen of Judah by killing her grandchildren, ruling for six years before being overthrown by Jehu.',
+		description: 'The daughter of Ahab and Jezebel who became queen of Judah by killing her grandchildren, ruling for six years before being executed at the order of High Priest Jehoiada.',
 		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Athaliah/',
-		href: 'WIP',
+		href: '',
 		scripture: [],
-		date: 'c.899bce',
+		date: 'c.905bce-c.899bce',
 		tags: []
 	},
 	{
@@ -178,7 +178,7 @@ const insights: Cononical[] = [
 		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Baal/',
 		href: '',
 		scripture: [],
-		date: '997bce-905bce',
+		date: '',
 		tags: []
 	},
 	{
@@ -188,7 +188,7 @@ const insights: Cononical[] = [
 		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Babel/',
 		href: '',
 		scripture: [],
-		date: '2030bce',
+		date: 'c.2269bce-c.2030bce',
 		tags: []
 	},
 	{
@@ -198,7 +198,7 @@ const insights: Cononical[] = [
 		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Babylon/',
 		href: '',
 		scripture: [],
-		date: 'c.645bce-916ce',
+		date: 'c.645bce-539bce',
 		tags: []
 	},
 	{
@@ -214,7 +214,7 @@ const insights: Cononical[] = [
 	{
 		id: 'belshazzar',
 		title: 'Belshazzar',
-		description: 'The last king of Babylon, son of Nebuchadnezzar, who saw the writing on the wall during a feast and was slain that night when Darius took the city.',
+		description: 'The firstborn son of Nabonidus and coregent of Babylon, who saw the writing on the wall during a feast and was slain that night when the city fell to Cyrus.',
 		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Belshazzar/',
 		href: '',
 		scripture: [],
@@ -238,7 +238,7 @@ const insights: Cononical[] = [
 		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Caesar/',
 		href: '',
 		scripture: [],
-		date: '54ce-117ce',
+		date: '31bce-117ce',
 		tags: []
 	},
 	{
@@ -278,17 +278,17 @@ const insights: Cononical[] = [
 		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Congregation/',
 		href: '',
 		scripture: [],
-		date: '33ce-36ce',
+		date: '',
 		tags: []
 	},
 	{
 		id: 'corinth',
 		title: 'Corinth',
-		description: 'A major Greek city on the isthmus connecting the Peloponnese to mainland Greece, known for its wealth and immorality, where Paul founded a prominent Christian congregation.',
+		description: 'A major Greek city on the isthmus connecting the Peloponnese to mainland Greece, where Paul arrived about 50 C.E. and stayed a year and six months founding a congregation, later returning in 55-56 C.E. to write his letter to the Romans.',
 		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Corinth/',
 		href: '',
 		scripture: [],
-		date: '196bce-56ce',
+		date: 'c.50ce-56ce',
 		tags: []
 	},
 	{
@@ -338,7 +338,7 @@ const insights: Cononical[] = [
 		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Daniel-Book-Of/',
 		href: '',
 		scripture: [],
-		date: '537bce-c.536bce',
+		date: '618bce-c.536bce',
 		tags: []
 	},
 	{
@@ -348,7 +348,7 @@ const insights: Cononical[] = [
 		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/David-City-Of/',
 		href: '',
 		scripture: [],
-		date: 'c.135ce',
+		date: '',
 		tags: []
 	},
 	{
@@ -376,7 +376,7 @@ const insights: Cononical[] = [
 		title: 'Egypt, Egyptian',
 		description: 'An ancient nation and civilization along the Nile River, where Abraham, Joseph, and Jacob\'s family sojourned, and from which the Israelites were delivered through Moses.',
 		source: 'https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Egypt-Egyptian/',
-		href: '',
+		href: 'WIP',
 		scripture: [],
 		date: '1657bce-70ce',
 		tags: []
