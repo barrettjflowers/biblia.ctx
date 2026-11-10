@@ -5,6 +5,11 @@
 	import { settings } from '../lib/settings';
 	import OrthoLinearGraph from '../lib/components/OrthoLinearGraph.svelte';
 	import SiteFooter from '../lib/components/SiteFooter.svelte';
+
+	// Focus the search box on page load so users can type right away.
+	function focusOnMount(node: HTMLInputElement) {
+		node.focus();
+	}
 </script>
 
 <!-- Full-height column so the footer sits at the bottom of the screen when content is short. -->
@@ -59,6 +64,7 @@
 	<div class="input-container">
 		<input
 			bind:value={$query}
+			use:focusOnMount
 			type="text"
 			style="font-family: menlo;"
 			placeholder="Search for an entity..."
